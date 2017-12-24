@@ -39,6 +39,13 @@ private:
     Slider riseTimeWarpSlider;
     Slider fallTimeOffsetSlider;
     Slider fallTimeWarpSlider;
+    Slider reverbMixSlider;
+    Slider delayMixSlider;
+    Slider delayTimeSlider;
+    Slider delayFeedbackSlider;
+    
+    void initRotarySlider(Slider *slider, const juce::String &suffix, float min, float max, float step, float start);
+    void addLabelToSlider(Slider& slider, Graphics& g, const juce::String &text);
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (RiseandfallAudioProcessorEditor)
 };
