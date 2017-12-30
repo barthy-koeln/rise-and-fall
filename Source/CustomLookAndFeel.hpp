@@ -12,72 +12,134 @@
 
 class CustomLookAndFeel : public LookAndFeel_V4 {
 public:
-    Colour darkBlue;
+    Colour black;
     Colour blue;
-    Colour lightBlue;
-    Colour darkRed;
+    Colour white;
     Colour red;
-    
-    CustomLookAndFeel(){
-        darkBlue = *new Colour(0xff2b2d42);
-        blue = *new Colour(0xff8d99ae);
-        lightBlue = *new Colour(0xffedf2f4);
-        red = *new Colour(0xffef233c);
-        darkRed = *new Colour(0xffd90429);
+
+    CustomLookAndFeel() {
+        black = *new Colour(0xff141414);
+        blue = *new Colour(0xff1966b0);
+        white = *new Colour(0xffffffff);
+        red = *new Colour(0xffe3170a);
     };
-    
-    void drawRotarySlider (Graphics& g, int x, int y, int width, int height, float sliderPos,
-                           const float rotaryStartAngle, const float rotaryEndAngle, Slider& slider) override
-    {
-        const float radius = jmin (width / 2, height / 2) -15.0f;
+
+    void
+    drawRotarySlider(Graphics &g, int x, int y, int width, int height, float sliderPos, const float rotaryStartAngle,
+                     const float rotaryEndAngle, Slider &slider) override {
+        const float radius = jmin(width / 2, height / 2) - 15.0f;
         const float centreX = x + width * 0.5f;
         const float centreY = y + height * 0.5f;
         const float rx = centreX - radius;
         const float ry = centreY - radius;
         const float rw = radius * 2.0f;
         const float angle = rotaryStartAngle + sliderPos * (rotaryEndAngle - rotaryStartAngle);
-        
+
         // fill
-        g.setColour (darkBlue);
-        g.fillEllipse (rx, ry, rw, rw);
+        g.setColour(black);
+        g.fillEllipse(rx, ry, rw, rw);
         // outline
-        g.setColour (lightBlue);
-        g.drawEllipse (rx, ry, rw, rw, 5.0f);
-        
+        g.setColour(white);
+        g.drawEllipse(rx, ry, rw, rw, 5.0f);
+
         Path p;
         const float pointerLength = radius * 0.5f;
         const float pointerThickness = 5.0f;
         p.addRectangle(-pointerThickness * 0.5f, -radius, pointerThickness, pointerLength);
         p.applyTransform(AffineTransform::rotation(angle).translated(centreX, centreY));
-        
+
         // pointer
         g.setColour(red);
         g.fillPath(p);
-        
-        g.setColour(lightBlue);
+
+        g.setColour(white);
         const int numLines = 10;
         const float lineThickness = pointerThickness * 0.5f;
         const float lineAngleStep = (rotaryEndAngle - rotaryStartAngle) / numLines;
         const float lineLength = pointerLength * 0.5f;
-        for(int i = 1; i < numLines; i++){
-            if(i != ((numLines/2))){
-                Path line;
-                const float lineAngle = rotaryStartAngle + (i * lineAngleStep);
-                line.addRectangle(-lineThickness * 0.5f, -radius - lineLength - 5.0f, lineThickness, lineLength);
-                line.applyTransform(AffineTransform::rotation(lineAngle).translated(centreX, centreY));
-                
-                // lines
-                g.fillPath(line);
-            }
+        for (int i = 1; i < numLines; i++) {
+            Path line;
+            const float lineAngle = rotaryStartAngle + (i * lineAngleStep);
+            line.addRectangle(-lineThickness * 0.5f, -radius - lineLength - 5.0f, lineThickness, lineLength);
+            line.applyTransform(AffineTransform::rotation(lineAngle).translated(centreX, centreY));
+
+            // lines
+            g.fillPath(line);
         }
-        
+
         g.setFont(11.0f);
-        std::string labelStart = std::to_string((int)slider.getMinimum());
-        std::string labelEnd = std::to_string((int)slider.getMaximum());
-        std::string labelMid = std::to_string((int)((slider.getMinimum() + slider.getMaximum()) * 0.5));
+        std::string labelStart = std::to_string((int) slider.getMinimum());
+        std::string labelEnd = std::to_string((int) slider.getMaximum());
         g.drawFittedText(labelStart, 0, height - 15, 20, 11, Justification::right, 1);
         g.drawFittedText(labelEnd, width - 20, height - 15, 20, 11, Justification::left, 1);
-        g.drawFittedText(labelMid, centreX - 10, 0, 20, 11, Justification::centred, 1);
+    }
+
+    void drawComboBox(Graphics &g, int width, int height, bool, int, int, int, int, ComboBox &box) override {
+        const Rectangle<int> boxBounds(0, 0, width, height);
+
+        g.setColour(white);
+        g.fillRect(boxBounds.toFloat());
+
+        g.setColour(black);
+        g.drawRect(boxBounds.toFloat().reduced(0.5f, 0.5f));
+
+        Rectangle<int> arrowZone(width - 30, 0, 20, height);
+        Path path;
+        path.startNewSubPath(arrowZone.getX() + 3.0f, arrowZone.getCentreY() - 2.0f);
+        path.lineTo(static_cast<float> (arrowZone.getCentreX()), arrowZone.getCentreY() + 3.0f);
+        path.lineTo(arrowZone.getRight() - 3.0f, arrowZone.getCentreY() - 2.0f);
+
+        g.setColour(black);
+        g.strokePath(path, PathStrokeType(2.0f));
+
+        box.setColour(ComboBox::textColourId, black);
+    }
+
+    void drawPopupMenuItem(Graphics &g, const Rectangle<int> &area, const bool isSeparator, const bool isActive,
+                           const bool isHighlighted, const bool isTicked, const bool hasSubMenu, const String &text,
+                           const String &shortcutKeyText, const Drawable *icon,
+                           const Colour *const textColourToUse) override {
+        auto textColour = (textColourToUse == nullptr ? findColour(PopupMenu::textColourId) : *textColourToUse);
+        auto r = area.reduced(1);
+
+        if (isHighlighted) {
+            g.setColour(white);
+        } else {
+            g.setColour(blue);
+        }
+        g.fillRect(r);
+        g.setColour(black);
+
+        r.reduce(jmin(5, area.getWidth() / 20), 0);
+        auto font = getPopupMenuFont();
+        const auto maxFontHeight = r.getHeight() / 1.3f;
+
+        if (font.getHeight() > maxFontHeight) {
+            font.setHeight(maxFontHeight);
+        }
+
+        g.setFont(font);
+
+        auto iconArea = r.removeFromLeft(roundToInt(maxFontHeight / 2)).toFloat();
+        if (isTicked) {
+            Path p;
+            p.addEllipse(0, 0, 1, 1);
+            if (isHighlighted) {
+                g.setColour(black);
+            } else {
+                g.setColour(white);
+            }
+            g.fillPath(p, p.getTransformToScaleToFit(iconArea.reduced(iconArea.getWidth() / 5, 0).toFloat(), true));
+        }
+
+        r.removeFromRight(3);
+
+        if (isHighlighted) {
+            g.setColour(black);
+        } else {
+            g.setColour(white);
+        }
+        g.drawFittedText(text, r, Justification::centredLeft, 1);
     }
 };
 

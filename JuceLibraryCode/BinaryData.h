@@ -9,7 +9,7 @@
 namespace BinaryData
 {
     extern const char*   background_png;
-    const int            background_pngSize = 20406;
+    const int            background_pngSize = 20746;
 
     // Points to the start of a list of resource names.
     extern const char* namedResourceList[];
