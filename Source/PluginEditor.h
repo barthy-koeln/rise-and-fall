@@ -57,8 +57,6 @@ private:
     AudioFormatManager formatManager;
     ScopedPointer<AudioFormatReaderSource> readerSource;
     AudioTransportSource transportSource;
-    AudioThumbnailCache thumbnailCache;
-    AudioThumbnail thumbnail;
 
     void initRotarySlider(Slider *slider, const juce::String &suffix, float min, float max, float step, float start,
                           bool logarithmic);

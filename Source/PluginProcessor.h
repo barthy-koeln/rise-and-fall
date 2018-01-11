@@ -11,6 +11,7 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "../modules/juce_dsp/juce_dsp.h"
 
 
 //==============================================================================
@@ -68,15 +69,31 @@ public:
 
     void setStateInformation(const void *data, int sizeInBytes) override;
 
-    AudioSampleBuffer* getAudioSmapleBuffer();
+    AudioSampleBuffer *getOriginalSampleBuffer();
 
-    void resetPosition();
+    AudioSampleBuffer *getProcessedSampleBuffer();
+
+    AudioThumbnail *getThumbnail();
+
+    void prepare();
+
+    void newSampleLoaded();
 
 private:
-    AudioSampleBuffer audioSampleBuffer;
-    int position;
+    AudioSampleBuffer originalSampleBuffer;
+    AudioSampleBuffer processedSampleBuffer;
+    AudioSampleBuffer reverbImpulseResponse;
+
+    dsp::Convolution convolution;
+
     double sampleRate;
     int samplesPerBlock;
+    int numChannels;
+    uint64 position;
+
+    AudioFormatManager formatManager;
+    AudioThumbnailCache thumbnailCache;
+    AudioThumbnail thumbnail;
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (RiseandfallAudioProcessor)

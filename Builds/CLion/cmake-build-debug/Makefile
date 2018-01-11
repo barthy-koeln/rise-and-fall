@@ -607,6 +607,33 @@ Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structur
 	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.s
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.s
 
+Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.o: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.i: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.s: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.s
+
 Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.o: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm.o
 
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.o
@@ -884,6 +911,9 @@ help:
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.s"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.s"

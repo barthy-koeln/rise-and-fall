@@ -2484,6 +2484,150 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/containers/juce_SIMDRegister.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/containers/juce_SIMDRegister_test.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/frequency/juce_Convolution.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/frequency/juce_Convolution.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/frequency/juce_FFT.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/frequency/juce_FFT.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/frequency/juce_FFT_test.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/frequency/juce_Windowing.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/frequency/juce_Windowing.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/juce_dsp.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/juce_dsp.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/juce_dsp.mm">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_FastMathApproximations.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_LookupTable.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_LookupTable.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix_test.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Polynomial.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_fallback_SIMDNativeOps.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_neon_SIMDNativeOps.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_neon_SIMDNativeOps.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_sse_SIMDNativeOps.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_sse_SIMDNativeOps.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Bias.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_FIRFilter.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_FIRFilter.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_FIRFilter_test.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Gain.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oscillator.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oversampling.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oversampling.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessContext.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_WaveShaper.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -4287,6 +4431,9 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -4306,6 +4453,9 @@
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Resources/background.png">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Resources/room_impulse_response_LBS.wav">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Source/CustomLookAndFeel.hpp">

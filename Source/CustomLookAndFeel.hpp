@@ -13,15 +13,13 @@
 class CustomLookAndFeel : public LookAndFeel_V4 {
 public:
     Colour black;
-    Colour blue;
     Colour white;
     Colour red;
 
     CustomLookAndFeel() {
-        black = *new Colour(0xff141414);
-        blue = *new Colour(0xff1966b0);
+        black = *new Colour(0xff181818);
         white = *new Colour(0xffffffff);
-        red = *new Colour(0xffe3170a);
+        red = *new Colour(0xffCC3333);
     };
 
     void
@@ -105,7 +103,7 @@ public:
         if (isHighlighted) {
             g.setColour(white);
         } else {
-            g.setColour(blue);
+            g.setColour(black);
         }
         g.fillRect(r);
         g.setColour(black);

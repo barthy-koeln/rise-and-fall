@@ -22,14 +22,14 @@ RiseandfallAudioProcessor::RiseandfallAudioProcessor()
 #endif
                                  .withOutput("Output", AudioChannelSet::stereo(), true)
 #endif
-)
+), thumbnailCache(5), thumbnail(512, formatManager, thumbnailCache)
 #endif
 {
-    resetPosition();
+    position = 0;
+    formatManager.registerBasicFormats();
 }
 
-RiseandfallAudioProcessor::~RiseandfallAudioProcessor() {
-}
+RiseandfallAudioProcessor::~RiseandfallAudioProcessor() = default;
 
 //==============================================================================
 const String RiseandfallAudioProcessor::getName() const {
@@ -94,6 +94,8 @@ void RiseandfallAudioProcessor::prepareToPlay(double sampleRate, int samplesPerB
 void RiseandfallAudioProcessor::releaseResources() {
     // When playback stops, you can use this as an opportunity to free up any
     // spare memory, etc.
+    convolution.reset();
+    position = 0;
 }
 
 #ifndef JucePlugin_PreferredChannelConfigurations
@@ -124,8 +126,10 @@ bool RiseandfallAudioProcessor::isBusesLayoutSupported(const BusesLayout &layout
 void RiseandfallAudioProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
     ScopedNoDenormals noDenormals;
 
-    const int totalNumInputChannels = audioSampleBuffer.getNumChannels();
-    if (totalNumInputChannels > 0) {
+    buffer.clear();
+    midiMessages.clear();
+
+    if (this->numChannels > 0) {
         const int totalNumOutputChannels = getTotalNumOutputChannels();
 
         // In case we have more outputs than inputs, this code clears any output
@@ -134,18 +138,17 @@ void RiseandfallAudioProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuff
         // This is here to avoid people getting screaming feedback
         // when they first compile a plugin, but obviously you don't need to keep
         // this code if your algorithm always overwrites all the output channels.
-        for (int i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
+        for (int i = this->numChannels; i < totalNumOutputChannels; ++i)
             buffer.clear(i, 0, buffer.getNumSamples());
 
-        int inputNumSamples = audioSampleBuffer.getNumSamples();
+        int inputNumSamples = processedSampleBuffer.getNumSamples();
         int bufferSamplesRemaining = inputNumSamples - position;
         int samplesThisTime = jmin(samplesPerBlock, bufferSamplesRemaining);
 
         // This is the place where you'd normally do the guts of your plugin's
         // audio processing...
-        for (int channel = 0; channel < totalNumInputChannels; ++channel) {
-            audioSampleBuffer.reverse(position, samplesThisTime);
-            buffer.addFrom(channel, 0, audioSampleBuffer, channel, position, samplesThisTime, 0.1);
+        for (int channel = 0; channel < this->numChannels; ++channel) {
+            buffer.addFrom(channel, 0, processedSampleBuffer, channel, position, samplesThisTime, 0.1);
         }
         position += samplesThisTime;
         if (position == inputNumSamples) {
@@ -181,10 +184,43 @@ AudioProcessor *JUCE_CALLTYPE createPluginFilter() {
     return new RiseandfallAudioProcessor();
 }
 
-AudioSampleBuffer *RiseandfallAudioProcessor::getAudioSmapleBuffer() {
-    return &audioSampleBuffer;
+AudioSampleBuffer *RiseandfallAudioProcessor::getOriginalSampleBuffer() {
+    return &originalSampleBuffer;
 }
 
-void RiseandfallAudioProcessor::resetPosition() {
+AudioSampleBuffer *RiseandfallAudioProcessor::getProcessedSampleBuffer() {
+    return &processedSampleBuffer;
+}
+
+AudioThumbnail *RiseandfallAudioProcessor::getThumbnail() {
+    return &thumbnail;
+}
+
+void RiseandfallAudioProcessor::prepare() {
     position = 0;
+    numChannels = originalSampleBuffer.getNumChannels();
+    dsp::ProcessSpec processSpec = {sampleRate, static_cast<uint32>(samplesPerBlock), static_cast<uint32>(2)};
+    convolution.prepare(processSpec);
+}
+
+void RiseandfallAudioProcessor::newSampleLoaded() {
+    position = 0;
+    const int numSamples = originalSampleBuffer.getNumSamples();
+    const int numChannels = originalSampleBuffer.getNumChannels();
+
+    if (numChannels > 0) {
+        processedSampleBuffer.setSize(numChannels, 2 * numSamples, false, true, false);
+
+        for (int i = 0; i < numChannels; i++) {
+            processedSampleBuffer.addFrom(i, numSamples, originalSampleBuffer, i, 0, numSamples);
+        }
+        originalSampleBuffer.reverse(0, numSamples);
+        for (int i = 0; i < numChannels; i++) {
+            processedSampleBuffer.addFrom(i, 0, originalSampleBuffer, i, 0, numSamples);
+        }
+        originalSampleBuffer.reverse(0, numSamples);
+
+        thumbnail.reset(numChannels, sampleRate, 2 * numSamples);
+        thumbnail.addBlock(0, processedSampleBuffer, 0, processedSampleBuffer.getNumSamples());
+    }
 }

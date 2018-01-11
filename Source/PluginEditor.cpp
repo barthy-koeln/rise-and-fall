@@ -61,7 +61,7 @@ void RiseandfallAudioProcessorEditor::addLabelToComboBox(ComboBox &comboBox, Gra
 
 //==============================================================================
 RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudioProcessor &p)
-        : AudioProcessorEditor(&p), processor(p), thumbnailCache(5), thumbnail(512, formatManager, thumbnailCache) {
+        : AudioProcessorEditor(&p), processor(p) {
 
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
@@ -107,7 +107,7 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
     loadFileButton.setButtonText("Load Audio File");
     loadFileButton.addListener(this);
     addAndMakeVisible(&loadFileButton);
-    thumbnail.addChangeListener(this);
+    processor.getThumbnail()->addChangeListener(this);
     formatManager.registerBasicFormats();
 }
 
@@ -138,11 +138,13 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
     addLabelToComboBox(reverbImpResComboBox, g, "Impulse Response");
     addLabelToComboBox(filterTypeCombomBox, g, "Filter");
 
-    const Rectangle<int> thumbnailBounds(margin, windowSize - (2 * margin) - buttonHeight - 180, windowSize - (2 * margin), 180);
+    const Rectangle<int> thumbnailBounds(margin, windowSize - (2 * margin) - buttonHeight - 180,
+                                         windowSize - (2 * margin), 180);
 
-    if (thumbnail.getNumChannels() != 0) {
-        g.setColour(customLookAndFeel.white);
-        thumbnail.drawChannels(g, thumbnailBounds, 0.0, thumbnail.getTotalLength(), 1.0f);
+    if (processor.getOriginalSampleBuffer()->getNumChannels() != 0) {
+        g.setColour(customLookAndFeel.red);
+        processor.getThumbnail()->drawChannels(g, thumbnailBounds, 0.0, processor.getThumbnail()->getTotalLength(),
+                                               1.0f);
     }
 }
 
@@ -195,16 +197,13 @@ void RiseandfallAudioProcessorEditor::loadFileButtonCLicked() {
         ScopedPointer<AudioFormatReader> reader = formatManager.createReaderFor(file);
         const double duration = reader->lengthInSamples / reader->sampleRate;
 
-        if (duration < 2) {
-            processor.getAudioSmapleBuffer()->setSize(reader->numChannels, static_cast<int>(reader->lengthInSamples));
-            reader->read(processor.getAudioSmapleBuffer(),
-                         0,
-                         static_cast<int>(reader->lengthInSamples),
-                         0,
-                         true,
+        if (duration < 20) {
+            processor.getOriginalSampleBuffer()->setSize(reader->numChannels,
+                                                         static_cast<int>(reader->lengthInSamples));
+            reader->read(processor.getOriginalSampleBuffer(), 0, static_cast<int>(reader->lengthInSamples), 0, true,
                          true);
-            thumbnail.setSource(new FileInputSource(file));
-            processor.resetPosition();
+            processor.newSampleLoaded();
+            processor.prepare();
         } else {
             // handle the error that the file is 2 seconds or longer..
         }
@@ -216,7 +215,8 @@ void RiseandfallAudioProcessorEditor::buttonClicked(Button *button) {
 }
 
 void RiseandfallAudioProcessorEditor::changeListenerCallback(ChangeBroadcaster *source) {
-    if (source == &thumbnail) {
+    if (source == processor.getThumbnail()) {
+        printf("THUMBNAIL CHANGED\n");
         thumbnailChanged();
     }
 }
