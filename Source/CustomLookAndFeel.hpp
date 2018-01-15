@@ -139,6 +139,36 @@ public:
         }
         g.drawFittedText(text, r, Justification::centredLeft, 1);
     }
+
+
+    void drawButtonBackground(Graphics &g, Button &button, const Colour &backgroundColour, bool isMouseOverButton,
+                              bool isButtonDown) override {
+
+        const auto bounds = button.getLocalBounds().toFloat().reduced(0.5f, 0.5f);
+
+        auto baseColour = black.withMultipliedSaturation(button.hasKeyboardFocus(true) ? 1.3f : 0.9f)
+                .withMultipliedAlpha(button.isEnabled() ? 1.0f : 0.5f);
+
+        if (isButtonDown || isMouseOverButton)
+            baseColour = baseColour.contrasting(isButtonDown ? 0.2f : 0.05f);
+
+        g.setColour(baseColour);
+
+        if (button.isConnectedOnLeft() || button.isConnectedOnRight()) {
+            Path path;
+            path.addRectangle(bounds.getX(), bounds.getY(), bounds.getWidth(), bounds.getHeight());
+
+            g.fillPath(path);
+
+            g.setColour(white);
+            g.strokePath(path, PathStrokeType(1.0f));
+        } else {
+            g.fillRect(bounds);
+
+            g.setColour(white);
+            g.drawRect(bounds, 1.0f);
+        }
+    }
 };
 
 #endif /* CustomLookAndFeel_hpp */
