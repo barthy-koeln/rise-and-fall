@@ -12,13 +12,19 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "../modules/juce_dsp/juce_dsp.h"
-
+#include "GUIParams.h"
 
 //==============================================================================
 /**
 */
 class RiseandfallAudioProcessor : public AudioProcessor {
 public:
+
+    /**
+     * Contains all extracted parameters from the GUI
+     */
+    GUIParams guiParams;
+
     //==============================================================================
     RiseandfallAudioProcessor();
 
@@ -69,31 +75,113 @@ public:
 
     void setStateInformation(const void *data, int sizeInBytes) override;
 
+    /**
+     * Get the original sample buffer
+     *
+     * @return A pointer to the original audio buffer
+     */
     AudioSampleBuffer *getOriginalSampleBuffer();
 
+    /**
+     * Get the processed sample buffer
+     *
+     * @return A pointer to the processed audio buffer
+     */
     AudioSampleBuffer *getProcessedSampleBuffer();
 
+    /**
+     * Get the thumbnail
+     *
+     * @return A pointer to the thumbnail
+     */
     AudioThumbnail *getThumbnail();
 
-    void prepare();
-
+    /**
+     * Reset the position and set the new number of samples and channels
+     */
     void newSampleLoaded();
 
+    /**
+     * Cascade the multiple audio processing algorithms
+     */
+    void processSample();
+
+    /**
+     * Move the rise and fall blocks
+     */
+    void adjustPositions();
+
+    /**
+     * Clone the processed audio, reverse it and finally prepend it to the processed audio buffer
+     */
+    void reverseAndPrepend();
+
+    /**
+     * Update the thumbnail image
+     */
+    void updateThumbnail();
+
 private:
+
+    /**
+     * Buffer containing the samples of the original audio file
+     */
     AudioSampleBuffer originalSampleBuffer;
+
+    /**
+     * Buffer containing the final processed output audio
+     */
     AudioSampleBuffer processedSampleBuffer;
+
+    /**
+     * Buffer containing the impulse respnse samples to use for the convolution in the reverb effect
+     */
     AudioSampleBuffer reverbImpulseResponse;
 
-    dsp::Convolution convolution;
-
+    /**
+     * Sample rate for the current block
+     */
     double sampleRate;
+
+    /**
+     * Number of samples in the current block
+     */
     int samplesPerBlock;
+
+    /**
+     * Number of channels in the original audio file
+     */
     int numChannels;
+
+    /**
+     * Number of samples in the original audio file
+     */
+    int numSamples;
+
+    /**
+     * Current position in the processing of sample blocks
+     */
     uint64 position;
 
+    /**
+     * Handles basic audio formats (wav, aiff)
+     */
     AudioFormatManager formatManager;
+
+    /**
+     * Cache containing thumbnail previews
+     */
     AudioThumbnailCache thumbnailCache;
+
+    /**
+     * Thumbnail of the audio waveform
+     */
     AudioThumbnail thumbnail;
+
+    /**
+     * Block processing of the sample if it is already in process
+     */
+    bool processing;
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (RiseandfallAudioProcessor)

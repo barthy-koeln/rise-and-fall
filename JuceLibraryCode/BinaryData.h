@@ -9,7 +9,7 @@
 namespace BinaryData
 {
     extern const char*   background_png;
-    const int            background_pngSize = 18611;
+    const int            background_pngSize = 20879;
 
     extern const char*   room_impulse_response_LBS_wav;
     const int            room_impulse_response_LBS_wavSize = 270044;

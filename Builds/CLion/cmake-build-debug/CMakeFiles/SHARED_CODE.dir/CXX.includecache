@@ -7820,6 +7820,8 @@ juce_video/juce_video.mm
 ../JuceLibraryCode/JuceHeader.h
 /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/JuceHeader.h
 
+/Users/Barthy/GitHub/VST/rise-and-fall/Source/GUIParams.h
+
 /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp
 PluginProcessor.h
 /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.h
@@ -7845,4 +7847,6 @@ PluginEditor.h
 /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/JuceHeader.h
 ../modules/juce_dsp/juce_dsp.h
 /Users/Barthy/GitHub/VST/rise-and-fall/modules/juce_dsp/juce_dsp.h
+GUIParams.h
+/Users/Barthy/GitHub/VST/rise-and-fall/Source/GUIParams.h
 

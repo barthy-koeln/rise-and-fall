@@ -18,7 +18,11 @@
 //==============================================================================
 /**
  */
-class RiseandfallAudioProcessorEditor : public AudioProcessorEditor, public Button::Listener, ChangeListener {
+class RiseandfallAudioProcessorEditor :
+        public AudioProcessorEditor,
+        public Button::Listener,
+        public ChangeListener,
+        public Slider::Listener {
 public:
     RiseandfallAudioProcessorEditor(RiseandfallAudioProcessor &);
 
@@ -35,10 +39,8 @@ private:
     RiseandfallAudioProcessor &processor;
 
     CustomLookAndFeel customLookAndFeel;
-    ImageComponent headerImage;
-    Slider riseTimeOffsetSlider;
+    Slider timeOffsetSlider;
     Slider riseTimeWarpSlider;
-    Slider fallTimeOffsetSlider;
     Slider fallTimeWarpSlider;
     Slider reverbMixSlider;
     Slider delayMixSlider;
@@ -47,21 +49,23 @@ private:
     Slider delayFilterCutoffSlider;
     Slider delayFilterResonanceSlider;
     ComboBox reverbImpResComboBox;
-    ComboBox filterTypeCombomBox;
+    ComboBox filterTypeComboBox;
     ToggleButton riseReverseToggleButton;
     ToggleButton riseEffectsToggleButton;
     ToggleButton fallReverseToggleButton;
     ToggleButton fallEffectsToggleButton;
     TextButton loadFileButton;
 
-    AudioFormatManager formatManager;
-    ScopedPointer<AudioFormatReaderSource> readerSource;
-    AudioTransportSource transportSource;
+    GUIParams *guiParams;
 
-    void initRotarySlider(Slider *slider, const juce::String &suffix, float min, float max, float step, float start,
+    AudioFormatManager formatManager;
+
+    void initRotarySlider(Slider *slider, const juce::String &suffix, double min, double max, double step, double start,
                           bool logarithmic);
 
     void initComboBox(ComboBox *comboBox, const StringArray *items);
+
+    void initToggleButton(ToggleButton *toggleButton, bool state, String label);
 
     void addLabelToSlider(Slider &slider, Graphics &g, const juce::String &text);
 
@@ -69,11 +73,11 @@ private:
 
     void buttonClicked(Button *button) override;
 
-    void changeListenerCallback (ChangeBroadcaster* source) override;
+    void changeListenerCallback(ChangeBroadcaster *source) override;
+
+    void sliderValueChanged(Slider* slider) override;
 
     void loadFileButtonCLicked();
-
-    void thumbnailChanged();
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (RiseandfallAudioProcessorEditor)
 };

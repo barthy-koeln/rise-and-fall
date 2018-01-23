@@ -15,6 +15,7 @@
               companyName="Barthy" companyWebsite="http://barthy.koeln" companyEmail="post@barthy.koeln">
   <MAINGROUP id="UHNwjp" name="RISE&amp;FALL">
     <GROUP id="{E54CE0C6-4AE7-C673-6E88-4FC41715E328}" name="Source">
+      <FILE id="dXsAnA" name="GUIParams.h" compile="0" resource="0" file="Source/GUIParams.h"/>
       <FILE id="bz6KWZ" name="CustomLookAndFeel.hpp" compile="0" resource="0"
             file="Source/CustomLookAndFeel.hpp"/>
       <FILE id="wQAjZR" name="PluginProcessor.cpp" compile="1" resource="0"

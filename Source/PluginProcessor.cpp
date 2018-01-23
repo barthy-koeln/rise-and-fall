@@ -22,10 +22,12 @@ RiseandfallAudioProcessor::RiseandfallAudioProcessor()
 #endif
                                  .withOutput("Output", AudioChannelSet::stereo(), true)
 #endif
-), thumbnailCache(5), thumbnail(512, formatManager, thumbnailCache)
+), thumbnailCache(5), thumbnail(256, formatManager, thumbnailCache)
 #endif
 {
     position = 0;
+    numSamples = 0;
+    numChannels = 0;
     formatManager.registerBasicFormats();
 }
 
@@ -94,7 +96,6 @@ void RiseandfallAudioProcessor::prepareToPlay(double sampleRate, int samplesPerB
 void RiseandfallAudioProcessor::releaseResources() {
     // When playback stops, you can use this as an opportunity to free up any
     // spare memory, etc.
-    convolution.reset();
     position = 0;
 }
 
@@ -129,7 +130,7 @@ void RiseandfallAudioProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuff
     buffer.clear();
     midiMessages.clear();
 
-    if (this->numChannels > 0) {
+    if (numChannels > 0 && !processing) {
         const int totalNumOutputChannels = getTotalNumOutputChannels();
 
         // In case we have more outputs than inputs, this code clears any output
@@ -138,20 +139,21 @@ void RiseandfallAudioProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuff
         // This is here to avoid people getting screaming feedback
         // when they first compile a plugin, but obviously you don't need to keep
         // this code if your algorithm always overwrites all the output channels.
-        for (int i = this->numChannels; i < totalNumOutputChannels; ++i)
+        for (int i = numChannels; i < totalNumOutputChannels; ++i) {
             buffer.clear(i, 0, buffer.getNumSamples());
+        }
 
         int inputNumSamples = processedSampleBuffer.getNumSamples();
-        int bufferSamplesRemaining = inputNumSamples - position;
+        auto bufferSamplesRemaining = static_cast<int>(inputNumSamples - position);
         int samplesThisTime = jmin(samplesPerBlock, bufferSamplesRemaining);
 
-        // This is the place where you'd normally do the guts of your plugin's
-        // audio processing...
-        for (int channel = 0; channel < this->numChannels; ++channel) {
-            buffer.addFrom(channel, 0, processedSampleBuffer, channel, position, samplesThisTime, 0.1);
+        for (int channel = 0; channel < numChannels; ++channel) {
+            buffer.addFrom(channel, 0, processedSampleBuffer, channel, static_cast<int>(position), samplesThisTime,
+                           0.1);
         }
+
         position += samplesThisTime;
-        if (position == inputNumSamples) {
+        if (position >= inputNumSamples) {
             position = 0;
         }
     }
@@ -196,31 +198,88 @@ AudioThumbnail *RiseandfallAudioProcessor::getThumbnail() {
     return &thumbnail;
 }
 
-void RiseandfallAudioProcessor::prepare() {
-    position = 0;
-    numChannels = originalSampleBuffer.getNumChannels();
-    dsp::ProcessSpec processSpec = {sampleRate, static_cast<uint32>(samplesPerBlock), static_cast<uint32>(2)};
-    convolution.prepare(processSpec);
-}
-
 void RiseandfallAudioProcessor::newSampleLoaded() {
     position = 0;
-    const int numSamples = originalSampleBuffer.getNumSamples();
-    const int numChannels = originalSampleBuffer.getNumChannels();
+    processedSampleBuffer.makeCopyOf(originalSampleBuffer);
+    numSamples = originalSampleBuffer.getNumSamples();
+    numChannels = originalSampleBuffer.getNumChannels();
+    processSample();
+}
 
+void RiseandfallAudioProcessor::reverseAndPrepend() {
     if (numChannels > 0) {
-        processedSampleBuffer.setSize(numChannels, 2 * numSamples, false, true, false);
 
-        for (int i = 0; i < numChannels; i++) {
-            processedSampleBuffer.addFrom(i, numSamples, originalSampleBuffer, i, 0, numSamples);
-        }
-        originalSampleBuffer.reverse(0, numSamples);
-        for (int i = 0; i < numChannels; i++) {
-            processedSampleBuffer.addFrom(i, 0, originalSampleBuffer, i, 0, numSamples);
-        }
-        originalSampleBuffer.reverse(0, numSamples);
+        AudioSampleBuffer riseTempBuffer = *new AudioSampleBuffer();
+        AudioSampleBuffer fallTempBuffer = *new AudioSampleBuffer();
 
-        thumbnail.reset(numChannels, sampleRate, 2 * numSamples);
-        thumbnail.addBlock(0, processedSampleBuffer, 0, processedSampleBuffer.getNumSamples());
+        riseTempBuffer.makeCopyOf(processedSampleBuffer);
+        if (guiParams.riseReverse) {
+            riseTempBuffer.reverse(0, riseTempBuffer.getNumSamples());
+        }
+
+        fallTempBuffer.makeCopyOf(processedSampleBuffer);
+        if (guiParams.fallReverse) {
+            fallTempBuffer.reverse(0, fallTempBuffer.getNumSamples());
+        }
+
+        auto offsetNumSamples = static_cast<int>((guiParams.timeOffset / 1000) * sampleRate);
+        int processedSize = (2 * riseTempBuffer.getNumSamples()) + offsetNumSamples;
+
+        processedSampleBuffer.clear();
+        processedSampleBuffer.setSize(numChannels, processedSize, false, true, false);
+
+        int overlapStart = numSamples + offsetNumSamples;
+        int overlapStop = overlapStart + abs(offsetNumSamples);
+        int overlapLength = overlapStop - overlapStart;
+
+        if (overlapStart < riseTempBuffer.getNumSamples()) {
+            // Overlap
+            for (int i = 0; i < numChannels; i++) {
+                for (int j = 0; j < overlapStart; j++) {
+                    float value = riseTempBuffer.getSample(i, j);
+                    processedSampleBuffer.addSample(i, j, value);
+                }
+
+                for (int j = 0; j < overlapLength; j++) {
+                    float value = fallTempBuffer.getSample(i, j) + riseTempBuffer.getSample(i, overlapStart + j);
+                    processedSampleBuffer.addSample(i, overlapStart + j, value);
+                }
+
+                for (int j = 0; j < numSamples - overlapLength; j++) {
+                    float value = fallTempBuffer.getSample(i, overlapLength + j);
+                    processedSampleBuffer.addSample(i, overlapStop + j, value);
+                }
+            }
+        } else {
+            // No overlap
+            for (int i = 0; i < numChannels; i++) {
+                for (int j = 0; j < riseTempBuffer.getNumSamples(); j++) {
+                    float value = riseTempBuffer.getSample(i, j);
+                    processedSampleBuffer.addSample(i, j, value);
+                }
+
+                for (int j = 0; j < fallTempBuffer.getNumSamples(); j++) {
+                    float value = fallTempBuffer.getSample(i, j);
+                    processedSampleBuffer.addSample(i, overlapStart + j, value);
+                }
+            }
+        }
+    }
+}
+
+void RiseandfallAudioProcessor::updateThumbnail() {
+    thumbnail.reset(numChannels, sampleRate, processedSampleBuffer.getNumSamples());
+    thumbnail.addBlock(0, processedSampleBuffer, 0, processedSampleBuffer.getNumSamples());
+}
+
+void RiseandfallAudioProcessor::processSample() {
+    if (!processing) {
+        position = 0;
+        processedSampleBuffer.makeCopyOf(originalSampleBuffer);
+
+        processing = true;
+        reverseAndPrepend();
+        updateThumbnail();
+        processing = false;
     }
 }

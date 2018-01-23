@@ -5901,6 +5901,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.h
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/JuceHeader.h
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/CustomLookAndFeel.hpp
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/GUIParams.h
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.h
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.h
@@ -6422,6 +6423,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.h
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/JuceHeader.h
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/CustomLookAndFeel.hpp
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/GUIParams.h
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.h
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.h
