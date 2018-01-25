@@ -106,21 +106,6 @@ public:
      */
     void processSample();
 
-    /**
-     * Move the rise and fall blocks
-     */
-    void adjustPositions();
-
-    /**
-     * Clone the processed audio, reverse it and finally prepend it to the processed audio buffer
-     */
-    void reverseAndPrepend();
-
-    /**
-     * Update the thumbnail image
-     */
-    void updateThumbnail();
-
 private:
 
     /**
@@ -182,6 +167,18 @@ private:
      * Block processing of the sample if it is already in process
      */
     bool processing;
+
+    /**
+     * Clone the processed audio, reverse it and finally prepend it to the processed audio buffer
+     */
+    void reverseAndPrepend();
+
+    void applyTimeWarp(AudioSampleBuffer *buffer, int factor);
+
+    /**
+     * Update the thumbnail image
+     */
+    void updateThumbnail();
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (RiseandfallAudioProcessor)

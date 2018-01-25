@@ -208,27 +208,31 @@ void RiseandfallAudioProcessor::newSampleLoaded() {
 
 void RiseandfallAudioProcessor::reverseAndPrepend() {
     if (numChannels > 0) {
-
-        AudioSampleBuffer riseTempBuffer = *new AudioSampleBuffer();
-        AudioSampleBuffer fallTempBuffer = *new AudioSampleBuffer();
+        AudioSampleBuffer riseTempBuffer;
+        AudioSampleBuffer fallTempBuffer;
 
         riseTempBuffer.makeCopyOf(processedSampleBuffer);
         if (guiParams.riseReverse) {
             riseTempBuffer.reverse(0, riseTempBuffer.getNumSamples());
+        }
+        if (guiParams.riseTimeWarp != 0) {
+            applyTimeWarp(&riseTempBuffer, guiParams.riseTimeWarp);
         }
 
         fallTempBuffer.makeCopyOf(processedSampleBuffer);
         if (guiParams.fallReverse) {
             fallTempBuffer.reverse(0, fallTempBuffer.getNumSamples());
         }
+        if (guiParams.fallTimeWarp != 0) {
+            applyTimeWarp(&fallTempBuffer, guiParams.fallTimeWarp);
+        }
 
         auto offsetNumSamples = static_cast<int>((guiParams.timeOffset / 1000) * sampleRate);
-        int processedSize = (2 * riseTempBuffer.getNumSamples()) + offsetNumSamples;
+        int processedSize = riseTempBuffer.getNumSamples() + fallTempBuffer.getNumSamples() + offsetNumSamples;
 
-        processedSampleBuffer.clear();
         processedSampleBuffer.setSize(numChannels, processedSize, false, true, false);
 
-        int overlapStart = numSamples + offsetNumSamples;
+        int overlapStart = riseTempBuffer.getNumSamples() + offsetNumSamples;
         int overlapStop = overlapStart + abs(offsetNumSamples);
         int overlapLength = overlapStop - overlapStart;
 
@@ -245,7 +249,7 @@ void RiseandfallAudioProcessor::reverseAndPrepend() {
                     processedSampleBuffer.addSample(i, overlapStart + j, value);
                 }
 
-                for (int j = 0; j < numSamples - overlapLength; j++) {
+                for (int j = 0; j < fallTempBuffer.getNumSamples() - overlapLength; j++) {
                     float value = fallTempBuffer.getSample(i, overlapLength + j);
                     processedSampleBuffer.addSample(i, overlapStop + j, value);
                 }
@@ -274,12 +278,34 @@ void RiseandfallAudioProcessor::updateThumbnail() {
 
 void RiseandfallAudioProcessor::processSample() {
     if (!processing) {
+        processing = true;
         position = 0;
         processedSampleBuffer.makeCopyOf(originalSampleBuffer);
-
-        processing = true;
         reverseAndPrepend();
         updateThumbnail();
         processing = false;
+    }
+}
+
+void RiseandfallAudioProcessor::applyTimeWarp(AudioSampleBuffer *buffer, int factor) {
+    float realFactor = -factor;
+    if (realFactor < 0) {
+        realFactor = 1 / abs(realFactor);
+    }
+
+    auto length = static_cast<int>(buffer->getNumSamples() * realFactor);
+    AudioSampleBuffer copy;
+    copy.makeCopyOf(*buffer);
+
+    buffer->setSize(copy.getNumChannels(), length, false, true, false);
+
+    int warpedIndex;
+    for (int channel = 0; channel < buffer->getNumChannels(); channel++) {
+        for (int i = 0; i < buffer->getNumSamples(); i++) {
+            warpedIndex = static_cast<int>(i * realFactor);
+            if (warpedIndex < length) {
+                buffer->addSample(channel, warpedIndex, copy.getSample(channel, i));
+            }
+        }
     }
 }

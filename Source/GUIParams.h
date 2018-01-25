@@ -18,4 +18,6 @@ public:
     bool fallReverse = false;
     bool riseEffects = true;
     bool fallEffects = true;
+    int riseTimeWarp = 0;
+    int fallTimeWarp = 0;
 };

@@ -84,9 +84,9 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
     setSize(windowSize, windowSize);
     setLookAndFeel(&customLookAndFeel);
 
-    initRotarySlider(&timeOffsetSlider, " ms", -120, 120, guiParams->timeOffset, 0);
-    initRotarySlider(&riseTimeWarpSlider, " ms", -5, 5, 1, 0);
-    initRotarySlider(&fallTimeWarpSlider, "", -5, 5, 1, 0);
+    initRotarySlider(&timeOffsetSlider, " ms", -120, 120, 1, guiParams->timeOffset);
+    initRotarySlider(&riseTimeWarpSlider, " x", -4, 4, 2, guiParams->riseTimeWarp);
+    initRotarySlider(&fallTimeWarpSlider, " x", -4, 4, 2, guiParams->fallTimeWarp);
 
     initRotarySlider(&reverbMixSlider, " %", 0, 100, 1, 50);
     initRotarySlider(&delayMixSlider, " %", 0, 100, 1, 50);
@@ -96,14 +96,14 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
     initRotarySlider(&delayFilterCutoffSlider, " Hz", 20, 20000, 1, 3000, true);
     initRotarySlider(&delayFilterResonanceSlider, " dB", -10, 10, 1, 0);
 
-    const StringArray *impResItems = new StringArray(
+    const ScopedPointer<StringArray> impResItems = new StringArray(
             CharPointer_UTF8("TH Köln - Entrance Hall"),
             CharPointer_UTF8("Erfthaus Köln - Stairway"),
             CharPointer_UTF8("Kölner Dom - Nave")
     );
     initComboBox(&reverbImpResComboBox, impResItems);
 
-    const StringArray *filterTypes = new StringArray(
+    const ScopedPointer<StringArray> filterTypes = new StringArray(
             CharPointer_UTF8("LP"),
             CharPointer_UTF8("BP"),
             CharPointer_UTF8("HP")
@@ -122,7 +122,9 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
     formatManager.registerBasicFormats();
 }
 
-RiseandfallAudioProcessorEditor::~RiseandfallAudioProcessorEditor() = default;
+RiseandfallAudioProcessorEditor::~RiseandfallAudioProcessorEditor() {
+    setLookAndFeel(nullptr);
+};
 
 //==============================================================================
 void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
@@ -130,7 +132,7 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
     Image background = ImageCache::getFromMemory(BinaryData::background_png, BinaryData::background_pngSize);
     g.drawImageAt(background, 0, 0);
 
-    g.setColour(customLookAndFeel.white);
+    g.setColour(*customLookAndFeel.white);
     g.setFont(fontSize);
 
     addLabelToSlider(timeOffsetSlider, g, "Time Offset");
@@ -148,11 +150,11 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
     addLabelToComboBox(reverbImpResComboBox, g, "Impulse Response");
     addLabelToComboBox(filterTypeComboBox, g, "Filter");
 
-    const Rectangle<int> thumbnailBounds(margin, windowSize - (3 * margin) - buttonHeight - 180,
-                                         windowSize - (2 * margin), 180);
+    const Rectangle<int> thumbnailBounds(margin, windowSize - (2 * margin) - buttonHeight - 175,
+                                         windowSize - (2 * margin), 175);
 
     if (processor.getOriginalSampleBuffer()->getNumChannels() != 0) {
-        g.setColour(customLookAndFeel.red);
+        g.setColour(*customLookAndFeel.red);
         processor.getThumbnail()->drawChannels(g, thumbnailBounds, 0.0, processor.getThumbnail()->getTotalLength(),
                                                1.0f);
     }
@@ -252,6 +254,10 @@ void RiseandfallAudioProcessorEditor::changeListenerCallback(ChangeBroadcaster *
 void RiseandfallAudioProcessorEditor::sliderValueChanged(Slider *slider) {
     if (slider == &timeOffsetSlider) {
         guiParams->timeOffset = timeOffsetSlider.getValue();
+    } else if (slider == &riseTimeWarpSlider){
+        guiParams->riseTimeWarp = static_cast<int>(riseTimeWarpSlider.getValue());
+    } else if (slider == &fallTimeWarpSlider){
+        guiParams->fallTimeWarp = static_cast<int>(fallTimeWarpSlider.getValue());
     }
 
     processor.processSample();

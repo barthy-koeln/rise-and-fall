@@ -12,14 +12,14 @@
 
 class CustomLookAndFeel : public LookAndFeel_V4 {
 public:
-    Colour black;
-    Colour white;
-    Colour red;
+    ScopedPointer<Colour> black;
+    ScopedPointer<Colour> white;
+    ScopedPointer<Colour> red;
 
     CustomLookAndFeel() {
-        black = *new Colour(0xff181818);
-        white = *new Colour(0xffffffff);
-        red = *new Colour(0xffCC3333);
+        black = new Colour(0xff181818);
+        white = new Colour(0xffffffff);
+        red = new Colour(0xffCC3333);
     };
 
     void
@@ -34,10 +34,10 @@ public:
         const float angle = rotaryStartAngle + sliderPos * (rotaryEndAngle - rotaryStartAngle);
 
         // fill
-        g.setColour(black);
+        g.setColour(*black);
         g.fillEllipse(rx, ry, rw, rw);
         // outline
-        g.setColour(white);
+        g.setColour(*white);
         g.drawEllipse(rx, ry, rw, rw, 5.0f);
 
         Path p;
@@ -47,10 +47,10 @@ public:
         p.applyTransform(AffineTransform::rotation(angle).translated(centreX, centreY));
 
         // pointer
-        g.setColour(red);
+        g.setColour(*red);
         g.fillPath(p);
 
-        g.setColour(white);
+        g.setColour(*white);
         const int numLines = 10;
         const float lineThickness = pointerThickness * 0.5f;
         const float lineAngleStep = (rotaryEndAngle - rotaryStartAngle) / numLines;
@@ -75,10 +75,10 @@ public:
     void drawComboBox(Graphics &g, int width, int height, bool, int, int, int, int, ComboBox &box) override {
         const Rectangle<int> boxBounds(0, 0, width, height);
 
-        g.setColour(white);
+        g.setColour(*white);
         g.fillRect(boxBounds.toFloat());
 
-        g.setColour(black);
+        g.setColour(*black);
         g.drawRect(boxBounds.toFloat().reduced(0.5f, 0.5f));
 
         Rectangle<int> arrowZone(width - 30, 0, 20, height);
@@ -87,10 +87,10 @@ public:
         path.lineTo(static_cast<float> (arrowZone.getCentreX()), arrowZone.getCentreY() + 3.0f);
         path.lineTo(arrowZone.getRight() - 3.0f, arrowZone.getCentreY() - 2.0f);
 
-        g.setColour(black);
+        g.setColour(*black);
         g.strokePath(path, PathStrokeType(2.0f));
 
-        box.setColour(ComboBox::textColourId, black);
+        box.setColour(ComboBox::textColourId, *black);
     }
 
     void drawPopupMenuItem(Graphics &g, const Rectangle<int> &area, const bool isSeparator, const bool isActive,
@@ -101,12 +101,12 @@ public:
         auto r = area.reduced(1);
 
         if (isHighlighted) {
-            g.setColour(white);
+            g.setColour(*white);
         } else {
-            g.setColour(black);
+            g.setColour(*black);
         }
         g.fillRect(r);
-        g.setColour(black);
+        g.setColour(*black);
 
         r.reduce(jmin(5, area.getWidth() / 20), 0);
         auto font = getPopupMenuFont();
@@ -123,9 +123,9 @@ public:
             Path p;
             p.addEllipse(0, 0, 1, 1);
             if (isHighlighted) {
-                g.setColour(black);
+                g.setColour(*black);
             } else {
-                g.setColour(white);
+                g.setColour(*white);
             }
             g.fillPath(p, p.getTransformToScaleToFit(iconArea.reduced(iconArea.getWidth() / 5, 0).toFloat(), true));
         }
@@ -133,9 +133,9 @@ public:
         r.removeFromRight(3);
 
         if (isHighlighted) {
-            g.setColour(black);
+            g.setColour(*black);
         } else {
-            g.setColour(white);
+            g.setColour(*white);
         }
         g.drawFittedText(text, r, Justification::centredLeft, 1);
     }
@@ -146,7 +146,7 @@ public:
 
         const auto bounds = button.getLocalBounds().toFloat().reduced(0.5f, 0.5f);
 
-        auto baseColour = black.withMultipliedSaturation(button.hasKeyboardFocus(true) ? 1.3f : 0.9f)
+        auto baseColour = black->withMultipliedSaturation(button.hasKeyboardFocus(true) ? 1.3f : 0.9f)
                 .withMultipliedAlpha(button.isEnabled() ? 1.0f : 0.5f);
 
         if (isButtonDown || isMouseOverButton)
@@ -160,12 +160,12 @@ public:
 
             g.fillPath(path);
 
-            g.setColour(white);
+            g.setColour(*white);
             g.strokePath(path, PathStrokeType(1.0f));
         } else {
             g.fillRect(bounds);
 
-            g.setColour(white);
+            g.setColour(*white);
             g.drawRect(bounds, 1.0f);
         }
     }
