@@ -173,7 +173,15 @@ private:
      */
     void reverseAndPrepend();
 
+    /**
+     * Warp audio samples to change the speed and pitch
+     *
+     * @param buffer
+     * @param factor
+     */
     void applyTimeWarp(AudioSampleBuffer *buffer, int factor);
+
+    void applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen, int delayTimeInSamples, int iteration);
 
     /**
      * Update the thumbnail image

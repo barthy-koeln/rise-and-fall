@@ -20,4 +20,6 @@ public:
     bool fallEffects = true;
     int riseTimeWarp = 0;
     int fallTimeWarp = 0;
+    int delayTime = 500;
+    int delayFeedback = 50;
 };

@@ -90,8 +90,8 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
 
     initRotarySlider(&reverbMixSlider, " %", 0, 100, 1, 50);
     initRotarySlider(&delayMixSlider, " %", 0, 100, 1, 50);
-    initRotarySlider(&delayTimeSlider, " ms", 0, 1000, 1, 500);
-    initRotarySlider(&delayFeedbackSlider, " dB", -40, 10, 1, 0, true);
+    initRotarySlider(&delayTimeSlider, " ms", 10, 1000, 1, guiParams->delayTime);
+    initRotarySlider(&delayFeedbackSlider, " %", 0, 99, 1, guiParams->delayFeedback);
 
     initRotarySlider(&delayFilterCutoffSlider, " Hz", 20, 20000, 1, 3000, true);
     initRotarySlider(&delayFilterResonanceSlider, " dB", -10, 10, 1, 0);
@@ -258,6 +258,10 @@ void RiseandfallAudioProcessorEditor::sliderValueChanged(Slider *slider) {
         guiParams->riseTimeWarp = static_cast<int>(riseTimeWarpSlider.getValue());
     } else if (slider == &fallTimeWarpSlider){
         guiParams->fallTimeWarp = static_cast<int>(fallTimeWarpSlider.getValue());
+    } else if (slider == &delayFeedbackSlider){
+        guiParams->delayFeedback = static_cast<int>(delayFeedbackSlider.getValue());
+    } else if (slider == &delayTimeSlider){
+        guiParams->delayTime = static_cast<int>(delayTimeSlider.getValue());
     }
 
     processor.processSample();
