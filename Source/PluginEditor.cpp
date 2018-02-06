@@ -19,8 +19,8 @@
 #define blockHeight 135
 #define thirdRowSecondBlock 210
 #define thirdRowThirdBLock 455
-#define sliderSize 80
-#define halfSliderSize 40
+#define sliderWidth 88
+#define sliderHeight 96
 #define thirdRowCenter 357
 #define comboBoxHeight 40
 #define toggleButtonHeight 40
@@ -30,15 +30,16 @@
 #define buttonHeight 40
 #define buttonWidth 120
 
-void RiseandfallAudioProcessorEditor::initRotarySlider(Slider *slider, const juce::String &suffix, double min,
+void RiseandfallAudioProcessorEditor::initRotarySlider(Slider *slider, const juce::String &label, const juce::String &suffix, double min,
                                                        double max, double step, double start,
                                                        bool logarithmic = false) {
     slider->setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
     slider->setRange(min, max, step);
-    slider->setTextBoxStyle(Slider::NoTextBox, false, sliderSize, 0);
+    slider->setTextBoxStyle(Slider::NoTextBox, false, 0, 0);
     slider->setPopupDisplayEnabled(true, false, this);
     slider->setTextValueSuffix(suffix);
     slider->setValue(start, NotificationType::dontSendNotification);
+    slider->setName(label);
 
     if (logarithmic) {
         slider->setSkewFactor(0.36787944117);
@@ -62,11 +63,6 @@ void RiseandfallAudioProcessorEditor::initToggleButton(ToggleButton *toggleButto
     addAndMakeVisible(toggleButton);
 }
 
-void RiseandfallAudioProcessorEditor::addLabelToSlider(Slider &slider, Graphics &g, const juce::String &text) {
-    Rectangle<int> bounds = slider.getBounds();
-    g.drawFittedText(text, bounds.getX(), bounds.getY() + sliderSize, sliderSize, fontSize, Justification::centred, 1);
-}
-
 void RiseandfallAudioProcessorEditor::addLabelToComboBox(ComboBox &comboBox, Graphics &g, const juce::String &text) {
     Rectangle<int> bounds = comboBox.getBounds();
     g.drawFittedText(text, bounds.getX(), bounds.getY() - smallMargin - fontSize, bounds.getWidth(), fontSize,
@@ -81,25 +77,25 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
 
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize(windowSize, windowSize);
+    setSize(688, 704);
     setLookAndFeel(&customLookAndFeel);
 
-    initRotarySlider(&timeOffsetSlider, " ms", -120, 120, 1, guiParams->timeOffset);
-    initRotarySlider(&riseTimeWarpSlider, " x", -4, 4, 2, guiParams->riseTimeWarp);
-    initRotarySlider(&fallTimeWarpSlider, " x", -4, 4, 2, guiParams->fallTimeWarp);
+    initRotarySlider(&timeOffsetSlider, "TIME OFFSET", customLookAndFeel.DIMENSION_MS, -120, 120, 1, guiParams->timeOffset);
+    initRotarySlider(&riseTimeWarpSlider, "TIME WARP", customLookAndFeel.DIMENSION_TIMES, -4, 4, 2, guiParams->riseTimeWarp);
+    initRotarySlider(&fallTimeWarpSlider, "TIME WARP", customLookAndFeel.DIMENSION_TIMES, -4, 4, 2, guiParams->fallTimeWarp);
 
-    initRotarySlider(&reverbMixSlider, " %", 0, 100, 1, 50);
-    initRotarySlider(&delayMixSlider, " %", 0, 100, 1, 50);
-    initRotarySlider(&delayTimeSlider, " ms", 10, 1000, 1, guiParams->delayTime);
-    initRotarySlider(&delayFeedbackSlider, " %", 0, 99, 1, guiParams->delayFeedback);
+    initRotarySlider(&reverbMixSlider, "MIX", customLookAndFeel.DIMENSION_PERCENT, 0, 100, 1, 50);
+    initRotarySlider(&delayMixSlider, "MIX", customLookAndFeel.DIMENSION_PERCENT, 0, 100, 1, 50);
+    initRotarySlider(&delayTimeSlider, "TIME", customLookAndFeel.DIMENSION_MS, 10, 1000, 1, guiParams->delayTime);
+    initRotarySlider(&delayFeedbackSlider, "FEEDBACK", customLookAndFeel.DIMENSION_PERCENT, 0, 99, 1, guiParams->delayFeedback);
 
-    initRotarySlider(&delayFilterCutoffSlider, " Hz", 20, 20000, 1, 3000, true);
-    initRotarySlider(&delayFilterResonanceSlider, " dB", -10, 10, 1, 0);
+    initRotarySlider(&delayFilterCutoffSlider, "CUTOFF", customLookAndFeel.DIMENSION_HERTZ, 20, 20000, 1, 3000, true);
+    initRotarySlider(&delayFilterResonanceSlider, "RESONANCE", customLookAndFeel.DIMENSION_DECIBEL, -10, 10, 1, 0);
 
     const ScopedPointer<StringArray> impResItems = new StringArray(
             CharPointer_UTF8("TH Köln - Entrance Hall"),
             CharPointer_UTF8("Erfthaus Köln - Stairway"),
-            CharPointer_UTF8("Kölner Dom - Nave")
+            CharPointer_UTF8("Cologne Subway Station \"Neuser Strasse/Gürtel\"")
     );
     initComboBox(&reverbImpResComboBox, impResItems);
 
@@ -132,20 +128,8 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
     Image background = ImageCache::getFromMemory(BinaryData::background_png, BinaryData::background_pngSize);
     g.drawImageAt(background, 0, 0);
 
-    g.setColour(*customLookAndFeel.white);
+    g.setColour(customLookAndFeel.COLOUR_WHITE);
     g.setFont(fontSize);
-
-    addLabelToSlider(timeOffsetSlider, g, "Time Offset");
-    addLabelToSlider(riseTimeWarpSlider, g, "Time Warp");
-    addLabelToSlider(fallTimeWarpSlider, g, "Time Warp");
-
-    addLabelToSlider(reverbMixSlider, g, "Mix");
-    addLabelToSlider(delayMixSlider, g, "Mix");
-    addLabelToSlider(delayTimeSlider, g, "Time");
-    addLabelToSlider(delayFeedbackSlider, g, "Feedback");
-
-    addLabelToSlider(delayFilterCutoffSlider, g, "Cutoff");
-    addLabelToSlider(delayFilterResonanceSlider, g, "Resonance");
 
     addLabelToComboBox(reverbImpResComboBox, g, "Impulse Response");
     addLabelToComboBox(filterTypeComboBox, g, "Filter");
@@ -154,7 +138,7 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
                                          windowSize - (2 * margin), 175);
 
     if (processor.getOriginalSampleBuffer()->getNumChannels() != 0) {
-        g.setColour(*customLookAndFeel.red);
+        g.setColour(customLookAndFeel.COLOUR_RED);
         processor.getThumbnail()->drawChannels(g, thumbnailBounds, 0.0, processor.getThumbnail()->getTotalLength(),
                                                1.0f);
     }
@@ -163,42 +147,37 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
 void RiseandfallAudioProcessorEditor::resized() {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
-    timeOffsetSlider.setBounds(blockCenter - (sliderSize + bigMargin), (2 * margin + (2 * blockHeight)), sliderSize,
-                               sliderSize);
+    timeOffsetSlider.setBounds(blockCenter - (sliderWidth + bigMargin), (2 * margin + (2 * blockHeight)),  sliderWidth, sliderHeight);
 
 
-    riseTimeWarpSlider.setBounds(windowSize - blockWidth - margin, thirdRowCenter - halfSliderSize, sliderSize,
-                                 sliderSize);
-    fallTimeWarpSlider.setBounds(windowSize - (2 * margin) - sliderSize, thirdRowCenter - halfSliderSize, sliderSize,
-                                 sliderSize);
+    riseTimeWarpSlider.setBounds(232, 304, sliderWidth, sliderHeight);
+    fallTimeWarpSlider.setBounds(568, 304, sliderWidth, sliderHeight);
 
-    reverbMixSlider.setBounds(blockWidth - sliderSize, blockHeight + margin, sliderSize, sliderSize);
-    delayMixSlider.setBounds(windowSize - (2 * margin) - sliderSize, 4 * margin, sliderSize, sliderSize);
-    delayTimeSlider.setBounds(windowSize - blockWidth, 4 * margin, sliderSize, sliderSize);
-    delayFeedbackSlider.setBounds(windowSize - (blockWidth / 2) - (sliderSize / 2) - (margin / 2), 4 * margin,
-                                  sliderSize, sliderSize);
+    reverbMixSlider.setBounds(232, 128, sliderWidth, sliderHeight);
+    
+    delayMixSlider.setBounds(568, 32, sliderWidth, sliderHeight);
+    delayTimeSlider.setBounds(368, 32, sliderWidth, sliderHeight);
+    delayFeedbackSlider.setBounds(468, 32, sliderWidth, sliderHeight);
 
-    delayFilterCutoffSlider.setBounds(windowSize - (blockWidth / 2) - (sliderSize / 2) - (margin / 2),
-                                      margin + blockHeight, sliderSize, sliderSize);
-    delayFilterResonanceSlider.setBounds(windowSize - (2 * margin) - sliderSize, margin + blockHeight, sliderSize,
-                                         sliderSize);
+    delayFilterCutoffSlider.setBounds(468, 144, sliderWidth, sliderHeight);
+    delayFilterResonanceSlider.setBounds(568, 144, sliderWidth, sliderHeight);
 
     reverbImpResComboBox.setBounds((2 * margin), blockHeight + margin + smallMargin + fontSize,
-                                   blockWidth - (4 * margin) - sliderSize, comboBoxHeight);
+                                   blockWidth - (4 * margin) - sliderWidth, comboBoxHeight);
     filterTypeComboBox.setBounds(windowSize - blockWidth, blockHeight + margin + smallMargin + fontSize,
-                                 sliderSize + bigMargin, comboBoxHeight);
+                                 sliderWidth + bigMargin, comboBoxHeight);
 
     riseReverseToggleButton.setBounds(thirdRowSecondBlock + margin, thirdRowCenter - halfToggleButtonHeight - bigMargin,
-                                      sliderSize, toggleButtonHeight);
+                                      sliderWidth, toggleButtonHeight);
     riseEffectsToggleButton.setBounds(thirdRowSecondBlock + margin, thirdRowCenter - halfToggleButtonHeight + bigMargin,
-                                      sliderSize, toggleButtonHeight);
+                                      sliderWidth, toggleButtonHeight);
 
     fallReverseToggleButton.setBounds(thirdRowThirdBLock + margin, thirdRowCenter - halfToggleButtonHeight - bigMargin,
-                                      sliderSize, toggleButtonHeight);
+                                      sliderWidth, toggleButtonHeight);
     fallEffectsToggleButton.setBounds(thirdRowThirdBLock + margin, thirdRowCenter - halfToggleButtonHeight + bigMargin,
-                                      sliderSize, toggleButtonHeight);
+                                      sliderWidth, toggleButtonHeight);
 
-    loadFileButton.setBounds(blockCenter - (sliderSize) - (buttonWidth / 2), 3 * blockHeight - smallMargin, buttonWidth,
+    loadFileButton.setBounds(blockCenter - (sliderWidth) - (buttonWidth / 2), 3 * blockHeight - smallMargin, buttonWidth,
                              buttonHeight);
 }
 

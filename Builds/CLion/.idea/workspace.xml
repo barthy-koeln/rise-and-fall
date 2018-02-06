@@ -3,9 +3,9 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="RISE&amp;FALL" targetName="VST" />
-      <config projectName="RISE&amp;FALL" targetName="AU" />
       <config projectName="RISE&amp;FALL" targetName="STANDALONE_PLUGIN" />
       <config projectName="RISE&amp;FALL" targetName="SHARED_CODE" />
+      <config projectName="RISE&amp;FALL" targetName="AU" />
       <config projectName="RISE&amp;FALL" targetName="VST3" />
     </generated>
   </component>
@@ -36,42 +36,7 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PluginProcessor.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="326" column="5" lean-forward="false" selection-start-line="326" selection-start-column="5" selection-end-line="326" selection-end-column="5" />
-              <folding>
-                <element signature="e#648#700#0" expanded="true" />
-                <element signature="e#1333#1346#0" expanded="true" />
-                <element signature="e#3397#3493#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PluginProcessor.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="183" column="84" lean-forward="false" selection-start-line="183" selection-start-column="84" selection-end-line="183" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PluginEditor.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-511">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -90,22 +55,31 @@
       <find>readerSour</find>
       <find>this-&gt;</find>
       <find>addSample</find>
+      <find>convolution</find>
+      <find>convo</find>
+      <find>Convolution</find>
+      <find>drawR</find>
+      <find>drawRotary</find>
+      <find>sliderSize, sliderSize</find>
+      <find>CustomLookAndFeel::</find>
     </findStrings>
     <replaceStrings>
       <replace>getAudioSampleBuffer</replace>
       <replace>getOriginalSampleBuffer</replace>
       <replace>originalSampleBuffer</replace>
+      <replace>sliderWidth, sliderHeight</replace>
+      <replace>customLookAndFeel.</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../Source/PluginEditor.h" />
-        <option value="$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp" />
         <option value="$PROJECT_DIR$/../../Source/GUIParams.h" />
         <option value="$PROJECT_DIR$/../../Source/PluginProcessor.h" />
         <option value="$PROJECT_DIR$/../../Source/PluginProcessor.cpp" />
+        <option value="$PROJECT_DIR$/../../Source/PluginEditor.h" />
         <option value="$PROJECT_DIR$/../../Source/PluginEditor.cpp" />
+        <option value="$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp" />
       </list>
     </option>
   </component>
@@ -117,8 +91,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-361" />
-    <option name="y" value="307" />
+    <option name="y" value="47" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
   </component>
@@ -239,16 +212,19 @@
       <workItem from="1516840923763" duration="778000" />
       <workItem from="1516842238322" duration="4293000" />
       <workItem from="1516896204289" duration="1947000" />
-      <workItem from="1517212067132" duration="4275000" />
+      <workItem from="1517212067132" duration="4421000" />
+      <workItem from="1517216869828" duration="1325000" />
+      <workItem from="1517218462780" duration="316000" />
+      <workItem from="1517876205066" duration="698000" />
+      <workItem from="1517879762743" duration="4376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55023000" />
+    <option name="totallyTimeSpent" value="61884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.52313626" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -260,7 +236,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.47686374" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36503857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36503857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -303,34 +279,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="25" lean-forward="false" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="152" column="23" lean-forward="false" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="46" lean-forward="true" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/containers/juce_AudioBlock.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="17" lean-forward="false" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/processors/juce_ProcessContext.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -387,13 +335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="49" column="73" lean-forward="false" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_audio_processors/juce_audio_processors.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -408,24 +349,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/juce_dsp.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/processors/juce_ProcessContext.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
           <caret line="78" column="24" lean-forward="false" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/frequency/juce_Convolution.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -492,13 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/buttons/juce_TextButton.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -513,31 +433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="318" column="1" lean-forward="true" selection-start-line="278" selection-start-column="0" selection-end-line="318" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_audio_basics/buffers/juce_FloatVectorOperations.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="534" column="70" lean-forward="false" selection-start-line="534" selection-start-column="70" selection-end-line="534" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/components/juce_Component.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-332">
-          <caret line="939" column="9" lean-forward="false" selection-start-line="939" selection-start-column="9" selection-end-line="939" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -576,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2460">
-          <caret line="164" column="16" lean-forward="false" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/components/juce_Component.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -597,19 +489,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/juce_dsp.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,15 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioSampleBuffer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="328" column="9" lean-forward="false" selection-start-line="328" selection-start-column="9" selection-end-line="328" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,14 +514,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioSampleBuffer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="598" column="9" lean-forward="true" selection-start-line="598" selection-start-column="9" selection-end-line="598" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="749" column="5" lean-forward="true" selection-start-line="749" selection-start-column="5" selection-end-line="749" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/juce_dsp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/frequency/juce_Convolution.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47115">
+          <caret line="3141" column="25" lean-forward="false" selection-start-line="3141" selection-start-column="25" selection-end-line="3141" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="187" column="0" lean-forward="false" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding>
+            <element signature="e#290#332#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="211" column="9" lean-forward="false" selection-start-line="211" selection-start-column="9" selection-end-line="211" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-407">
+          <caret line="1046" column="43" lean-forward="true" selection-start-line="1046" selection-start-column="43" selection-end-line="1046" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/widgets/juce_Slider.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="425" column="11" lean-forward="false" selection-start-line="425" selection-start-column="11" selection-end-line="425" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="105" column="40" lean-forward="true" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="326" column="5" lean-forward="false" selection-start-line="326" selection-start-column="5" selection-end-line="326" selection-end-column="5" />
+        <state relative-caret-position="123">
+          <caret line="323" column="59" lean-forward="false" selection-start-line="323" selection-start-column="59" selection-end-line="323" selection-end-column="59" />
           <folding>
             <element signature="e#648#700#0" expanded="true" />
             <element signature="e#1333#1346#0" expanded="true" />
@@ -657,18 +622,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.h">
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_core/text/juce_String.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="183" column="84" lean-forward="false" selection-start-line="183" selection-start-column="84" selection-end-line="183" selection-end-column="84" />
+        <state relative-caret-position="-7009">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-511">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="1935">
+          <caret line="130" column="48" lean-forward="false" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/components/juce_Component.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding />
         </state>
       </provider>

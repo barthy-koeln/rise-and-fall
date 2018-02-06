@@ -163,6 +163,7 @@ private:
      */
     AudioThumbnail thumbnail;
 
+
     /**
      * Block processing of the sample if it is already in process
      */
@@ -182,6 +183,8 @@ private:
     void applyTimeWarp(AudioSampleBuffer *buffer, int factor);
 
     void applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen, int delayTimeInSamples, int iteration);
+
+    void applyReverb(AudioSampleBuffer *target);
 
     /**
      * Update the thumbnail image

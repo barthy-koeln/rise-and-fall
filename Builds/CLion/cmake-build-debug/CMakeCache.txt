@@ -15,7 +15,7 @@
 ########################
 
 //Dependencies for the target
-AU_LIB_DEPENDS:STATIC=general;SHARED_CODE;general;-framework Accelerate;general;-framework AudioToolbox;general;-framework AudioUnit;general;-framework AVFoundation;general;-framework AVKit;general;-framework Carbon;general;-framework Cocoa;general;-framework CoreAudio;general;-framework CoreAudioKit;general;-framework CoreMedia;general;-framework CoreMIDI;general;-framework DiscRecording;general;-framework IOKit;general;-framework OpenGL;general;-framework QuartzCore;general;-framework WebKit;
+AU_LIB_DEPENDS:STATIC=general;SHARED_CODE;general;-framework Accelerate;general;-framework AudioToolbox;general;-framework AudioUnit;general;-framework Carbon;general;-framework Cocoa;general;-framework CoreAudio;general;-framework CoreAudioKit;general;-framework CoreMIDI;general;-framework DiscRecording;general;-framework IOKit;general;-framework QuartzCore;general;-framework WebKit;
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
@@ -202,13 +202,13 @@ RISE&FALL_BINARY_DIR:STATIC=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/
 RISE&FALL_SOURCE_DIR:STATIC=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion
 
 //Dependencies for the target
-SHARED_CODE_LIB_DEPENDS:STATIC=general;-framework Accelerate;general;-framework AudioToolbox;general;-framework AVFoundation;general;-framework AVKit;general;-framework Carbon;general;-framework Cocoa;general;-framework CoreAudio;general;-framework CoreMedia;general;-framework CoreMIDI;general;-framework DiscRecording;general;-framework IOKit;general;-framework OpenGL;general;-framework QuartzCore;general;-framework WebKit;
+SHARED_CODE_LIB_DEPENDS:STATIC=general;-framework Accelerate;general;-framework AudioToolbox;general;-framework Carbon;general;-framework Cocoa;general;-framework CoreAudio;general;-framework CoreMIDI;general;-framework DiscRecording;general;-framework IOKit;general;-framework QuartzCore;general;-framework WebKit;
 
 //Dependencies for the target
-VST3_LIB_DEPENDS:STATIC=general;SHARED_CODE;general;-framework Accelerate;general;-framework AudioToolbox;general;-framework AVFoundation;general;-framework AVKit;general;-framework Carbon;general;-framework Cocoa;general;-framework CoreAudio;general;-framework CoreMedia;general;-framework CoreMIDI;general;-framework DiscRecording;general;-framework IOKit;general;-framework OpenGL;general;-framework QuartzCore;general;-framework WebKit;
+VST3_LIB_DEPENDS:STATIC=general;SHARED_CODE;general;-framework Accelerate;general;-framework AudioToolbox;general;-framework Carbon;general;-framework Cocoa;general;-framework CoreAudio;general;-framework CoreMIDI;general;-framework DiscRecording;general;-framework IOKit;general;-framework QuartzCore;general;-framework WebKit;
 
 //Dependencies for the target
-VST_LIB_DEPENDS:STATIC=general;SHARED_CODE;general;-framework Accelerate;general;-framework AudioToolbox;general;-framework AVFoundation;general;-framework AVKit;general;-framework Carbon;general;-framework Cocoa;general;-framework CoreAudio;general;-framework CoreMedia;general;-framework CoreMIDI;general;-framework DiscRecording;general;-framework IOKit;general;-framework OpenGL;general;-framework QuartzCore;general;-framework WebKit;
+VST_LIB_DEPENDS:STATIC=general;SHARED_CODE;general;-framework Accelerate;general;-framework AudioToolbox;general;-framework Carbon;general;-framework Cocoa;general;-framework CoreAudio;general;-framework CoreMIDI;general;-framework DiscRecording;general;-framework IOKit;general;-framework QuartzCore;general;-framework WebKit;
 
 
 ########################

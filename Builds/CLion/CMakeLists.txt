@@ -709,21 +709,6 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_core/juce_core.cpp"
     "../../../JUCE/modules/juce_core/juce_core.mm"
     "../../../JUCE/modules/juce_core/juce_core.h"
-    "../../../JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp"
-    "../../../JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h"
-    "../../../JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp"
-    "../../../JUCE/modules/juce_cryptography/encryption/juce_Primes.h"
-    "../../../JUCE/modules/juce_cryptography/encryption/juce_RSAKey.cpp"
-    "../../../JUCE/modules/juce_cryptography/encryption/juce_RSAKey.h"
-    "../../../JUCE/modules/juce_cryptography/hashing/juce_MD5.cpp"
-    "../../../JUCE/modules/juce_cryptography/hashing/juce_MD5.h"
-    "../../../JUCE/modules/juce_cryptography/hashing/juce_SHA256.cpp"
-    "../../../JUCE/modules/juce_cryptography/hashing/juce_SHA256.h"
-    "../../../JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.cpp"
-    "../../../JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h"
-    "../../../JUCE/modules/juce_cryptography/juce_cryptography.cpp"
-    "../../../JUCE/modules/juce_cryptography/juce_cryptography.mm"
-    "../../../JUCE/modules/juce_cryptography/juce_cryptography.h"
     "../../../JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp"
     "../../../JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h"
     "../../../JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.cpp"
@@ -1325,51 +1310,6 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_gui_extra/juce_gui_extra.cpp"
     "../../../JUCE/modules/juce_gui_extra/juce_gui_extra.mm"
     "../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h"
-    "../../../JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h"
-    "../../../JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h"
-    "../../../JUCE/modules/juce_opengl/geometry/juce_Quaternion.h"
-    "../../../JUCE/modules/juce_opengl/geometry/juce_Vector3D.h"
-    "../../../JUCE/modules/juce_opengl/native/juce_MissingGLDefinitions.h"
-    "../../../JUCE/modules/juce_opengl/native/juce_OpenGL_android.h"
-    "../../../JUCE/modules/juce_opengl/native/juce_OpenGL_ios.h"
-    "../../../JUCE/modules/juce_opengl/native/juce_OpenGL_linux_X11.h"
-    "../../../JUCE/modules/juce_opengl/native/juce_OpenGL_osx.h"
-    "../../../JUCE/modules/juce_opengl/native/juce_OpenGL_win32.h"
-    "../../../JUCE/modules/juce_opengl/native/juce_OpenGLExtensions.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.cpp"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.cpp"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.cpp"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.cpp"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.cpp"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.cpp"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLRenderer.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.cpp"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.h"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.cpp"
-    "../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.h"
-    "../../../JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.cpp"
-    "../../../JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h"
-    "../../../JUCE/modules/juce_opengl/juce_opengl.cpp"
-    "../../../JUCE/modules/juce_opengl/juce_opengl.mm"
-    "../../../JUCE/modules/juce_opengl/juce_opengl.h"
-    "../../../JUCE/modules/juce_video/capture/juce_CameraDevice.cpp"
-    "../../../JUCE/modules/juce_video/capture/juce_CameraDevice.h"
-    "../../../JUCE/modules/juce_video/native/juce_android_CameraDevice.h"
-    "../../../JUCE/modules/juce_video/native/juce_mac_CameraDevice.h"
-    "../../../JUCE/modules/juce_video/native/juce_mac_Video.h"
-    "../../../JUCE/modules/juce_video/native/juce_win32_CameraDevice.h"
-    "../../../JUCE/modules/juce_video/native/juce_win32_Video.h"
-    "../../../JUCE/modules/juce_video/playback/juce_VideoComponent.cpp"
-    "../../../JUCE/modules/juce_video/playback/juce_VideoComponent.h"
-    "../../../JUCE/modules/juce_video/juce_video.cpp"
-    "../../../JUCE/modules/juce_video/juce_video.mm"
-    "../../../JUCE/modules/juce_video/juce_video.h"
     "../../JuceLibraryCode/AppConfig.h"
     "../../JuceLibraryCode/BinaryData.cpp"
     "../../JuceLibraryCode/BinaryData.h"
@@ -1381,15 +1321,12 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/include_juce_audio_processors.mm"
     "../../JuceLibraryCode/include_juce_audio_utils.mm"
     "../../JuceLibraryCode/include_juce_core.mm"
-    "../../JuceLibraryCode/include_juce_cryptography.mm"
     "../../JuceLibraryCode/include_juce_data_structures.mm"
     "../../JuceLibraryCode/include_juce_dsp.mm"
     "../../JuceLibraryCode/include_juce_events.mm"
     "../../JuceLibraryCode/include_juce_graphics.mm"
     "../../JuceLibraryCode/include_juce_gui_basics.mm"
     "../../JuceLibraryCode/include_juce_gui_extra.mm"
-    "../../JuceLibraryCode/include_juce_opengl.mm"
-    "../../JuceLibraryCode/include_juce_video.mm"
     "../../JuceLibraryCode/JuceHeader.h"
 )
 
@@ -1397,7 +1334,7 @@ set_source_files_properties ("../../Source/GUIParams.h" PROPERTIES HEADER_FILE_O
 set_source_files_properties ("../../Source/CustomLookAndFeel.hpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/PluginProcessor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/PluginEditor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Resources/background.png" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Resources/room_impulse_response_LBS.wav" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2045,21 +1982,6 @@ set_source_files_properties ("../../../JUCE/modules/juce_core/zip/juce_ZipFile.h
 set_source_files_properties ("../../../JUCE/modules/juce_core/juce_core.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_core/juce_core.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_core/juce_core.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/encryption/juce_Primes.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/encryption/juce_RSAKey.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/encryption/juce_RSAKey.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/hashing/juce_MD5.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/hashing/juce_MD5.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/hashing/juce_SHA256.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/hashing/juce_SHA256.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/juce_cryptography.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/juce_cryptography.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_cryptography/juce_cryptography.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2661,51 +2583,6 @@ set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_w
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/juce_gui_extra.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/juce_gui_extra.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/geometry/juce_Quaternion.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/geometry/juce_Vector3D.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/native/juce_MissingGLDefinitions.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/native/juce_OpenGL_android.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/native/juce_OpenGL_ios.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/native/juce_OpenGL_linux_X11.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/native/juce_OpenGL_osx.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/native/juce_OpenGL_win32.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/native/juce_OpenGLExtensions.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLRenderer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/juce_opengl.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/juce_opengl.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_opengl/juce_opengl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/capture/juce_CameraDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/capture/juce_CameraDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/native/juce_android_CameraDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/native/juce_mac_CameraDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/native/juce_mac_Video.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/native/juce_win32_CameraDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/native/juce_win32_Video.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/playback/juce_VideoComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/playback/juce_VideoComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/juce_video.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/juce_video.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_video/juce_video.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/AppConfig.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/BinaryData.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/JuceHeader.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2782,16 +2659,12 @@ target_link_libraries (VST PRIVATE
     SHARED_CODE
     "-framework Accelerate"
     "-framework AudioToolbox"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -2861,16 +2734,12 @@ target_link_libraries (VST3 PRIVATE
     SHARED_CODE
     "-framework Accelerate"
     "-framework AudioToolbox"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -2966,17 +2835,13 @@ target_link_libraries (AU PRIVATE
     "-framework Accelerate"
     "-framework AudioToolbox"
     "-framework AudioUnit"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
     "-framework CoreAudioKit"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -3038,16 +2903,12 @@ target_link_libraries (STANDALONE_PLUGIN PRIVATE
     SHARED_CODE
     "-framework Accelerate"
     "-framework AudioToolbox"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -3099,16 +2960,12 @@ set_target_properties (SHARED_CODE PROPERTIES
 target_link_libraries (SHARED_CODE PRIVATE
     "-framework Accelerate"
     "-framework AudioToolbox"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -3185,16 +3042,12 @@ target_link_libraries (VST PRIVATE
     SHARED_CODE
     "-framework Accelerate"
     "-framework AudioToolbox"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -3266,16 +3119,12 @@ target_link_libraries (VST3 PRIVATE
     SHARED_CODE
     "-framework Accelerate"
     "-framework AudioToolbox"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -3373,17 +3222,13 @@ target_link_libraries (AU PRIVATE
     "-framework Accelerate"
     "-framework AudioToolbox"
     "-framework AudioUnit"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
     "-framework CoreAudioKit"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -3447,16 +3292,12 @@ target_link_libraries (STANDALONE_PLUGIN PRIVATE
     SHARED_CODE
     "-framework Accelerate"
     "-framework AudioToolbox"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )
@@ -3510,16 +3351,12 @@ set_target_properties (SHARED_CODE PROPERTIES
 target_link_libraries (SHARED_CODE PRIVATE
     "-framework Accelerate"
     "-framework AudioToolbox"
-    "-framework AVFoundation"
-    "-framework AVKit"
     "-framework Carbon"
     "-framework Cocoa"
     "-framework CoreAudio"
-    "-framework CoreMedia"
     "-framework CoreMIDI"
     "-framework DiscRecording"
     "-framework IOKit"
-    "-framework OpenGL"
     "-framework QuartzCore"
     "-framework WebKit"
 )

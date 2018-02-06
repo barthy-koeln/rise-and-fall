@@ -60,14 +60,12 @@ private:
 
     AudioFormatManager formatManager;
 
-    void initRotarySlider(Slider *slider, const juce::String &suffix, double min, double max, double step, double start,
+    void initRotarySlider(Slider *slider, const juce::String &label, const juce::String &suffix, double min, double max, double step, double start,
                           bool logarithmic);
 
     void initComboBox(ComboBox *comboBox, const StringArray *items);
 
     void initToggleButton(ToggleButton *toggleButton, bool state, String label);
-
-    void addLabelToSlider(Slider &slider, Graphics &g, const juce::String &text);
 
     void addLabelToComboBox(ComboBox &comboBox, Graphics &g, const juce::String &text);
 

@@ -553,33 +553,6 @@ Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.s:
 	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.s
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.s
 
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.o: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.o
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.o
-
-# target to build an object file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.o:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.o
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.o
-
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.i: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.i
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.i
-
-# target to preprocess a source file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.i:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.i
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.i
-
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.s: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.s
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.s
-
-# target to generate assembly for a file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.s:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.s
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm.s
-
 Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.o: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.o
 
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.o
@@ -742,60 +715,6 @@ Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.
 	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.s
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.s
 
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.o: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.o
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.o
-
-# target to build an object file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.o:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.o
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.o
-
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.i: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.i
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.i
-
-# target to preprocess a source file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.i:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.i
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.i
-
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.s: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.s
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.s
-
-# target to generate assembly for a file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.s:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.s
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm.s
-
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.o: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.o
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.o
-
-# target to build an object file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.o:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.o
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.o
-
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.i: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.i
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.i
-
-# target to preprocess a source file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.i:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.i
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.i
-
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.s: Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.s
-
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.s
-
-# target to generate assembly for a file
-Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.s:
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.s
-.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm.s
-
 Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.o: Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o
 
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.o
@@ -905,9 +824,6 @@ help:
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.s"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.o"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.i"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.s"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.s"
@@ -926,12 +842,6 @@ help:
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.s"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.o"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.i"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.s"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.o"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.i"
-	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.s"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.s"

@@ -2385,51 +2385,6 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_core/zip/zlib/zutil.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/encryption/juce_Primes.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/encryption/juce_RSAKey.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/encryption/juce_RSAKey.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/hashing/juce_MD5.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/hashing/juce_MD5.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/hashing/juce_SHA256.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/hashing/juce_SHA256.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/juce_cryptography.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/juce_cryptography.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_cryptography/juce_cryptography.mm">
-			<Option target="SHARED_CODE"/>
-		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -4233,141 +4188,6 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_win32_WebBrowserComponent.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/geometry/juce_Quaternion.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/geometry/juce_Vector3D.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/juce_opengl.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/juce_opengl.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/juce_opengl.mm">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/native/juce_MissingGLDefinitions.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/native/juce_OpenGLExtensions.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/native/juce_OpenGL_android.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/native/juce_OpenGL_ios.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/native/juce_OpenGL_linux_X11.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/native/juce_OpenGL_osx.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/native/juce_OpenGL_win32.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLRenderer.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/capture/juce_CameraDevice.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/capture/juce_CameraDevice.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/juce_video.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/juce_video.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/juce_video.mm">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/native/juce_android_CameraDevice.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/native/juce_mac_CameraDevice.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/native/juce_mac_Video.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/native/juce_win32_CameraDevice.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/native/juce_win32_Video.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/playback/juce_VideoComponent.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_video/playback/juce_VideoComponent.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/rise-and-fall.rsrc">
 			<Option target="AU"/>
 		</Unit>
@@ -4425,9 +4245,6 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_cryptography.mm">
-			<Option target="SHARED_CODE"/>
-		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -4444,12 +4261,6 @@
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_opengl.mm">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_video.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Resources/background.png">

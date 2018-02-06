@@ -217,6 +217,9 @@ void RiseandfallAudioProcessor::reverseAndPrepend() {
         float delayTimeNormalized = guiParams.delayTime / 1000.0f;
         auto delayTimeInSamples = static_cast<int>(sampleRate * delayTimeNormalized);
 
+        float magnitude = processedSampleBuffer.getMagnitude(0, processedSampleBuffer.getNumSamples());
+        processedSampleBuffer.applyGain(1 / magnitude);
+
         // RISE
         riseTempBuffer.makeCopyOf(processedSampleBuffer);
         if (guiParams.riseTimeWarp != 0) {
@@ -329,7 +332,7 @@ void RiseandfallAudioProcessor::applyTimeWarp(AudioSampleBuffer *buffer, int fac
 
 void RiseandfallAudioProcessor::applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen, int delayTimeInSamples, int iteration) {
     base->applyGain(dampen);
-    if (base->getMagnitude(0, base->getNumSamples()) > 0.1) {
+    if (base->getMagnitude(0, base->getNumSamples()) > 0.05) {
         int currentDelayPosition = delayTimeInSamples * iteration;
         int length = target->getNumSamples() + delayTimeInSamples;
         target->setSize(target->getNumChannels(), length, true, true, true);
@@ -342,4 +345,7 @@ void RiseandfallAudioProcessor::applyDelay(AudioSampleBuffer *target, AudioSampl
 
         applyDelay(target, base, dampen, delayTimeInSamples, iteration + 1);
     }
+}
+
+void RiseandfallAudioProcessor::applyReverb(AudioSampleBuffer *target) {
 }
