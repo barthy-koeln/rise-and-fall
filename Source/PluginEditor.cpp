@@ -94,12 +94,12 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
     );
     initComboBox(&filterTypeComboBox, "FILTER", filterTypes);
 
-    initToggleButton(&riseReverseToggleButton, processor.guiParams.riseReverse, "Reverse");
-    initToggleButton(&riseEffectsToggleButton, processor.guiParams.riseEffects, "Effects");
-    initToggleButton(&fallReverseToggleButton, processor.guiParams.fallReverse, "Reverse");
-    initToggleButton(&fallEffectsToggleButton, processor.guiParams.fallEffects, "Effects");
+    initToggleButton(&riseReverseToggleButton, processor.guiParams.riseReverse, "REVERSE");
+    initToggleButton(&riseEffectsToggleButton, processor.guiParams.riseEffects, "EFFECTS");
+    initToggleButton(&fallReverseToggleButton, processor.guiParams.fallReverse, "REVERSE");
+    initToggleButton(&fallEffectsToggleButton, processor.guiParams.fallEffects, "EFFECTS");
 
-    loadFileButton.setButtonText("Load Audio File");
+    loadFileButton.setButtonText("LOAD AUDIO FILE");
     loadFileButton.addListener(this);
     addAndMakeVisible(&loadFileButton);
     processor.getThumbnail()->addChangeListener(this);
@@ -112,7 +112,6 @@ RiseandfallAudioProcessorEditor::~RiseandfallAudioProcessorEditor() {
 
 //==============================================================================
 void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
-    // (Our component is opaque, so we must completely fill the background with a solid
     Image background = ImageCache::getFromMemory(BinaryData::background_png, BinaryData::background_pngSize);
     g.drawImageAt(background, 0, 0);
 
@@ -131,27 +130,27 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
 void RiseandfallAudioProcessorEditor::resized() {
     timeOffsetSlider.setBounds(368, 464, 288, 32);
 
-    riseTimeWarpSlider.setBounds(232, 304, sliderWidth, sliderHeight);
-    fallTimeWarpSlider.setBounds(568, 304, sliderWidth, sliderHeight);
+    riseTimeWarpSlider.setBounds(232, 320, sliderWidth, sliderHeight);
+    fallTimeWarpSlider.setBounds(568, 320, sliderWidth, sliderHeight);
 
-    reverbMixSlider.setBounds(232, 128, sliderWidth, sliderHeight);
+    reverbMixSlider.setBounds(232, 176, sliderWidth, sliderHeight);
 
-    delayMixSlider.setBounds(568, 32, sliderWidth, sliderHeight);
-    delayTimeSlider.setBounds(368, 32, sliderWidth, sliderHeight);
-    delayFeedbackSlider.setBounds(468, 32, sliderWidth, sliderHeight);
+    delayTimeSlider.setBounds(368, 176, sliderWidth, sliderHeight);
+    delayFeedbackSlider.setBounds(468, 176, sliderWidth, sliderHeight);
+    delayMixSlider.setBounds(568, 176, sliderWidth, sliderHeight);
 
-    delayFilterCutoffSlider.setBounds(468, 144, sliderWidth, sliderHeight);
-    delayFilterResonanceSlider.setBounds(568, 144, sliderWidth, sliderHeight);
+    delayFilterCutoffSlider.setBounds(468, 32, sliderWidth, sliderHeight);
+    delayFilterResonanceSlider.setBounds(568, 32, sliderWidth, sliderHeight);
 
-    reverbImpResComboBox.setBounds(32, 160, 188, comboBoxHeight);
+    reverbImpResComboBox.setBounds(32, 208, 188, comboBoxHeight);
 
-    filterTypeComboBox.setBounds(368, 176, 88, comboBoxHeight);
+    filterTypeComboBox.setBounds(368, 64, 88, comboBoxHeight);
 
-    riseReverseToggleButton.setBounds(32, 312, toggleButtonWidth, toggleButtonHeight);
-    riseEffectsToggleButton.setBounds(32, 360, toggleButtonWidth, toggleButtonHeight);
+    riseReverseToggleButton.setBounds(32, 336, toggleButtonWidth, toggleButtonHeight);
+    riseEffectsToggleButton.setBounds(32, 384, toggleButtonWidth, toggleButtonHeight);
 
-    fallReverseToggleButton.setBounds(368, 312, toggleButtonWidth, toggleButtonHeight);
-    fallEffectsToggleButton.setBounds(368, 360, toggleButtonWidth, toggleButtonHeight);
+    fallReverseToggleButton.setBounds(368, 336, toggleButtonWidth, toggleButtonHeight);
+    fallEffectsToggleButton.setBounds(368, 384, toggleButtonWidth, toggleButtonHeight);
 
     loadFileButton.setBounds(32, 464, 188, 32);
 }
@@ -173,7 +172,7 @@ void RiseandfallAudioProcessorEditor::loadFileButtonCLicked() {
                          true);
             processor.newSampleLoaded();
         } else {
-            // handle the error that the file is 2 seconds or longer..
+            // handle the error that the file is 20 seconds or longer..
         }
     }
 }
