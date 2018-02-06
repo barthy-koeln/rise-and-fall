@@ -60,20 +60,19 @@ private:
 
     AudioFormatManager formatManager;
 
-    void initRotarySlider(Slider *slider, const juce::String &label, const juce::String &suffix, double min, double max, double step, double start,
-                          bool logarithmic);
+    void initSlider(Slider *slider, const String &label, const String &suffix, double min, double max,
+                          double step, double start, bool logarithmic, bool linear);
 
-    void initComboBox(ComboBox *comboBox, const StringArray *items);
+    void initComboBox(ComboBox *comboBox, const String &label, const StringArray *items);
+
 
     void initToggleButton(ToggleButton *toggleButton, bool state, String label);
-
-    void addLabelToComboBox(ComboBox &comboBox, Graphics &g, const juce::String &text);
 
     void buttonClicked(Button *button) override;
 
     void changeListenerCallback(ChangeBroadcaster *source) override;
 
-    void sliderValueChanged(Slider* slider) override;
+    void sliderValueChanged(Slider *slider) override;
 
     void loadFileButtonCLicked();
 

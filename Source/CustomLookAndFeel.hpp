@@ -100,13 +100,12 @@ public:
     }
 
     void drawComboBox(Graphics &g, int width, int height, bool, int, int, int, int, ComboBox &box) override {
-        const Rectangle<int> boxBounds(0, 0, width, height);
+        const Rectangle<int> boxBounds(0, 16, width, 32);
 
         g.setColour(COLOUR_WHITE);
-        g.fillRect(boxBounds.toFloat());
-
-        g.setColour(COLOUR_BLACK);
-        g.drawRect(boxBounds.toFloat().reduced(0.5f, 0.5f));
+        g.fillRect(boxBounds);
+        g.setFont(12.0f);
+        g.drawFittedText(box.getName(), 0, 0, width, 12, Justification::left, 1);
 
         Rectangle<int> arrowZone(width - 30, 0, 20, height);
         Path path;
