@@ -4498,6 +4498,122 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_win32_WebBrowserComponent.cpp
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/AppConfig.h
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h
@@ -4988,6 +5104,10 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/AppConfig.h
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.h
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/JuceHeader.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
  /Users/Barthy/GitHub/VST/rise-and-fall/Source/CustomLookAndFeel.hpp
  /Users/Barthy/GitHub/VST/rise-and-fall/Source/GUIParams.h
  /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp
@@ -5483,6 +5603,10 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/AppConfig.h
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.h
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/JuceHeader.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.h
+ /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h
  /Users/Barthy/GitHub/VST/rise-and-fall/Source/CustomLookAndFeel.hpp
  /Users/Barthy/GitHub/VST/rise-and-fall/Source/GUIParams.h
  /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.h

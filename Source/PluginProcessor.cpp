@@ -8,9 +8,10 @@
   ==============================================================================
 */
 
+#define AVOID_REALLOCATING false
+
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
-
 
 //==============================================================================
 RiseandfallAudioProcessor::RiseandfallAudioProcessor()
@@ -26,7 +27,6 @@ RiseandfallAudioProcessor::RiseandfallAudioProcessor()
 #endif
 {
     position = 0;
-    numSamples = 0;
     numChannels = 0;
     formatManager.registerBasicFormats();
 }
@@ -91,6 +91,7 @@ void RiseandfallAudioProcessor::prepareToPlay(double sampleRate, int samplesPerB
     // initialisation that you need..
     this->sampleRate = sampleRate;
     this->samplesPerBlock = samplesPerBlock;
+    soundTouch.setSampleRate(static_cast<uint>(sampleRate));
 }
 
 void RiseandfallAudioProcessor::releaseResources() {
@@ -192,10 +193,6 @@ AudioSampleBuffer *RiseandfallAudioProcessor::getOriginalSampleBuffer() {
     return &originalSampleBuffer;
 }
 
-AudioSampleBuffer *RiseandfallAudioProcessor::getProcessedSampleBuffer() {
-    return &processedSampleBuffer;
-}
-
 AudioThumbnail *RiseandfallAudioProcessor::getThumbnail() {
     return &thumbnail;
 }
@@ -203,8 +200,8 @@ AudioThumbnail *RiseandfallAudioProcessor::getThumbnail() {
 void RiseandfallAudioProcessor::newSampleLoaded() {
     position = 0;
     processedSampleBuffer.makeCopyOf(originalSampleBuffer);
-    numSamples = originalSampleBuffer.getNumSamples();
     numChannels = originalSampleBuffer.getNumChannels();
+    soundTouch.setChannels(1); // always iterate over single channels
     processSample();
 }
 
@@ -250,42 +247,26 @@ void RiseandfallAudioProcessor::reverseAndPrepend() {
         auto offsetNumSamples = static_cast<int>((guiParams.timeOffset / 1000) * sampleRate);
         int processedSize = riseTempBuffer.getNumSamples() + fallTempBuffer.getNumSamples() + offsetNumSamples;
 
-        processedSampleBuffer.setSize(numChannels, processedSize, false, true, false);
+        processedSampleBuffer.setSize(numChannels, processedSize, false, true, AVOID_REALLOCATING);
 
         int overlapStart = riseTempBuffer.getNumSamples() + offsetNumSamples;
-        int overlapStop = overlapStart + abs(offsetNumSamples);
+        int overlapStop = overlapStart + abs(jmin(offsetNumSamples, 0));
         int overlapLength = overlapStop - overlapStart;
 
-        if (overlapStart < riseTempBuffer.getNumSamples()) {
-            // Overlap
-            for (int i = 0; i < numChannels; i++) {
-                for (int j = 0; j < overlapStart; j++) {
-                    float value = riseTempBuffer.getSample(i, j);
-                    processedSampleBuffer.setSample(i, j, value);
-                }
-
-                for (int j = 0; j < overlapLength; j++) {
-                    float value = fallTempBuffer.getSample(i, j) + riseTempBuffer.getSample(i, overlapStart + j);
-                    processedSampleBuffer.setSample(i, overlapStart + j, value);
-                }
-
-                for (int j = 0; j < fallTempBuffer.getNumSamples() - overlapLength; j++) {
-                    float value = fallTempBuffer.getSample(i, overlapLength + j);
-                    processedSampleBuffer.setSample(i, overlapStop + j, value);
-                }
+        for (int i = 0; i < numChannels; i++) {
+            for (int j = 0; j < overlapStart; j++) {
+                float value = riseTempBuffer.getSample(i, j);
+                processedSampleBuffer.setSample(i, j, value);
             }
-        } else {
-            // No overlap
-            for (int i = 0; i < numChannels; i++) {
-                for (int j = 0; j < riseTempBuffer.getNumSamples(); j++) {
-                    float value = riseTempBuffer.getSample(i, j);
-                    processedSampleBuffer.setSample(i, j, value);
-                }
 
-                for (int j = 0; j < fallTempBuffer.getNumSamples(); j++) {
-                    float value = fallTempBuffer.getSample(i, j);
-                    processedSampleBuffer.addSample(i, overlapStart + j, value);
-                }
+            for (int j = 0; j < overlapLength; j++) {
+                float value = fallTempBuffer.getSample(i, j) + riseTempBuffer.getSample(i, overlapStart + j);
+                processedSampleBuffer.setSample(i, overlapStart + j, value);
+            }
+
+            for (int j = 0; j < fallTempBuffer.getNumSamples() - overlapLength; j++) {
+                float value = fallTempBuffer.getSample(i, overlapLength + j);
+                processedSampleBuffer.setSample(i, overlapStop + j, value);
             }
         }
     }
@@ -308,29 +289,29 @@ void RiseandfallAudioProcessor::processSample() {
 }
 
 void RiseandfallAudioProcessor::applyTimeWarp(AudioSampleBuffer *buffer, int factor) {
-    float realFactor = -factor;
+    float realFactor = factor;
     if (realFactor < 0) {
         realFactor = 1 / abs(realFactor);
     }
 
-    auto length = static_cast<int>(buffer->getNumSamples() * realFactor);
     AudioSampleBuffer copy;
     copy.makeCopyOf(*buffer);
 
-    buffer->setSize(copy.getNumChannels(), length, false, true, false);
+    soundTouch.setTempo(realFactor);
+    soundTouch.setPitch(1.0);
 
-    int warpedIndex;
+    double ratio = soundTouch.getInputOutputSampleRatio();
+    buffer->setSize(buffer->getNumChannels(), static_cast<int>(ceil(buffer->getNumSamples() * ratio)), false, true, AVOID_REALLOCATING);
+
     for (int channel = 0; channel < buffer->getNumChannels(); channel++) {
-        for (int i = 0; i < buffer->getNumSamples(); i++) {
-            warpedIndex = static_cast<int>(i * realFactor);
-            if (warpedIndex < length) {
-                buffer->setSample(channel, warpedIndex, copy.getSample(channel, i));
-            }
-        }
+        soundTouch.putSamples(copy.getReadPointer(channel), static_cast<uint>(copy.getNumSamples()));
+        soundTouch.receiveSamples(buffer->getWritePointer(channel), static_cast<uint>(buffer->getNumSamples()));
+        soundTouch.clear();
     }
 }
 
-void RiseandfallAudioProcessor::applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen, int delayTimeInSamples, int iteration) {
+void RiseandfallAudioProcessor::applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen,
+                                           int delayTimeInSamples, int iteration) {
     base->applyGain(dampen);
     if (base->getMagnitude(0, base->getNumSamples()) > 0.05) {
         int currentDelayPosition = delayTimeInSamples * iteration;

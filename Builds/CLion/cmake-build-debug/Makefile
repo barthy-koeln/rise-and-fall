@@ -715,6 +715,384 @@ Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.
 	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.s
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.s
 
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.s
+
 Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.o: Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o
 
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.o
@@ -842,6 +1220,48 @@ help:
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.s"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.s"

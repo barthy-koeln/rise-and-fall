@@ -54,6 +54,36 @@ add_executable (STANDALONE_PLUGIN
 set_source_files_properties ("../../../JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 
 add_library (SHARED_CODE STATIC
+    "../../Lib/SoundTouch/AAFilter.cpp"
+    "../../Lib/SoundTouch/AAFilter.h"
+    "../../Lib/SoundTouch/BPMDetect.cpp"
+    "../../Lib/SoundTouch/BPMDetect.h"
+    "../../Lib/SoundTouch/cpu_detect.h"
+    "../../Lib/SoundTouch/cpu_detect_x86.cpp"
+    "../../Lib/SoundTouch/FIFOSampleBuffer.cpp"
+    "../../Lib/SoundTouch/FIFOSampleBuffer.h"
+    "../../Lib/SoundTouch/FIFOSamplePipe.h"
+    "../../Lib/SoundTouch/FIRFilter.cpp"
+    "../../Lib/SoundTouch/FIRFilter.h"
+    "../../Lib/SoundTouch/InterpolateCubic.cpp"
+    "../../Lib/SoundTouch/InterpolateCubic.h"
+    "../../Lib/SoundTouch/InterpolateLinear.cpp"
+    "../../Lib/SoundTouch/InterpolateLinear.h"
+    "../../Lib/SoundTouch/InterpolateShannon.cpp"
+    "../../Lib/SoundTouch/InterpolateShannon.h"
+    "../../Lib/SoundTouch/mmx_optimized.cpp"
+    "../../Lib/SoundTouch/PeakFinder.cpp"
+    "../../Lib/SoundTouch/PeakFinder.h"
+    "../../Lib/SoundTouch/RateTransposer.cpp"
+    "../../Lib/SoundTouch/RateTransposer.h"
+    "../../Lib/SoundTouch/SoundTouch.cpp"
+    "../../Lib/SoundTouch/SoundTouch.h"
+    "../../Lib/SoundTouch/soundtouch_config.h"
+    "../../Lib/SoundTouch/soundtouch_config.h.in"
+    "../../Lib/SoundTouch/sse_optimized.cpp"
+    "../../Lib/SoundTouch/STTypes.h"
+    "../../Lib/SoundTouch/TDStretch.cpp"
+    "../../Lib/SoundTouch/TDStretch.h"
     "../../Source/GUIParams.h"
     "../../Source/CustomLookAndFeel.hpp"
     "../../Source/PluginProcessor.cpp"
@@ -1330,6 +1360,22 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/JuceHeader.h"
 )
 
+set_source_files_properties ("../../Lib/SoundTouch/AAFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/BPMDetect.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/cpu_detect.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/FIFOSampleBuffer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/FIFOSamplePipe.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/FIRFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/InterpolateCubic.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/InterpolateLinear.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/InterpolateShannon.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/PeakFinder.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/RateTransposer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/SoundTouch.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/soundtouch_config.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/soundtouch_config.h.in" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/STTypes.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Lib/SoundTouch/TDStretch.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/GUIParams.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/CustomLookAndFeel.hpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/PluginProcessor.h" PROPERTIES HEADER_FILE_ONLY TRUE)

@@ -13,6 +13,9 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "../modules/juce_dsp/juce_dsp.h"
 #include "GUIParams.h"
+#include "../Lib/SoundTouch/SoundTouch.h"
+
+using namespace soundtouch;
 
 //==============================================================================
 /**
@@ -83,13 +86,6 @@ public:
     AudioSampleBuffer *getOriginalSampleBuffer();
 
     /**
-     * Get the processed sample buffer
-     *
-     * @return A pointer to the processed audio buffer
-     */
-    AudioSampleBuffer *getProcessedSampleBuffer();
-
-    /**
      * Get the thumbnail
      *
      * @return A pointer to the thumbnail
@@ -119,7 +115,7 @@ private:
     AudioSampleBuffer processedSampleBuffer;
 
     /**
-     * Buffer containing the impulse respnse samples to use for the convolution in the reverb effect
+     * Buffer containing the impulse response samples to use for the convolution in the reverb effect
      */
     AudioSampleBuffer reverbImpulseResponse;
 
@@ -137,11 +133,6 @@ private:
      * Number of channels in the original audio file
      */
     int numChannels;
-
-    /**
-     * Number of samples in the original audio file
-     */
-    int numSamples;
 
     /**
      * Current position in the processing of sample blocks
@@ -163,6 +154,10 @@ private:
      */
     AudioThumbnail thumbnail;
 
+    /**
+     * SoundTouch instance for time warping
+     */
+    SoundTouch soundTouch;
 
     /**
      * Block processing of the sample if it is already in process

@@ -101,6 +101,9 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
 
     loadFileButton.setButtonText("LOAD AUDIO FILE");
     loadFileButton.addListener(this);
+    loadFileButton.setColour(TextButton::textColourOnId, customLookAndFeel.COLOUR_BLACK);
+    loadFileButton.setColour(TextButton::textColourOffId, customLookAndFeel.COLOUR_BLACK);
+    loadFileButton.setColour(TextButton::textColourOnId, customLookAndFeel.COLOUR_BLACK);
     addAndMakeVisible(&loadFileButton);
     processor.getThumbnail()->addChangeListener(this);
     formatManager.registerBasicFormats();
@@ -118,7 +121,7 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
     g.setColour(customLookAndFeel.COLOUR_WHITE);
     g.setFont(fontSize);
 
-    const Rectangle<int> thumbnailBounds(16, 528, 656, 160);
+    const Rectangle<int> thumbnailBounds(16, 536, 656, 144);
 
     if (processor.getOriginalSampleBuffer()->getNumChannels() != 0) {
         g.setColour(customLookAndFeel.COLOUR_RED);

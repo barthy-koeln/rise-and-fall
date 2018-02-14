@@ -3,9 +3,9 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="RISE&amp;FALL" targetName="VST" />
-      <config projectName="RISE&amp;FALL" targetName="AU" />
       <config projectName="RISE&amp;FALL" targetName="STANDALONE_PLUGIN" />
       <config projectName="RISE&amp;FALL" targetName="SHARED_CODE" />
+      <config projectName="RISE&amp;FALL" targetName="AU" />
       <config projectName="RISE&amp;FALL" targetName="VST3" />
     </generated>
   </component>
@@ -15,7 +15,65 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cc38629-1681-4cc0-9048-4e407dbee79b" name="Default" comment="" />
+    <list default="true" id="5cc38629-1681-4cc0-9048-4e407dbee79b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/AAFilter.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/AAFilter.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/BPMDetect.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/BPMDetect.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/FIFOSampleBuffer.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/FIFOSampleBuffer.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/FIFOSamplePipe.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/FIRFilter.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/FIRFilter.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/InterpolateCubic.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/InterpolateCubic.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/InterpolateLinear.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/InterpolateLinear.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/InterpolateShannon.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/InterpolateShannon.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/PeakFinder.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/PeakFinder.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/RateTransposer.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/RateTransposer.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/STTypes.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/SoundTouch.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/SoundTouch.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/TDStretch.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/TDStretch.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/cpu_detect.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/cpu_detect_x86.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/mmx_optimized.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/soundtouch_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/soundtouch_config.h.in" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Lib/SoundTouch/sse_optimized.cpp" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/DependInfo.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SHARED_CODE.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/STANDALONE_PLUGIN.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/STANDALONE_PLUGIN.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VST.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VST.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VST3.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VST3.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RISE&amp;FALL.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/RISE&amp;FALL.cbp" />
+      <change beforePath="$PROJECT_DIR$/../MacOSX/RISE&amp;FALL.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../MacOSX/RISE&amp;FALL.xcodeproj/project.pbxproj" />
+      <change beforePath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.cpp" afterPath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.cpp" />
+      <change beforePath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.h" afterPath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.h" />
+      <change beforePath="$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp" afterPath="$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp" />
+      <change beforePath="$PROJECT_DIR$/../../Source/PluginEditor.cpp" afterPath="$PROJECT_DIR$/../../Source/PluginEditor.cpp" />
+      <change beforePath="$PROJECT_DIR$/../../Source/PluginProcessor.cpp" afterPath="$PROJECT_DIR$/../../Source/PluginProcessor.cpp" />
+      <change beforePath="$PROJECT_DIR$/../../Source/PluginProcessor.h" afterPath="$PROJECT_DIR$/../../Source/PluginProcessor.h" />
+      <change beforePath="$PROJECT_DIR$/../../rise-and-fall.jucer" afterPath="$PROJECT_DIR$/../../rise-and-fall.jucer" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,22 +95,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PluginEditor.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.h">
+      <file leaf-file-name="PluginProcessor.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+            <state relative-caret-position="228">
+              <caret line="302" column="58" lean-forward="true" selection-start-line="302" selection-start-column="58" selection-end-line="302" selection-end-column="58" />
+              <folding>
+                <element signature="e#310#338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SoundTouch.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Lib/SoundTouch/SoundTouch.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4337">
+              <caret line="202" column="17" lean-forward="false" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PluginEditor.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PluginEditor.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="190" column="58" lean-forward="true" selection-start-line="190" selection-start-column="58" selection-end-line="190" selection-end-column="58" />
+            <state relative-caret-position="2372">
+              <caret line="220" column="5" lean-forward="false" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PluginProcessor.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="151" column="7" lean-forward="false" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="7" />
+              <folding>
+                <element signature="e#290#332#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +153,6 @@
       <find>audioSampleBuffer</find>
       <find>paintBU</find>
       <find>paintButton</find>
-      <find>button</find>
       <find>drawButtonBackground</find>
       <find>readerSour</find>
       <find>this-&gt;</find>
@@ -84,6 +165,14 @@
       <find>sliderSize, sliderSize</find>
       <find>CustomLookAndFeel::</find>
       <find>initRotarySlider</find>
+      <find>Menu</find>
+      <find>label</find>
+      <find>getIdealPopupMenuItemSize</find>
+      <find>PopupMenu</find>
+      <find>button</find>
+      <find>setSize</find>
+      <find>receive</find>
+      <find>setChann</find>
     </findStrings>
     <replaceStrings>
       <replace>getAudioSampleBuffer</replace>
@@ -94,15 +183,18 @@
       <replace>initSlider</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../../Source/GUIParams.h" />
+        <option value="$PROJECT_DIR$/../../Source/PluginEditor.h" />
+        <option value="$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp" />
+        <option value="$PROJECT_DIR$/../../Source/PluginEditor.cpp" />
         <option value="$PROJECT_DIR$/../../Source/PluginProcessor.h" />
         <option value="$PROJECT_DIR$/../../Source/PluginProcessor.cpp" />
-        <option value="$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp" />
-        <option value="$PROJECT_DIR$/../../Source/PluginEditor.h" />
-        <option value="$PROJECT_DIR$/../../Source/PluginEditor.cpp" />
       </list>
     </option>
   </component>
@@ -113,10 +205,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="47" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -142,8 +237,7 @@
             </path>
             <path>
               <item name="RISE&amp;FALL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="CLion" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="Source" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -154,6 +248,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="SearchEverywhereHistoryKey" value="SoundTouch&#9;null&#9;null&#10;Look&#9;FILE&#9;file:///Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.cpp" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -242,24 +337,30 @@
       <workItem from="1517879762743" duration="4376000" />
       <workItem from="1517908860153" duration="2506000" />
       <workItem from="1517913890419" duration="1565000" />
+      <workItem from="1517916539489" duration="3103000" />
+      <workItem from="1518548179167" duration="19000" />
+      <workItem from="1518548564974" duration="184000" />
+      <workItem from="1518548783105" duration="2467000" />
+      <workItem from="1518568689787" duration="250000" />
+      <workItem from="1518569016350" duration="2019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65955000" />
+    <option name="totallyTimeSpent" value="73997000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="0" y="47" width="1440" height="873" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.52313626" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20437019" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5025707" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.47686374" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36503857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -267,29 +368,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.52313626" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.47686374" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39974293" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -299,74 +380,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="73" />
+      <option name="time" value="82" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_dsp/processors/juce_ProcessContext.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="24" lean-forward="false" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="200" column="27" lean-forward="true" selection-start-line="200" selection-start-column="27" selection-end-line="200" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="146" column="35" lean-forward="false" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="22" lean-forward="false" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioSampleBuffer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10215">
-          <caret line="681" column="22" lean-forward="true" selection-start-line="681" selection-start-column="22" selection-end-line="681" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_audio_processors/juce_audio_processors.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../JuceLibraryCode/JuceHeader.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -535,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/GUIParams.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioSampleBuffer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -577,20 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47115">
-          <caret line="3141" column="25" lean-forward="false" selection-start-line="3141" selection-start-column="25" selection-end-line="3141" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="187" column="0" lean-forward="false" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -598,31 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-407">
-          <caret line="1046" column="43" lean-forward="true" selection-start-line="1046" selection-start-column="43" selection-end-line="1046" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/widgets/juce_Slider.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="425" column="11" lean-forward="false" selection-start-line="425" selection-start-column="11" selection-end-line="425" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="323" column="59" lean-forward="false" selection-start-line="323" selection-start-column="59" selection-end-line="323" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -640,27 +616,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp">
+    <entry file="file://$PROJECT_DIR$/../../Source/GUIParams.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/juce_gui_basics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="129" column="12" lean-forward="false" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="393" column="16" lean-forward="false" selection-start-line="393" selection-start-column="16" selection-end-line="393" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/widgets/juce_ComboBox.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="550" column="0" lean-forward="true" selection-start-line="550" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/widgets/juce_ComboBox.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="432" column="36" lean-forward="false" selection-start-line="432" selection-start-column="36" selection-end-line="432" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        <state relative-caret-position="156">
+          <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="153" column="62" lean-forward="false" selection-start-line="153" selection-start-column="56" selection-end-line="153" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/CustomLookAndFeel.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2655">
+          <caret line="177" column="64" lean-forward="false" selection-start-line="177" selection-start-column="64" selection-end-line="177" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="3141" column="25" lean-forward="false" selection-start-line="3141" selection-start-column="25" selection-end-line="3141" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../JuceLibraryCode/BinaryData2.cpp" />
+    <entry file="file://$PROJECT_DIR$/../../../soundtouch/include/SoundTouch.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="233" column="0" lean-forward="true" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Lib/SoundTouch/SoundTouch.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="75" column="20" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+          <folding>
+            <element signature="e#3527#3554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="151" column="7" lean-forward="false" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="7" />
+          <folding>
+            <element signature="e#290#332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Lib/SoundTouch/AAFilter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Source/PluginEditor.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="190" column="58" lean-forward="true" selection-start-line="190" selection-start-column="58" selection-end-line="190" selection-end-column="58" />
+        <state relative-caret-position="2372">
+          <caret line="220" column="5" lean-forward="false" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Lib/SoundTouch/SoundTouch.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4337">
+          <caret line="202" column="17" lean-forward="false" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/PluginProcessor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="302" column="58" lean-forward="true" selection-start-line="302" selection-start-column="58" selection-end-line="302" selection-end-column="58" />
+          <folding>
+            <element signature="e#310#338#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

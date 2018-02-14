@@ -4263,6 +4263,96 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSamplePipe.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/STTypes.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/soundtouch_config.h.in">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Resources/background.png">
 			<Option target="SHARED_CODE"/>
 		</Unit>

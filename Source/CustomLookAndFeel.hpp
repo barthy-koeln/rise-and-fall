@@ -82,10 +82,10 @@ public:
         String suffix = slider.getTextValueSuffix();
         String labelStart = String((int) slider.getMinimum()) + suffix;
         String labelEnd;
-        if(maximum > 0){
-            if(suffix.equalsIgnoreCase(DIMENSION_HERTZ)){
+        if (maximum > 0) {
+            if (suffix.equalsIgnoreCase(DIMENSION_HERTZ)) {
                 labelEnd = String((int) (slider.getMaximum() / 1000)) + " kHz";
-            } else if (suffix.equalsIgnoreCase(DIMENSION_MS)){
+            } else if (suffix.equalsIgnoreCase(DIMENSION_MS)) {
                 labelEnd = String((int) (slider.getMaximum() / 1000)) + " s";
             }
         } else {
@@ -101,7 +101,6 @@ public:
 
     void drawComboBox(Graphics &g, int width, int height, bool, int, int, int, int, ComboBox &box) override {
         const Rectangle<int> boxBounds(0, 16, width, 32);
-
         g.setColour(COLOUR_WHITE);
         g.fillRect(boxBounds);
         g.setFont(12.0f);
@@ -172,27 +171,28 @@ public:
 
         const auto bounds = button.getLocalBounds().toFloat().reduced(0.5f, 0.5f);
 
-        auto baseColour = COLOUR_BLACK.withMultipliedSaturation(button.hasKeyboardFocus(true) ? 1.3f : 0.9f)
+        auto baseColour = COLOUR_WHITE.withMultipliedSaturation(button.hasKeyboardFocus(true) ? 1.3f : 0.9f)
                 .withMultipliedAlpha(button.isEnabled() ? 1.0f : 0.5f);
 
-        if (isButtonDown || isMouseOverButton)
+        if (isButtonDown || isMouseOverButton) {
             baseColour = baseColour.contrasting(isButtonDown ? 0.2f : 0.05f);
+        }
 
         g.setColour(baseColour);
+        g.fillRect(bounds);
+    }
 
-        if (button.isConnectedOnLeft() || button.isConnectedOnRight()) {
-            Path path;
-            path.addRectangle(bounds.getX(), bounds.getY(), bounds.getWidth(), bounds.getHeight());
-
-            g.fillPath(path);
-
-            g.setColour(COLOUR_WHITE);
-            g.strokePath(path, PathStrokeType(1.0f));
+    void getIdealPopupMenuItemSize(const String &text, const bool isSeparator, int standardMenuItemHeight,
+                                   int &idealWidth, int &idealHeight) override {
+        if (isSeparator) {
+            idealWidth = 50;
+            idealHeight = standardMenuItemHeight > 0 ? standardMenuItemHeight / 10 : 10;
         } else {
-            g.fillRect(bounds);
+            auto font = getPopupMenuFont();
+            font.setHeight(16);
 
-            g.setColour(COLOUR_WHITE);
-            g.drawRect(bounds, 1.0f);
+            idealHeight = 32;
+            idealWidth = font.getStringWidth(text) + 32;
         }
     }
 };
