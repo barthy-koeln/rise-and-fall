@@ -214,8 +214,6 @@ void RiseandfallAudioProcessor::reverseAndPrepend() {
         float delayTimeNormalized = guiParams.delayTime / 1000.0f;
         auto delayTimeInSamples = static_cast<int>(sampleRate * delayTimeNormalized);
 
-        float magnitude = processedSampleBuffer.getMagnitude(0, processedSampleBuffer.getNumSamples());
-        processedSampleBuffer.applyGain(1 / magnitude);
 
         // RISE
         riseTempBuffer.makeCopyOf(processedSampleBuffer);
@@ -225,6 +223,8 @@ void RiseandfallAudioProcessor::reverseAndPrepend() {
 
         delayBaseTempBuffer.makeCopyOf(riseTempBuffer);
         applyDelay(&riseTempBuffer, &delayBaseTempBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
+
+        applyReverb(&riseTempBuffer);
 
         if (guiParams.riseReverse) {
             riseTempBuffer.reverse(0, riseTempBuffer.getNumSamples());
@@ -238,6 +238,8 @@ void RiseandfallAudioProcessor::reverseAndPrepend() {
 
         delayBaseTempBuffer.makeCopyOf(fallTempBuffer);
         applyDelay(&fallTempBuffer, &delayBaseTempBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
+
+        applyReverb(&fallTempBuffer);
 
         if (guiParams.fallReverse) {
             fallTempBuffer.reverse(0, fallTempBuffer.getNumSamples());
@@ -282,6 +284,7 @@ void RiseandfallAudioProcessor::processSample() {
         processing = true;
         position = 0;
         processedSampleBuffer.makeCopyOf(originalSampleBuffer);
+        normalizeSample();
         reverseAndPrepend();
         updateThumbnail();
         processing = false;
@@ -301,7 +304,8 @@ void RiseandfallAudioProcessor::applyTimeWarp(AudioSampleBuffer *buffer, int fac
     soundTouch.setPitch(1.0);
 
     double ratio = soundTouch.getInputOutputSampleRatio();
-    buffer->setSize(buffer->getNumChannels(), static_cast<int>(ceil(buffer->getNumSamples() * ratio)), false, true, AVOID_REALLOCATING);
+    buffer->setSize(buffer->getNumChannels(), static_cast<int>(ceil(buffer->getNumSamples() * ratio)), false, true,
+                    AVOID_REALLOCATING);
 
     for (int channel = 0; channel < buffer->getNumChannels(); channel++) {
         soundTouch.putSamples(copy.getReadPointer(channel), static_cast<uint>(copy.getNumSamples()));
@@ -329,4 +333,26 @@ void RiseandfallAudioProcessor::applyDelay(AudioSampleBuffer *target, AudioSampl
 }
 
 void RiseandfallAudioProcessor::applyReverb(AudioSampleBuffer *target) {
+    AudioSampleBuffer copy;
+    copy.makeCopyOf(*target);
+
+    convolution.loadImpulseResponse(BinaryData::room_impulse_response_LBS_wav,
+                                    BinaryData::room_impulse_response_LBS_wavSize, false, false, 0);
+
+    int processedSize = BinaryData::room_impulse_response_LBS_wavSize + copy.getNumSamples() - 1;
+    target->setSize(target->getNumChannels(), processedSize, false, true, AVOID_REALLOCATING);
+
+    ProcessSpec processSpec = {sampleRate, static_cast<uint32>(processedSize),
+                               static_cast<uint32>(target->getNumChannels())};
+    convolution.prepare(processSpec);
+
+    AudioBlock<float> audioBlockIn = AudioBlock<float>(copy);
+    AudioBlock<float> audioBlockOut = AudioBlock<float>(*target);
+    ProcessContextNonReplacing<float> processContext = ProcessContextNonReplacing<float>(audioBlockIn, audioBlockOut);
+    convolution.process(processContext);
+}
+
+void RiseandfallAudioProcessor::normalizeSample() {
+    float magnitude = processedSampleBuffer.getMagnitude(0, processedSampleBuffer.getNumSamples());
+    processedSampleBuffer.applyGain(1 / magnitude);
 }

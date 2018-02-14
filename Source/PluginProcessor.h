@@ -16,6 +16,7 @@
 #include "../Lib/SoundTouch/SoundTouch.h"
 
 using namespace soundtouch;
+using namespace dsp;
 
 //==============================================================================
 /**
@@ -160,9 +161,16 @@ private:
     SoundTouch soundTouch;
 
     /**
+     * Convolution engine for the reverb effect
+     */
+    Convolution convolution;
+
+    /**
      * Block processing of the sample if it is already in process
      */
     bool processing;
+
+    void normalizeSample();
 
     /**
      * Clone the processed audio, reverse it and finally prepend it to the processed audio buffer
