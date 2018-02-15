@@ -1,9 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion
-failed to find juce_audio_plugin_client_AU/juce_audio_plugin_client_AU.r
-/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_AU.r:9: ### /Applications/Xcode.app/Contents/Developer/usr/bin/Rez - SysError 0 during open of "juce_audio_plugin_client_AU.r".
-Fatal Error!
-/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_AU.r:9: ### /Applications/Xcode.app/Contents/Developer/usr/bin/Rez - Fatal Error, can't recover.
-juce_audio_plugin_client_AU.r: ### /Applications/Xcode.app/Contents/Developer/usr/bin/Rez - Since errors occurred, /Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/rise-and-fall.rsrc's resource fork was not written.
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug

@@ -11,7 +11,7 @@
               pluginIsSynth="1" pluginWantsMidiIn="1" pluginProducesMidiOut="0"
               pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="1" pluginAUExportPrefix="riseandfallAU"
               pluginRTASCategory="" aaxIdentifier="com.yourcompany.riseandfall"
-              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="5.2.0"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="5.2.1"
               companyName="Barthy" companyWebsite="http://barthy.koeln" companyEmail="post@barthy.koeln">
   <MAINGROUP id="UHNwjp" name="RISE&amp;FALL">
     <GROUP id="{82B20B1B-AC74-0C47-3E9D-3777EEB27B6F}" name="Lib">

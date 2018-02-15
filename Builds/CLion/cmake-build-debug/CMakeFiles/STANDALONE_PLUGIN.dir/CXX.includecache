@@ -951,59 +951,109 @@ crtdbg.h
 -
 comutil.h
 -
-sched.h
+arpa/inet.h
 -
-pthread.h
--
-sys/time.h
+dlfcn.h
 -
 errno.h
 -
-sys/stat.h
+fcntl.h
+-
+fnmatch.h
+-
+net/if.h
+-
+netdb.h
+-
+netinet/in.h
+-
+pthread.h
+-
+pwd.h
+-
+sched.h
+-
+signal.h
+-
+stddef.h
 -
 sys/dir.h
 -
+sys/file.h
+-
+sys/ioctl.h
+-
+sys/mman.h
+-
+sys/prctl.h
+-
 sys/ptrace.h
+-
+sys/socket.h
+-
+sys/stat.h
+-
+sys/sysinfo.h
+-
+sys/time.h
+-
+sys/types.h
 -
 sys/vfs.h
 -
 sys/wait.h
 -
-sys/mman.h
--
-fnmatch.h
--
 utime.h
--
-pwd.h
--
-fcntl.h
--
-dlfcn.h
--
-netdb.h
 -
 arpa/inet.h
 -
-netinet/in.h
+dirent.h
 -
-sys/types.h
+dlfcn.h
 -
-sys/ioctl.h
+errno.h
 -
-sys/socket.h
+fcntl.h
+-
+fnmatch.h
 -
 net/if.h
 -
-sys/sysinfo.h
+netdb.h
 -
-sys/file.h
+netinet/in.h
 -
-sys/prctl.h
+pthread.h
+-
+pwd.h
+-
+sched.h
 -
 signal.h
 -
 stddef.h
+-
+sys/file.h
+-
+sys/ioctl.h
+-
+sys/mman.h
+-
+sys/mount.h
+-
+sys/ptrace.h
+-
+sys/socket.h
+-
+sys/stat.h
+-
+sys/time.h
+-
+sys/types.h
+-
+sys/wait.h
+-
+utime.h
 -
 jni.h
 -
@@ -1243,6 +1293,8 @@ values/juce_ValueTreeSynchroniser.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
 values/juce_CachedValue.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_CachedValue.h
+values/juce_ValueWithDefault.h
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
 app_properties/juce_PropertiesFile.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.h
 app_properties/juce_ApplicationProperties.h
@@ -1259,6 +1311,8 @@ app_properties/juce_ApplicationProperties.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
 
@@ -1398,6 +1452,8 @@ native/juce_win32_WinRTWrapper.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
 
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
+
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
@@ -1431,6 +1487,8 @@ geometry/juce_Line.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
 geometry/juce_Rectangle.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Rectangle.h
+geometry/juce_Parallelogram.h
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
 placement/juce_Justification.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/placement/juce_Justification.h
 geometry/juce_Path.h
@@ -1565,6 +1623,8 @@ native/juce_win32_Direct2DGraphicsContext.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
+
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
 
@@ -1767,6 +1827,8 @@ widgets/juce_ToolbarItemFactory.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemFactory.h
 widgets/juce_ToolbarItemPalette.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemPalette.h
+menus/juce_BurgerMenuComponent.h
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
 buttons/juce_ToolbarButton.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/buttons/juce_ToolbarButton.h
 misc/juce_DropShadower.h
@@ -1797,6 +1859,8 @@ windows/juce_TooltipWindow.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/windows/juce_TooltipWindow.h
 layout/juce_MultiDocumentPanel.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_MultiDocumentPanel.h
+layout/juce_SidePanel.h
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
 filebrowser/juce_FileBrowserListener.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserListener.h
 filebrowser/juce_DirectoryContentsList.h
@@ -1821,6 +1885,8 @@ filebrowser/juce_FileTreeComponent.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileTreeComponent.h
 filebrowser/juce_ImagePreviewComponent.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ImagePreviewComponent.h
+filebrowser/juce_ContentSharer.h
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
 properties/juce_PropertyComponent.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/properties/juce_PropertyComponent.h
 properties/juce_BooleanPropertyComponent.h
@@ -1912,6 +1978,8 @@ layout/juce_Grid.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
 
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
+
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h
@@ -1933,6 +2001,8 @@ layout/juce_Grid.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
 
@@ -2068,6 +2138,8 @@ layout/juce_Grid.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h
 
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h
+
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h
 
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h
@@ -2095,6 +2167,8 @@ code_editor/juce_LuaCodeTokeniser.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/code_editor/juce_LuaCodeTokeniser.h
 embedding/juce_ActiveXControlComponent.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h
+embedding/juce_AndroidViewComponent.h
+/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h
 embedding/juce_NSViewComponent.h
 /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h
 embedding/juce_UIViewComponent.h

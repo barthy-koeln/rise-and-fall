@@ -432,6 +432,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -966,6 +967,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_Value.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h
@@ -1011,6 +1013,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -1055,6 +1058,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.h
@@ -1093,6 +1097,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h
@@ -1104,6 +1109,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h
@@ -1363,6 +1369,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_Value.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h
@@ -1408,6 +1415,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -1452,6 +1460,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.h
@@ -1490,6 +1499,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h
@@ -1501,6 +1511,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h
@@ -1778,6 +1789,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_Value.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h
@@ -1823,6 +1835,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -1867,6 +1880,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.h
@@ -1905,6 +1919,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h
@@ -1916,6 +1931,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h
@@ -1983,6 +1999,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/code_editor/juce_XMLCodeTokeniser.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_XEmbedComponent.h
@@ -2078,6 +2095,8 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8/public.sdk/source/vst/vstinitiids.cpp
  /Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8/public.sdk/source/vst/vstparameters.cpp
  /Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8/public.sdk/source/vst/vstparameters.h
+ /Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8/public.sdk/source/vst/vstpresetfile.cpp
+ /Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8/public.sdk/source/vst/vstpresetfile.h
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/AppConfig.h
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm.o
@@ -2335,6 +2354,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_Value.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h
@@ -2380,6 +2400,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -2424,6 +2445,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.h
@@ -2462,6 +2484,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h
@@ -2473,6 +2496,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h
@@ -2540,6 +2564,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/code_editor/juce_XMLCodeTokeniser.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_XEmbedComponent.h
@@ -2569,7 +2594,6 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_HashMap.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_HashMap_test.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_LinkedListPointer.h
- /Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_ListenerList.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_ListenerList.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_NamedValueSet.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_NamedValueSet.h
@@ -2928,6 +2952,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h
@@ -3150,6 +3175,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix_test.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Phase.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Polynomial.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h
@@ -3168,6 +3194,8 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_LadderFilter.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_LadderFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oscillator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oversampling.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oversampling.h
@@ -3175,6 +3203,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Reverb.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_WaveShaper.h
  /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/AppConfig.h
@@ -3529,6 +3558,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.cpp
@@ -3781,6 +3811,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_Value.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h
@@ -3826,6 +3857,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -3896,6 +3928,8 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_SVGParser.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.cpp
@@ -3966,6 +4000,8 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.cpp
@@ -3988,6 +4024,8 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.cpp
@@ -4021,8 +4059,12 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/mouse/juce_TextDragAndDropTarget.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/mouse/juce_TooltipClient.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_MultiTouchMapper.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_android_ContentSharer.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_android_FileChooser.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_android_Windowing.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_common_MimeTypes.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_ios_ContentSharer.cpp
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_ios_FileChooser.mm
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_ios_UIViewComponentPeer.mm
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_ios_Windowing.mm
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_linux_FileChooser.cpp
@@ -4243,6 +4285,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_Value.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h
@@ -4288,6 +4331,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -4332,6 +4376,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.h
@@ -4370,6 +4415,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h
@@ -4381,6 +4427,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h
@@ -4454,6 +4501,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_XEmbedComponent.h
@@ -4482,6 +4530,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/misc/juce_SystemTrayIconComponent.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/misc/juce_SystemTrayIconComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/misc/juce_WebBrowserComponent.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_AndroidViewComponent.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_android_PushNotifications.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_android_WebBrowserComponent.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_ios_PushNotifications.cpp
@@ -4491,6 +4540,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_linux_XEmbedComponent.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_mac_AppleRemote.mm
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_mac_NSViewComponent.mm
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_mac_PushNotifications.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_mac_SystemTrayIcon.cpp
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_mac_WebBrowserComponent.mm
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_win32_ActiveXComponent.cpp
@@ -4851,6 +4901,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_Value.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/containers/juce_SIMDRegister.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.h
@@ -4861,6 +4912,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_FastMathApproximations.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_LookupTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Phase.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Polynomial.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.h
@@ -4872,12 +4924,14 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Gain.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_LadderFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oscillator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oversampling.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessContext.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Reverb.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_WaveShaper.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
@@ -4925,6 +4979,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -4969,6 +5024,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.h
@@ -5007,6 +5063,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h
@@ -5018,6 +5075,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h
@@ -5085,6 +5143,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/code_editor/juce_XMLCodeTokeniser.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_XEmbedComponent.h
@@ -5350,6 +5409,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_Value.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTree.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/containers/juce_SIMDRegister.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.h
@@ -5360,6 +5420,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_FastMathApproximations.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_LookupTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Phase.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Polynomial.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.h
@@ -5371,12 +5432,14 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Gain.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_LadderFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oscillator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oversampling.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessContext.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Reverb.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_WaveShaper.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h
@@ -5424,6 +5487,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h
@@ -5468,6 +5532,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.h
@@ -5506,6 +5571,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h
@@ -5517,6 +5583,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h
@@ -5584,6 +5651,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/code_editor/juce_XMLCodeTokeniser.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h
+ /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h
  /Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_XEmbedComponent.h

@@ -13,7 +13,7 @@ endif (NOT CMAKE_BUILD_TYPE)
 
 if (APPLE)
 
-project (RISE&FALL C CXX)
+project ("RISE&FALL" C CXX)
 
 add_library (VST MODULE
     "../../../JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp"
@@ -517,7 +517,6 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_core/containers/juce_HashMap.h"
     "../../../JUCE/modules/juce_core/containers/juce_HashMap_test.cpp"
     "../../../JUCE/modules/juce_core/containers/juce_LinkedListPointer.h"
-    "../../../JUCE/modules/juce_core/containers/juce_ListenerList.cpp"
     "../../../JUCE/modules/juce_core/containers/juce_ListenerList.h"
     "../../../JUCE/modules/juce_core/containers/juce_NamedValueSet.cpp"
     "../../../JUCE/modules/juce_core/containers/juce_NamedValueSet.h"
@@ -754,6 +753,7 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_data_structures/values/juce_ValueTree.h"
     "../../../JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.cpp"
     "../../../JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h"
+    "../../../JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h"
     "../../../JUCE/modules/juce_data_structures/juce_data_structures.cpp"
     "../../../JUCE/modules/juce_data_structures/juce_data_structures.mm"
     "../../../JUCE/modules/juce_data_structures/juce_data_structures.h"
@@ -775,6 +775,7 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_dsp/maths/juce_Matrix.cpp"
     "../../../JUCE/modules/juce_dsp/maths/juce_Matrix.h"
     "../../../JUCE/modules/juce_dsp/maths/juce_Matrix_test.cpp"
+    "../../../JUCE/modules/juce_dsp/maths/juce_Phase.h"
     "../../../JUCE/modules/juce_dsp/maths/juce_Polynomial.h"
     "../../../JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.cpp"
     "../../../JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h"
@@ -793,6 +794,8 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_dsp/processors/juce_IIRFilter.cpp"
     "../../../JUCE/modules/juce_dsp/processors/juce_IIRFilter.h"
     "../../../JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h"
+    "../../../JUCE/modules/juce_dsp/processors/juce_LadderFilter.cpp"
+    "../../../JUCE/modules/juce_dsp/processors/juce_LadderFilter.h"
     "../../../JUCE/modules/juce_dsp/processors/juce_Oscillator.h"
     "../../../JUCE/modules/juce_dsp/processors/juce_Oversampling.cpp"
     "../../../JUCE/modules/juce_dsp/processors/juce_Oversampling.h"
@@ -800,6 +803,7 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h"
     "../../../JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h"
     "../../../JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h"
+    "../../../JUCE/modules/juce_dsp/processors/juce_Reverb.h"
     "../../../JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h"
     "../../../JUCE/modules/juce_dsp/processors/juce_WaveShaper.h"
     "../../../JUCE/modules/juce_dsp/juce_dsp.cpp"
@@ -888,6 +892,7 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_graphics/geometry/juce_EdgeTable.cpp"
     "../../../JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h"
     "../../../JUCE/modules/juce_graphics/geometry/juce_Line.h"
+    "../../../JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h"
     "../../../JUCE/modules/juce_graphics/geometry/juce_Path.cpp"
     "../../../JUCE/modules/juce_graphics/geometry/juce_Path.h"
     "../../../JUCE/modules/juce_graphics/geometry/juce_PathIterator.cpp"
@@ -1066,6 +1071,8 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.cpp"
     "../../../JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h"
     "../../../JUCE/modules/juce_gui_basics/drawables/juce_SVGParser.cpp"
+    "../../../JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.cpp"
+    "../../../JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h"
     "../../../JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.cpp"
     "../../../JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h"
     "../../../JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.cpp"
@@ -1133,6 +1140,8 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h"
     "../../../JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.cpp"
     "../../../JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h"
+    "../../../JUCE/modules/juce_gui_basics/layout/juce_SidePanel.cpp"
+    "../../../JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h"
     "../../../JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.cpp"
     "../../../JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h"
     "../../../JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.cpp"
@@ -1155,6 +1164,8 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h"
     "../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.cpp"
     "../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h"
+    "../../../JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.cpp"
+    "../../../JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h"
     "../../../JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.cpp"
     "../../../JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h"
     "../../../JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.cpp"
@@ -1187,8 +1198,12 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_gui_basics/mouse/juce_SelectedItemSet.h"
     "../../../JUCE/modules/juce_gui_basics/mouse/juce_TextDragAndDropTarget.h"
     "../../../JUCE/modules/juce_gui_basics/mouse/juce_TooltipClient.h"
+    "../../../JUCE/modules/juce_gui_basics/native/juce_android_ContentSharer.cpp"
     "../../../JUCE/modules/juce_gui_basics/native/juce_android_FileChooser.cpp"
     "../../../JUCE/modules/juce_gui_basics/native/juce_android_Windowing.cpp"
+    "../../../JUCE/modules/juce_gui_basics/native/juce_common_MimeTypes.cpp"
+    "../../../JUCE/modules/juce_gui_basics/native/juce_ios_ContentSharer.cpp"
+    "../../../JUCE/modules/juce_gui_basics/native/juce_ios_FileChooser.mm"
     "../../../JUCE/modules/juce_gui_basics/native/juce_ios_UIViewComponentPeer.mm"
     "../../../JUCE/modules/juce_gui_basics/native/juce_ios_Windowing.mm"
     "../../../JUCE/modules/juce_gui_basics/native/juce_linux_FileChooser.cpp"
@@ -1297,6 +1312,7 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.cpp"
     "../../../JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.h"
     "../../../JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h"
+    "../../../JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h"
     "../../../JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h"
     "../../../JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h"
     "../../../JUCE/modules/juce_gui_extra/embedding/juce_XEmbedComponent.h"
@@ -1324,6 +1340,7 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_gui_extra/misc/juce_WebBrowserComponent.h"
     "../../../JUCE/modules/juce_gui_extra/native/juce_android_PushNotifications.cpp"
     "../../../JUCE/modules/juce_gui_extra/native/juce_android_WebBrowserComponent.cpp"
+    "../../../JUCE/modules/juce_gui_extra/native/juce_AndroidViewComponent.cpp"
     "../../../JUCE/modules/juce_gui_extra/native/juce_ios_PushNotifications.cpp"
     "../../../JUCE/modules/juce_gui_extra/native/juce_ios_UIViewComponent.mm"
     "../../../JUCE/modules/juce_gui_extra/native/juce_linux_X11_SystemTrayIcon.cpp"
@@ -1332,6 +1349,7 @@ add_library (SHARED_CODE STATIC
     "../../../JUCE/modules/juce_gui_extra/native/juce_mac_AppleRemote.mm"
     "../../../JUCE/modules/juce_gui_extra/native/juce_mac_CarbonViewWrapperComponent.h"
     "../../../JUCE/modules/juce_gui_extra/native/juce_mac_NSViewComponent.mm"
+    "../../../JUCE/modules/juce_gui_extra/native/juce_mac_PushNotifications.cpp"
     "../../../JUCE/modules/juce_gui_extra/native/juce_mac_SystemTrayIcon.cpp"
     "../../../JUCE/modules/juce_gui_extra/native/juce_mac_WebBrowserComponent.mm"
     "../../../JUCE/modules/juce_gui_extra/native/juce_win32_ActiveXComponent.cpp"
@@ -1806,7 +1824,6 @@ set_source_files_properties ("../../../JUCE/modules/juce_core/containers/juce_El
 set_source_files_properties ("../../../JUCE/modules/juce_core/containers/juce_HashMap.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_core/containers/juce_HashMap_test.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_core/containers/juce_LinkedListPointer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../JUCE/modules/juce_core/containers/juce_ListenerList.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_core/containers/juce_ListenerList.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_core/containers/juce_NamedValueSet.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_core/containers/juce_NamedValueSet.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2043,6 +2060,7 @@ set_source_files_properties ("../../../JUCE/modules/juce_data_structures/values/
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/values/juce_ValueTree.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/juce_data_structures.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/juce_data_structures.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_data_structures/juce_data_structures.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2064,6 +2082,7 @@ set_source_files_properties ("../../../JUCE/modules/juce_dsp/maths/juce_LookupTa
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/maths/juce_Matrix.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/maths/juce_Matrix.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/maths/juce_Matrix_test.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_dsp/maths/juce_Phase.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/maths/juce_Polynomial.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2082,6 +2101,8 @@ set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_Gai
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_IIRFilter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_IIRFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_LadderFilter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_LadderFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_Oscillator.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_Oversampling.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_Oversampling.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2089,6 +2110,7 @@ set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_Pro
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_Reverb.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/processors/juce_WaveShaper.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_dsp/juce_dsp.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2177,6 +2199,7 @@ set_source_files_properties ("../../../JUCE/modules/juce_graphics/geometry/juce_
 set_source_files_properties ("../../../JUCE/modules/juce_graphics/geometry/juce_EdgeTable.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_graphics/geometry/juce_Line.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_graphics/geometry/juce_Path.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_graphics/geometry/juce_Path.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_graphics/geometry/juce_PathIterator.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2355,6 +2378,8 @@ set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/drawables/ju
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/drawables/juce_SVGParser.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2422,6 +2447,8 @@ set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_SidePanel.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2444,6 +2471,8 @@ set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/lookandfeel/
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2476,8 +2505,12 @@ set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/mouse/juce_M
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/mouse/juce_SelectedItemSet.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/mouse/juce_TextDragAndDropTarget.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/mouse/juce_TooltipClient.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_android_ContentSharer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_android_FileChooser.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_android_Windowing.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_common_MimeTypes.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_ios_ContentSharer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_ios_FileChooser.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_ios_UIViewComponentPeer.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_ios_Windowing.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_basics/native/juce_linux_FileChooser.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2586,6 +2619,7 @@ set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/code_editor/j
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/embedding/juce_XEmbedComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2613,6 +2647,7 @@ set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/misc/juce_Sys
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/misc/juce_WebBrowserComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_android_PushNotifications.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_android_WebBrowserComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_AndroidViewComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_ios_PushNotifications.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_ios_UIViewComponent.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_linux_X11_SystemTrayIcon.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2621,6 +2656,7 @@ set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_l
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_mac_AppleRemote.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_mac_CarbonViewWrapperComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_mac_NSViewComponent.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_mac_PushNotifications.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_mac_SystemTrayIcon.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_mac_WebBrowserComponent.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../JUCE/modules/juce_gui_extra/native/juce_win32_ActiveXComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2645,6 +2681,8 @@ set_target_properties (SHARED_CODE PROPERTIES SUFFIX ".a")
 #------------------------------------------------------------------------------
 
 if (CMAKE_BUILD_TYPE STREQUAL Debug)
+
+execute_process (COMMAND uname -m OUTPUT_VARIABLE JUCE_ARCH_LABEL OUTPUT_STRIP_TRAILING_WHITESPACE)
 
 target_include_directories (VST PRIVATE
     "/Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8"
@@ -2671,11 +2709,12 @@ target_compile_definitions (VST PRIVATE
 target_compile_options (VST PRIVATE
     -mmacosx-version-min=10.11
     -O0
-    -std=c++14
 )
 
 set_target_properties (VST PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -2716,9 +2755,9 @@ target_link_libraries (VST PRIVATE
 )
 
 add_custom_command (TARGET VST POST_BUILD
-    COMMAND cmake -E remove_directory "$(HOME)/Library/Audio/Plug-Ins/VST/rise-and-fall.vst"
-    COMMAND cmake -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.vst" "$(HOME)/Library/Audio/Plug-Ins/VST/rise-and-fall.vst"
-    COMMENT "Copying \"rise-and-fall.vst\" to \"$(HOME)/Library/Audio/Plug-Ins/VST/\""
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "$ENV{HOME}/Library/Audio/Plug-Ins/VST/rise-and-fall.vst"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.vst" "$ENV{HOME}/Library/Audio/Plug-Ins/VST/rise-and-fall.vst"
+    COMMENT "Copying \"rise-and-fall.vst\" to \"$ENV{HOME}/Library/Audio/Plug-Ins/VST/\""
 )
 
 target_include_directories (VST3 PRIVATE
@@ -2746,11 +2785,12 @@ target_compile_definitions (VST3 PRIVATE
 target_compile_options (VST3 PRIVATE
     -mmacosx-version-min=10.11
     -O0
-    -std=c++14
 )
 
 set_target_properties (VST3 PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -2791,9 +2831,9 @@ target_link_libraries (VST3 PRIVATE
 )
 
 add_custom_command (TARGET VST3 POST_BUILD
-    COMMAND cmake -E remove_directory "$(HOME)/Library/Audio/Plug-Ins/VST3/rise-and-fall.vst3"
-    COMMAND cmake -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.vst3" "$(HOME)/Library/Audio/Plug-Ins/VST3/rise-and-fall.vst3"
-    COMMENT "Copying \"rise-and-fall.vst3\" to \"$(HOME)/Library/Audio/Plug-Ins/VST3/\""
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "$ENV{HOME}/Library/Audio/Plug-Ins/VST3/rise-and-fall.vst3"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.vst3" "$ENV{HOME}/Library/Audio/Plug-Ins/VST3/rise-and-fall.vst3"
+    COMMENT "Copying \"rise-and-fall.vst3\" to \"$ENV{HOME}/Library/Audio/Plug-Ins/VST3/\""
 )
 
 target_include_directories (AU PRIVATE
@@ -2821,7 +2861,6 @@ target_compile_definitions (AU PRIVATE
 target_compile_options (AU PRIVATE
     -mmacosx-version-min=10.11
     -O0
-    -std=c++14
 )
 
 if (RC_COMPILER)
@@ -2836,10 +2875,10 @@ if (RC_COMPILER)
     execute_process (COMMAND
         ${RC_COMPILER}
         -d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I "$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase"
-        -I "${PROJECT_SOURCE_DIR}//Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8"
+        -I "/Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8"
         -I "${PROJECT_SOURCE_DIR}/../../JuceLibraryCode"
-        -I "${PROJECT_SOURCE_DIR}//Users/Barthy/GitHub/VST/JUCE/modules"
-        -I "${PROJECT_SOURCE_DIR}//Users/Barthy/GitHub/VST/JUCE/modules/juce_audio_plugin_client"
+        -I "/Users/Barthy/GitHub/VST/JUCE/modules"
+        -I "/Users/Barthy/GitHub/VST/JUCE/modules/juce_audio_plugin_client"
         ${AU_REZ_SOURCES}
         -o ${AU_REZ_OUTPUT}
     )
@@ -2851,6 +2890,8 @@ endif (RC_COMPILER)
 
 set_target_properties (AU PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -2893,9 +2934,9 @@ target_link_libraries (AU PRIVATE
 )
 
 add_custom_command (TARGET AU POST_BUILD
-    COMMAND cmake -E remove_directory "$(HOME)/Library/Audio/Plug-Ins/Components/rise-and-fall.component"
-    COMMAND cmake -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.component" "$(HOME)/Library/Audio/Plug-Ins/Components/rise-and-fall.component"
-    COMMENT "Copying \"rise-and-fall.component\" to \"$(HOME)/Library/Audio/Plug-Ins/Components/\""
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "$ENV{HOME}/Library/Audio/Plug-Ins/Components/rise-and-fall.component"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.component" "$ENV{HOME}/Library/Audio/Plug-Ins/Components/rise-and-fall.component"
+    COMMENT "Copying \"rise-and-fall.component\" to \"$ENV{HOME}/Library/Audio/Plug-Ins/Components/\""
 )
 
 target_include_directories (STANDALONE_PLUGIN PRIVATE
@@ -2923,11 +2964,12 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
 target_compile_options (STANDALONE_PLUGIN PRIVATE
     -mmacosx-version-min=10.11
     -O0
-    -std=c++14
 )
 
 set_target_properties (STANDALONE_PLUGIN PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -2985,11 +3027,12 @@ target_compile_definitions (SHARED_CODE PRIVATE
 target_compile_options (SHARED_CODE PRIVATE
     -mmacosx-version-min=10.11
     -O0
-    -std=c++14
 )
 
 set_target_properties (SHARED_CODE PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -3027,6 +3070,8 @@ endif (CMAKE_BUILD_TYPE STREQUAL Debug)
 
 if (CMAKE_BUILD_TYPE STREQUAL Release)
 
+execute_process (COMMAND uname -m OUTPUT_VARIABLE JUCE_ARCH_LABEL OUTPUT_STRIP_TRAILING_WHITESPACE)
+
 target_include_directories (VST PRIVATE
     "/Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8"
     "../../JuceLibraryCode"
@@ -3053,11 +3098,12 @@ target_compile_options (VST PRIVATE
     -mmacosx-version-min=10.11
     -O3
     -flto
-    -std=c++14
 )
 
 set_target_properties (VST PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -3099,9 +3145,9 @@ target_link_libraries (VST PRIVATE
 )
 
 add_custom_command (TARGET VST POST_BUILD
-    COMMAND cmake -E remove_directory "$(HOME)/Library/Audio/Plug-Ins/VST/rise-and-fall.vst"
-    COMMAND cmake -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.vst" "$(HOME)/Library/Audio/Plug-Ins/VST/rise-and-fall.vst"
-    COMMENT "Copying \"rise-and-fall.vst\" to \"$(HOME)/Library/Audio/Plug-Ins/VST/\""
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "$ENV{HOME}/Library/Audio/Plug-Ins/VST/rise-and-fall.vst"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.vst" "$ENV{HOME}/Library/Audio/Plug-Ins/VST/rise-and-fall.vst"
+    COMMENT "Copying \"rise-and-fall.vst\" to \"$ENV{HOME}/Library/Audio/Plug-Ins/VST/\""
 )
 
 target_include_directories (VST3 PRIVATE
@@ -3130,11 +3176,12 @@ target_compile_options (VST3 PRIVATE
     -mmacosx-version-min=10.11
     -O3
     -flto
-    -std=c++14
 )
 
 set_target_properties (VST3 PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -3176,9 +3223,9 @@ target_link_libraries (VST3 PRIVATE
 )
 
 add_custom_command (TARGET VST3 POST_BUILD
-    COMMAND cmake -E remove_directory "$(HOME)/Library/Audio/Plug-Ins/VST3/rise-and-fall.vst3"
-    COMMAND cmake -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.vst3" "$(HOME)/Library/Audio/Plug-Ins/VST3/rise-and-fall.vst3"
-    COMMENT "Copying \"rise-and-fall.vst3\" to \"$(HOME)/Library/Audio/Plug-Ins/VST3/\""
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "$ENV{HOME}/Library/Audio/Plug-Ins/VST3/rise-and-fall.vst3"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.vst3" "$ENV{HOME}/Library/Audio/Plug-Ins/VST3/rise-and-fall.vst3"
+    COMMENT "Copying \"rise-and-fall.vst3\" to \"$ENV{HOME}/Library/Audio/Plug-Ins/VST3/\""
 )
 
 target_include_directories (AU PRIVATE
@@ -3207,7 +3254,6 @@ target_compile_options (AU PRIVATE
     -mmacosx-version-min=10.11
     -O3
     -flto
-    -std=c++14
 )
 
 if (RC_COMPILER)
@@ -3222,10 +3268,10 @@ if (RC_COMPILER)
     execute_process (COMMAND
         ${RC_COMPILER}
         -d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I "$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase"
-        -I "${PROJECT_SOURCE_DIR}//Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8"
+        -I "/Users/Barthy/GitHub/VST/VST_SDK/VST3_SDK_3_6_8"
         -I "${PROJECT_SOURCE_DIR}/../../JuceLibraryCode"
-        -I "${PROJECT_SOURCE_DIR}//Users/Barthy/GitHub/VST/JUCE/modules"
-        -I "${PROJECT_SOURCE_DIR}//Users/Barthy/GitHub/VST/JUCE/modules/juce_audio_plugin_client"
+        -I "/Users/Barthy/GitHub/VST/JUCE/modules"
+        -I "/Users/Barthy/GitHub/VST/JUCE/modules/juce_audio_plugin_client"
         ${AU_REZ_SOURCES}
         -o ${AU_REZ_OUTPUT}
     )
@@ -3237,6 +3283,8 @@ endif (RC_COMPILER)
 
 set_target_properties (AU PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -3280,9 +3328,9 @@ target_link_libraries (AU PRIVATE
 )
 
 add_custom_command (TARGET AU POST_BUILD
-    COMMAND cmake -E remove_directory "$(HOME)/Library/Audio/Plug-Ins/Components/rise-and-fall.component"
-    COMMAND cmake -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.component" "$(HOME)/Library/Audio/Plug-Ins/Components/rise-and-fall.component"
-    COMMENT "Copying \"rise-and-fall.component\" to \"$(HOME)/Library/Audio/Plug-Ins/Components/\""
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "$ENV{HOME}/Library/Audio/Plug-Ins/Components/rise-and-fall.component"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_BINARY_DIR}/rise-and-fall.component" "$ENV{HOME}/Library/Audio/Plug-Ins/Components/rise-and-fall.component"
+    COMMENT "Copying \"rise-and-fall.component\" to \"$ENV{HOME}/Library/Audio/Plug-Ins/Components/\""
 )
 
 target_include_directories (STANDALONE_PLUGIN PRIVATE
@@ -3311,11 +3359,12 @@ target_compile_options (STANDALONE_PLUGIN PRIVATE
     -mmacosx-version-min=10.11
     -O3
     -flto
-    -std=c++14
 )
 
 set_target_properties (STANDALONE_PLUGIN PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"
@@ -3375,11 +3424,12 @@ target_compile_options (SHARED_CODE PRIVATE
     -mmacosx-version-min=10.11
     -O3
     -flto
-    -std=c++14
 )
 
 set_target_properties (SHARED_CODE PROPERTIES
     OUTPUT_NAME "rise-and-fall"
+    CXX_STANDARD 14
+    CXX_EXTENSIONS OFF
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
     XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "$(PROJECT_DIR)/build/$(CONFIGURATION)"

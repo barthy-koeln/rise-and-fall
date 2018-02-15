@@ -116,9 +116,14 @@ private:
     AudioSampleBuffer processedSampleBuffer;
 
     /**
-     * Buffer containing the impulse response samples to use for the convolution in the reverb effect
+     * Buffer containing the final processed output audio
      */
-    AudioSampleBuffer reverbImpulseResponse;
+    AudioSampleBuffer riseSampleBuffer;
+
+    /**
+     * Buffer containing the final processed output audio
+     */
+    AudioSampleBuffer fallSampleBuffer;
 
     /**
      * Sample rate for the current block
@@ -175,7 +180,27 @@ private:
     /**
      * Clone the processed audio, reverse it and finally prepend it to the processed audio buffer
      */
-    void reverseAndPrepend();
+    void concatenate();
+
+    /**
+     * Apply Time warp to the rise and fall buffers
+     */
+    void warp();
+
+    /**
+     * Calculate the delay effect for the rise and fall buffers
+     */
+    void delayEffect();
+
+    /**
+     * Calculate the reverb effect for the rise and fall buffers
+     */
+    void reverbEffect();
+
+    /**
+     * Reverse the rise and/or fall buffers
+     */
+    void reverse();
 
     /**
      * Warp audio samples to change the speed and pitch
@@ -185,9 +210,22 @@ private:
      */
     void applyTimeWarp(AudioSampleBuffer *buffer, int factor);
 
-    void applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen, int delayTimeInSamples, int iteration);
+    /**
+     *
+     * @param target
+     * @param base
+     * @param dampen
+     * @param delayTimeInSamples
+     * @param iteration
+     */
+    void
+    applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen, int delayTimeInSamples, int iteration);
 
-    void applyReverb(AudioSampleBuffer *target);
+    /**
+     *
+     * @param target
+     */
+    void applyReverb(AudioSampleBuffer *target, const char *fileName, size_t fileSize);
 
     /**
      * Update the thumbnail image

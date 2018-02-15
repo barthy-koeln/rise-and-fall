@@ -1719,9 +1719,6 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_LinkedListPointer.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_ListenerList.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_core/containers/juce_ListenerList.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -2439,6 +2436,9 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -2502,6 +2502,9 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Matrix_test.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Phase.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/maths/juce_Polynomial.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -2556,6 +2559,12 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_LadderFilter.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_LadderFilter.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Oscillator.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -2575,6 +2584,9 @@
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_Reverb.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h">
@@ -2830,6 +2842,9 @@
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Line.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Parallelogram.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_graphics/geometry/juce_Path.cpp">
@@ -3366,6 +3381,12 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/drawables/juce_SVGParser.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_ContentSharer.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -3576,6 +3597,12 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_SidePanel.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -3640,6 +3667,12 @@
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V4.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_BurgerMenuComponent.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.cpp">
@@ -3741,10 +3774,22 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_MultiTouchMapper.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_android_ContentSharer.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_android_FileChooser.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_android_Windowing.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_common_MimeTypes.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_ios_ContentSharer.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_ios_FileChooser.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_basics/native/juce_ios_UIViewComponentPeer.mm">
@@ -4059,6 +4104,9 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_AndroidViewComponent.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -4143,6 +4191,9 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/misc/juce_WebBrowserComponent.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_AndroidViewComponent.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_android_PushNotifications.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
@@ -4171,6 +4222,9 @@
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_mac_NSViewComponent.mm">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_mac_PushNotifications.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/JUCE/modules/juce_gui_extra/native/juce_mac_SystemTrayIcon.cpp">

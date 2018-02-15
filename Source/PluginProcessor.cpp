@@ -29,6 +29,7 @@ RiseandfallAudioProcessor::RiseandfallAudioProcessor()
     position = 0;
     numChannels = 0;
     formatManager.registerBasicFormats();
+    soundTouch.setChannels(1); // always iterate over single channels
 }
 
 RiseandfallAudioProcessor::~RiseandfallAudioProcessor() = default;
@@ -197,100 +198,6 @@ AudioThumbnail *RiseandfallAudioProcessor::getThumbnail() {
     return &thumbnail;
 }
 
-void RiseandfallAudioProcessor::newSampleLoaded() {
-    position = 0;
-    processedSampleBuffer.makeCopyOf(originalSampleBuffer);
-    numChannels = originalSampleBuffer.getNumChannels();
-    soundTouch.setChannels(1); // always iterate over single channels
-    processSample();
-}
-
-void RiseandfallAudioProcessor::reverseAndPrepend() {
-    if (numChannels > 0) {
-        AudioSampleBuffer riseTempBuffer;
-        AudioSampleBuffer fallTempBuffer;
-        AudioSampleBuffer delayBaseTempBuffer;
-        float delayFeedbackNormalized = guiParams.delayFeedback / 100.0f;
-        float delayTimeNormalized = guiParams.delayTime / 1000.0f;
-        auto delayTimeInSamples = static_cast<int>(sampleRate * delayTimeNormalized);
-
-
-        // RISE
-        riseTempBuffer.makeCopyOf(processedSampleBuffer);
-        if (guiParams.riseTimeWarp != 0) {
-            applyTimeWarp(&riseTempBuffer, guiParams.riseTimeWarp);
-        }
-
-        delayBaseTempBuffer.makeCopyOf(riseTempBuffer);
-        applyDelay(&riseTempBuffer, &delayBaseTempBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
-
-        applyReverb(&riseTempBuffer);
-
-        if (guiParams.riseReverse) {
-            riseTempBuffer.reverse(0, riseTempBuffer.getNumSamples());
-        }
-
-        // FALL
-        fallTempBuffer.makeCopyOf(processedSampleBuffer);
-        if (guiParams.fallTimeWarp != 0) {
-            applyTimeWarp(&fallTempBuffer, guiParams.fallTimeWarp);
-        }
-
-        delayBaseTempBuffer.makeCopyOf(fallTempBuffer);
-        applyDelay(&fallTempBuffer, &delayBaseTempBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
-
-        applyReverb(&fallTempBuffer);
-
-        if (guiParams.fallReverse) {
-            fallTempBuffer.reverse(0, fallTempBuffer.getNumSamples());
-        }
-
-        // TIME OFFSET
-        auto offsetNumSamples = static_cast<int>((guiParams.timeOffset / 1000) * sampleRate);
-        int processedSize = riseTempBuffer.getNumSamples() + fallTempBuffer.getNumSamples() + offsetNumSamples;
-
-        processedSampleBuffer.setSize(numChannels, processedSize, false, true, AVOID_REALLOCATING);
-
-        int overlapStart = riseTempBuffer.getNumSamples() + offsetNumSamples;
-        int overlapStop = overlapStart + abs(jmin(offsetNumSamples, 0));
-        int overlapLength = overlapStop - overlapStart;
-
-        for (int i = 0; i < numChannels; i++) {
-            for (int j = 0; j < overlapStart; j++) {
-                float value = riseTempBuffer.getSample(i, j);
-                processedSampleBuffer.setSample(i, j, value);
-            }
-
-            for (int j = 0; j < overlapLength; j++) {
-                float value = fallTempBuffer.getSample(i, j) + riseTempBuffer.getSample(i, overlapStart + j);
-                processedSampleBuffer.setSample(i, overlapStart + j, value);
-            }
-
-            for (int j = 0; j < fallTempBuffer.getNumSamples() - overlapLength; j++) {
-                float value = fallTempBuffer.getSample(i, overlapLength + j);
-                processedSampleBuffer.setSample(i, overlapStop + j, value);
-            }
-        }
-    }
-}
-
-void RiseandfallAudioProcessor::updateThumbnail() {
-    thumbnail.reset(numChannels, sampleRate, processedSampleBuffer.getNumSamples());
-    thumbnail.addBlock(0, processedSampleBuffer, 0, processedSampleBuffer.getNumSamples());
-}
-
-void RiseandfallAudioProcessor::processSample() {
-    if (!processing) {
-        processing = true;
-        position = 0;
-        processedSampleBuffer.makeCopyOf(originalSampleBuffer);
-        normalizeSample();
-        reverseAndPrepend();
-        updateThumbnail();
-        processing = false;
-    }
-}
-
 void RiseandfallAudioProcessor::applyTimeWarp(AudioSampleBuffer *buffer, int factor) {
     float realFactor = factor;
     if (realFactor < 0) {
@@ -332,19 +239,18 @@ void RiseandfallAudioProcessor::applyDelay(AudioSampleBuffer *target, AudioSampl
     }
 }
 
-void RiseandfallAudioProcessor::applyReverb(AudioSampleBuffer *target) {
+void RiseandfallAudioProcessor::applyReverb(AudioSampleBuffer *target, const char *fileName, const size_t fileSize) {
     AudioSampleBuffer copy;
     copy.makeCopyOf(*target);
 
-    convolution.loadImpulseResponse(BinaryData::room_impulse_response_LBS_wav,
-                                    BinaryData::room_impulse_response_LBS_wavSize, false, false, 0);
-
-    int processedSize = BinaryData::room_impulse_response_LBS_wavSize + copy.getNumSamples() - 1;
+    int processedSize = static_cast<int>(fileSize) + copy.getNumSamples() - 1;
     target->setSize(target->getNumChannels(), processedSize, false, true, AVOID_REALLOCATING);
 
     ProcessSpec processSpec = {sampleRate, static_cast<uint32>(processedSize),
                                static_cast<uint32>(target->getNumChannels())};
+
     convolution.prepare(processSpec);
+    convolution.loadImpulseResponse(fileName, fileSize, false, true, 0);
 
     AudioBlock<float> audioBlockIn = AudioBlock<float>(copy);
     AudioBlock<float> audioBlockOut = AudioBlock<float>(*target);
@@ -352,7 +258,118 @@ void RiseandfallAudioProcessor::applyReverb(AudioSampleBuffer *target) {
     convolution.process(processContext);
 }
 
+void RiseandfallAudioProcessor::warp() {
+    // RISE
+    if (guiParams.riseTimeWarp != 0) {
+        applyTimeWarp(&riseSampleBuffer, guiParams.riseTimeWarp);
+    }
+
+    // FALL
+    if (guiParams.fallTimeWarp != 0) {
+        applyTimeWarp(&fallSampleBuffer, guiParams.fallTimeWarp);
+    }
+}
+
+void RiseandfallAudioProcessor::delayEffect() {
+    AudioSampleBuffer delayBaseTempBuffer;
+    float delayFeedbackNormalized = guiParams.delayFeedback / 100.0f;
+    float delayTimeNormalized = guiParams.delayTime / 1000.0f;
+    auto delayTimeInSamples = static_cast<int>(sampleRate * delayTimeNormalized);
+
+    // RISE
+    delayBaseTempBuffer.makeCopyOf(riseSampleBuffer);
+    applyDelay(&riseSampleBuffer, &delayBaseTempBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
+
+    // FALL
+    delayBaseTempBuffer.makeCopyOf(fallSampleBuffer);
+    applyDelay(&fallSampleBuffer, &delayBaseTempBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
+}
+
+void RiseandfallAudioProcessor::reverbEffect() {
+    const char *fileName = BinaryData::room_impulse_response_LBS_wav;
+    const size_t fileSize = BinaryData::room_impulse_response_LBS_wavSize;
+
+    // RISE
+    applyReverb(&riseSampleBuffer, fileName, fileSize);
+
+    // FALL
+    applyReverb(&fallSampleBuffer, fileName, fileSize);
+}
+
+void RiseandfallAudioProcessor::reverse() {
+    // RISE
+    if (guiParams.riseReverse) {
+        riseSampleBuffer.reverse(0, riseSampleBuffer.getNumSamples());
+    }
+
+    // FALL
+    if (guiParams.fallReverse) {
+        fallSampleBuffer.reverse(0, fallSampleBuffer.getNumSamples());
+    }
+}
+
+void RiseandfallAudioProcessor::concatenate() {
+    // TIME OFFSET
+    auto offsetNumSamples = static_cast<int>((guiParams.timeOffset / 1000) * sampleRate);
+    int processedSize = riseSampleBuffer.getNumSamples() + fallSampleBuffer.getNumSamples() + offsetNumSamples;
+
+    processedSampleBuffer.setSize(numChannels, processedSize, false, true, AVOID_REALLOCATING);
+
+    int overlapStart = riseSampleBuffer.getNumSamples() + offsetNumSamples;
+    int overlapStop = overlapStart + abs(jmin(offsetNumSamples, 0));
+    int overlapLength = overlapStop - overlapStart;
+
+    for (int i = 0; i < numChannels; i++) {
+        for (int j = 0; j < overlapStart; j++) {
+            float value = riseSampleBuffer.getSample(i, j);
+            processedSampleBuffer.setSample(i, j, value);
+        }
+
+        for (int j = 0; j < overlapLength; j++) {
+            float value = fallSampleBuffer.getSample(i, j) + riseSampleBuffer.getSample(i, overlapStart + j);
+            processedSampleBuffer.setSample(i, overlapStart + j, value);
+        }
+
+        for (int j = 0; j < fallSampleBuffer.getNumSamples() - overlapLength; j++) {
+            float value = fallSampleBuffer.getSample(i, overlapLength + j);
+            processedSampleBuffer.setSample(i, overlapStop + j, value);
+        }
+    }
+}
+
+void RiseandfallAudioProcessor::updateThumbnail() {
+    thumbnail.reset(numChannels, sampleRate, processedSampleBuffer.getNumSamples());
+    thumbnail.addBlock(0, processedSampleBuffer, 0, processedSampleBuffer.getNumSamples());
+}
+
+
 void RiseandfallAudioProcessor::normalizeSample() {
-    float magnitude = processedSampleBuffer.getMagnitude(0, processedSampleBuffer.getNumSamples());
-    processedSampleBuffer.applyGain(1 / magnitude);
+    float magnitude = originalSampleBuffer.getMagnitude(0, originalSampleBuffer.getNumSamples());
+    originalSampleBuffer.applyGain(1 / magnitude);
+}
+
+
+void RiseandfallAudioProcessor::processSample() {
+    if (!processing) {
+        processing = true;
+        riseSampleBuffer.makeCopyOf(originalSampleBuffer);
+        fallSampleBuffer.makeCopyOf(originalSampleBuffer);
+        position = 0;
+        warp();
+        delayEffect();
+        reverbEffect();
+        reverse();
+        concatenate();
+        updateThumbnail();
+        processing = false;
+    }
+}
+
+void RiseandfallAudioProcessor::newSampleLoaded() {
+    position = 0;
+    numChannels = originalSampleBuffer.getNumChannels();
+    if (numChannels > 0) {
+        normalizeSample();
+        processSample();
+    }
 }
