@@ -1376,7 +1376,7 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/include_juce_gui_basics.mm"
     "../../JuceLibraryCode/include_juce_gui_extra.mm"
     "../../JuceLibraryCode/JuceHeader.h"
-)
+        ../../Source/ProcessingThreadPoolJob.cpp ../../Source/ProcessingThreadPoolJob.h)
 
 set_source_files_properties ("../../Lib/SoundTouch/AAFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Lib/SoundTouch/BPMDetect.h" PROPERTIES HEADER_FILE_ONLY TRUE)

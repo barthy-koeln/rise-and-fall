@@ -30,6 +30,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o"
   "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o"
   "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o"
+  "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o"
   "librise-and-fall.pdb"
   "librise-and-fall.a"
 )

@@ -801,6 +801,30 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o.provides.build: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o
 
 
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp
+
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp > CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.i
+
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.s
+
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o.requires:
+
+.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o.requires
+
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o.provides: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o.requires
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o.provides.build
+.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o.provides
+
+CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o.provides.build: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o
+
+
 # Object files for target SHARED_CODE
 SHARED_CODE_OBJECTS = \
 "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o" \
@@ -833,7 +857,8 @@ SHARED_CODE_OBJECTS = \
 "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm.o" \
 "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o" \
 "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o" \
-"CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o"
+"CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o" \
+"CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o"
 
 # External object files for target SHARED_CODE
 SHARED_CODE_EXTERNAL_OBJECTS =
@@ -869,9 +894,10 @@ librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o
+librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/build.make
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX static library librise-and-fall.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX static library librise-and-fall.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/SHARED_CODE.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SHARED_CODE.dir/link.txt --verbose=$(VERBOSE)
 
@@ -911,6 +937,7 @@ CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/Git
 CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o.requires
 CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o.requires
 CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o.requires
+CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o.requires
 
 .PHONY : CMakeFiles/SHARED_CODE.dir/requires
 

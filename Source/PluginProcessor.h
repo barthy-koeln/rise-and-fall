@@ -15,9 +15,6 @@
 #include "GUIParams.h"
 #include "../Lib/SoundTouch/SoundTouch.h"
 
-using namespace soundtouch;
-using namespace dsp;
-
 //==============================================================================
 /**
 */
@@ -106,6 +103,11 @@ public:
 private:
 
     /**
+     * Thread pool to execute multiple tasks at once and to separate GUI Threads from Processing threads
+     */
+    ThreadPool pool { 2 };
+
+    /**
      * Buffer containing the samples of the original audio file
      */
     AudioSampleBuffer originalSampleBuffer;
@@ -161,16 +163,6 @@ private:
     AudioThumbnail thumbnail;
 
     /**
-     * SoundTouch instance for time warping
-     */
-    SoundTouch soundTouch;
-
-    /**
-     * Convolution engine for the reverb effect
-     */
-    Convolution convolution;
-
-    /**
      * Block processing of the sample if it is already in process
      */
     bool processing;
@@ -181,51 +173,6 @@ private:
      * Clone the processed audio, reverse it and finally prepend it to the processed audio buffer
      */
     void concatenate();
-
-    /**
-     * Apply Time warp to the rise and fall buffers
-     */
-    void warp();
-
-    /**
-     * Calculate the delay effect for the rise and fall buffers
-     */
-    void delayEffect();
-
-    /**
-     * Calculate the reverb effect for the rise and fall buffers
-     */
-    void reverbEffect();
-
-    /**
-     * Reverse the rise and/or fall buffers
-     */
-    void reverse();
-
-    /**
-     * Warp audio samples to change the speed and pitch
-     *
-     * @param buffer
-     * @param factor
-     */
-    void applyTimeWarp(AudioSampleBuffer *buffer, int factor);
-
-    /**
-     *
-     * @param target
-     * @param base
-     * @param dampen
-     * @param delayTimeInSamples
-     * @param iteration
-     */
-    void
-    applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen, int delayTimeInSamples, int iteration);
-
-    /**
-     *
-     * @param target
-     */
-    void applyReverb(AudioSampleBuffer *target, const char *fileName, size_t fileSize);
 
     /**
      * Update the thumbnail image

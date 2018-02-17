@@ -12,6 +12,7 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include "ProcessingThreadPoolJob.h"
 
 //==============================================================================
 RiseandfallAudioProcessor::RiseandfallAudioProcessor()
@@ -29,10 +30,11 @@ RiseandfallAudioProcessor::RiseandfallAudioProcessor()
     position = 0;
     numChannels = 0;
     formatManager.registerBasicFormats();
-    soundTouch.setChannels(1); // always iterate over single channels
 }
 
-RiseandfallAudioProcessor::~RiseandfallAudioProcessor() = default;
+RiseandfallAudioProcessor::~RiseandfallAudioProcessor() {
+    pool.removeAllJobs(true, 2000);
+}
 
 //==============================================================================
 const String RiseandfallAudioProcessor::getName() const {
@@ -92,7 +94,6 @@ void RiseandfallAudioProcessor::prepareToPlay(double sampleRate, int samplesPerB
     // initialisation that you need..
     this->sampleRate = sampleRate;
     this->samplesPerBlock = samplesPerBlock;
-    soundTouch.setSampleRate(static_cast<uint>(sampleRate));
 }
 
 void RiseandfallAudioProcessor::releaseResources() {
@@ -198,117 +199,10 @@ AudioThumbnail *RiseandfallAudioProcessor::getThumbnail() {
     return &thumbnail;
 }
 
-void RiseandfallAudioProcessor::applyTimeWarp(AudioSampleBuffer *buffer, int factor) {
-    float realFactor = factor;
-    if (realFactor < 0) {
-        realFactor = 1 / abs(realFactor);
-    }
-
-    AudioSampleBuffer copy;
-    copy.makeCopyOf(*buffer);
-
-    soundTouch.setTempo(realFactor);
-    soundTouch.setPitch(1.0);
-
-    double ratio = soundTouch.getInputOutputSampleRatio();
-    buffer->setSize(buffer->getNumChannels(), static_cast<int>(ceil(buffer->getNumSamples() * ratio)), false, true,
-                    AVOID_REALLOCATING);
-
-    for (int channel = 0; channel < buffer->getNumChannels(); channel++) {
-        soundTouch.putSamples(copy.getReadPointer(channel), static_cast<uint>(copy.getNumSamples()));
-        soundTouch.receiveSamples(buffer->getWritePointer(channel), static_cast<uint>(buffer->getNumSamples()));
-        soundTouch.clear();
-    }
-}
-
-void RiseandfallAudioProcessor::applyDelay(AudioSampleBuffer *target, AudioSampleBuffer *base, float dampen,
-                                           int delayTimeInSamples, int iteration) {
-    base->applyGain(dampen);
-    if (base->getMagnitude(0, base->getNumSamples()) > 0.05) {
-        int currentDelayPosition = delayTimeInSamples * iteration;
-        int length = target->getNumSamples() + delayTimeInSamples;
-        target->setSize(target->getNumChannels(), length, true, true, true);
-
-        for (int channel = 0; channel < target->getNumChannels(); channel++) {
-            for (int i = 0; i < base->getNumSamples(); i++) {
-                target->addSample(channel, i + currentDelayPosition, base->getSample(channel, i));
-            }
-        }
-
-        applyDelay(target, base, dampen, delayTimeInSamples, iteration + 1);
-    }
-}
-
-void RiseandfallAudioProcessor::applyReverb(AudioSampleBuffer *target, const char *fileName, const size_t fileSize) {
-    AudioSampleBuffer copy;
-    copy.makeCopyOf(*target);
-
-    int processedSize = static_cast<int>(fileSize) + copy.getNumSamples() - 1;
-    target->setSize(target->getNumChannels(), processedSize, false, true, AVOID_REALLOCATING);
-
-    ProcessSpec processSpec = {sampleRate, static_cast<uint32>(processedSize),
-                               static_cast<uint32>(target->getNumChannels())};
-
-    convolution.prepare(processSpec);
-    convolution.loadImpulseResponse(fileName, fileSize, false, true, 0);
-
-    AudioBlock<float> audioBlockIn = AudioBlock<float>(copy);
-    AudioBlock<float> audioBlockOut = AudioBlock<float>(*target);
-    ProcessContextNonReplacing<float> processContext = ProcessContextNonReplacing<float>(audioBlockIn, audioBlockOut);
-    convolution.process(processContext);
-}
-
-void RiseandfallAudioProcessor::warp() {
-    // RISE
-    if (guiParams.riseTimeWarp != 0) {
-        applyTimeWarp(&riseSampleBuffer, guiParams.riseTimeWarp);
-    }
-
-    // FALL
-    if (guiParams.fallTimeWarp != 0) {
-        applyTimeWarp(&fallSampleBuffer, guiParams.fallTimeWarp);
-    }
-}
-
-void RiseandfallAudioProcessor::delayEffect() {
-    AudioSampleBuffer delayBaseTempBuffer;
-    float delayFeedbackNormalized = guiParams.delayFeedback / 100.0f;
-    float delayTimeNormalized = guiParams.delayTime / 1000.0f;
-    auto delayTimeInSamples = static_cast<int>(sampleRate * delayTimeNormalized);
-
-    // RISE
-    delayBaseTempBuffer.makeCopyOf(riseSampleBuffer);
-    applyDelay(&riseSampleBuffer, &delayBaseTempBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
-
-    // FALL
-    delayBaseTempBuffer.makeCopyOf(fallSampleBuffer);
-    applyDelay(&fallSampleBuffer, &delayBaseTempBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
-}
-
-void RiseandfallAudioProcessor::reverbEffect() {
-    const char *fileName = BinaryData::room_impulse_response_LBS_wav;
-    const size_t fileSize = BinaryData::room_impulse_response_LBS_wavSize;
-
-    // RISE
-    applyReverb(&riseSampleBuffer, fileName, fileSize);
-
-    // FALL
-    applyReverb(&fallSampleBuffer, fileName, fileSize);
-}
-
-void RiseandfallAudioProcessor::reverse() {
-    // RISE
-    if (guiParams.riseReverse) {
-        riseSampleBuffer.reverse(0, riseSampleBuffer.getNumSamples());
-    }
-
-    // FALL
-    if (guiParams.fallReverse) {
-        fallSampleBuffer.reverse(0, fallSampleBuffer.getNumSamples());
-    }
-}
-
 void RiseandfallAudioProcessor::concatenate() {
+    time_t start, end;
+
+    time(&start);
     // TIME OFFSET
     auto offsetNumSamples = static_cast<int>((guiParams.timeOffset / 1000) * sampleRate);
     int processedSize = riseSampleBuffer.getNumSamples() + fallSampleBuffer.getNumSamples() + offsetNumSamples;
@@ -335,6 +229,9 @@ void RiseandfallAudioProcessor::concatenate() {
             processedSampleBuffer.setSample(i, overlapStop + j, value);
         }
     }
+
+    time(&end);
+    printf("concat elapsed: %.2lf seconds\n", difftime(end, start));
 }
 
 void RiseandfallAudioProcessor::updateThumbnail() {
@@ -352,16 +249,38 @@ void RiseandfallAudioProcessor::normalizeSample() {
 void RiseandfallAudioProcessor::processSample() {
     if (!processing) {
         processing = true;
+        time_t start, end;
+        time(&start);
+        printf("BLOCK START\n");
+
         riseSampleBuffer.makeCopyOf(originalSampleBuffer);
         fallSampleBuffer.makeCopyOf(originalSampleBuffer);
-        position = 0;
-        warp();
-        delayEffect();
-        reverbEffect();
-        reverse();
-        concatenate();
-        updateThumbnail();
+
+        auto *risePoolJob = new ProcessingThreadPoolJob(RISE, riseSampleBuffer, guiParams, sampleRate);
+        auto *fallPoolJob = new ProcessingThreadPoolJob(FALL, fallSampleBuffer, guiParams, sampleRate);
+
+        pool.addJob(risePoolJob, true);
+        pool.addJob(fallPoolJob, true);
+
+        bool riseJobFinished = pool.waitForJobToFinish(risePoolJob, 60000);
+        bool fallJobFinished = pool.waitForJobToFinish(fallPoolJob, 60000);
+
+        if (riseJobFinished && fallJobFinished) {
+            riseSampleBuffer.makeCopyOf(risePoolJob->getOutputBuffer());
+            fallSampleBuffer.makeCopyOf(fallPoolJob->getOutputBuffer());
+            position = 0;
+            concatenate();
+            time(&end);
+            printf("BLOCK END: %.2f\n\n", difftime(end, start));
+            updateThumbnail();
+            processing = false;
+        } else {
+            printf("TIMEOUT THREAD POOL SHIT\n");
+        }
+    } else {
+        pool.removeAllJobs(true, 2000);
         processing = false;
+        processSample();
     }
 }
 
