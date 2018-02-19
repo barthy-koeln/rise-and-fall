@@ -101,11 +101,10 @@ ThreadPoolJob::JobStatus ProcessingThreadPoolJob::runJob() {
     time(&end);
     printf("%d delay elapsed: %.2lf seconds\n", type, difftime(end, start));
 
-    /*printf("type: %d: reverb\n", type);
     time(&start);
     applyReverb(bufferIn, BinaryData::room_impulse_response_LBS_wav, BinaryData::room_impulse_response_LBS_wavSize);
     time(&end);
-    printf("%d reverb elapsed: %.2lf seconds\n", type, difftime(end, start));*/
+    printf("%d reverb elapsed: %.2lf seconds\n", type, difftime(end, start));
 
     if ((type == RISE && guiParams.riseReverse) || (type == FALL && guiParams.fallReverse)) {
         time(&start);

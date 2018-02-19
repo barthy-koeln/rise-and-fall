@@ -210,23 +210,23 @@
 // juce_dsp flags:
 
 #ifndef    JUCE_ASSERTION_FIRFILTER
- //#define JUCE_ASSERTION_FIRFILTER 1
+ #define   JUCE_ASSERTION_FIRFILTER 1
 #endif
 
 #ifndef    JUCE_DSP_USE_INTEL_MKL
- //#define JUCE_DSP_USE_INTEL_MKL 0
+ #define   JUCE_DSP_USE_INTEL_MKL 0
 #endif
 
 #ifndef    JUCE_DSP_USE_SHARED_FFTW
- //#define JUCE_DSP_USE_SHARED_FFTW 0
+ #define   JUCE_DSP_USE_SHARED_FFTW 0
 #endif
 
 #ifndef    JUCE_DSP_USE_STATIC_FFTW
- //#define JUCE_DSP_USE_STATIC_FFTW 0
+ #define   JUCE_DSP_USE_STATIC_FFTW 0
 #endif
 
 #ifndef    JUCE_DSP_ENABLE_SNAP_TO_ZERO
- //#define JUCE_DSP_ENABLE_SNAP_TO_ZERO 1
+ #define   JUCE_DSP_ENABLE_SNAP_TO_ZERO 1
 #endif
 
 //==============================================================================

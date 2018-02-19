@@ -715,6 +715,141 @@ Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.
 	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.s
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.s
 
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.s
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.o
+
+# target to build an object file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.i: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.i
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.i
+
+# target to preprocess a source file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.i:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.i
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.i
+
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.s: Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.s
+
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.s
+
+# target to generate assembly for a file
+Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.s:
+	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.s
+.PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.s
+
 Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.o: Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o
 
 .PHONY : Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.o
@@ -1247,6 +1382,21 @@ help:
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.s"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.o"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.i"
+	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.s"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.o"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.i"
 	@echo "... Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.s"

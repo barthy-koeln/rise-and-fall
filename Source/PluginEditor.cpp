@@ -33,8 +33,8 @@ void RiseandfallAudioProcessorEditor::initSlider(Slider *slider, const String &l
         slider->setSkewFactor(0.36787944117);
     }
 
-    addAndMakeVisible(slider);
     slider->addListener(this);
+    addAndMakeVisible(slider);
 }
 
 void RiseandfallAudioProcessorEditor::initComboBox(ComboBox *comboBox, const String &label, const StringArray *items) {
@@ -42,6 +42,7 @@ void RiseandfallAudioProcessorEditor::initComboBox(ComboBox *comboBox, const Str
     comboBox->setSelectedId(1);
     comboBox->setName(label);
 
+    comboBox->addListener(this);
     addAndMakeVisible(comboBox);
 }
 
@@ -131,7 +132,7 @@ void RiseandfallAudioProcessorEditor::paint(Graphics &g) {
 }
 
 void RiseandfallAudioProcessorEditor::resized() {
-    timeOffsetSlider.setBounds(368, 464, 288, 32);
+    timeOffsetSlider.setBounds(368, 464, 288, 46);
 
     riseTimeWarpSlider.setBounds(232, 320, sliderWidth, sliderHeight);
     fallTimeWarpSlider.setBounds(568, 320, sliderWidth, sliderHeight);
@@ -221,4 +222,12 @@ void RiseandfallAudioProcessorEditor::sliderValueChanged(Slider *slider) {
     }
 
     processor.processSample();
+}
+
+void RiseandfallAudioProcessorEditor::comboBoxChanged(ComboBox *box) {
+    if(box == &reverbImpResComboBox){
+        guiParams->impulseResponse = reverbImpResComboBox.getSelectedItemIndex();
+    } else if(box == &filterTypeComboBox) {
+        guiParams->filterType = filterTypeComboBox.getSelectedItemIndex();
+    }
 }

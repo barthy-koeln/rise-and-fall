@@ -14,7 +14,6 @@
 #include "PluginProcessor.h"
 #include "CustomLookAndFeel.hpp"
 
-
 //==============================================================================
 /**
  */
@@ -22,7 +21,8 @@ class RiseandfallAudioProcessorEditor :
         public AudioProcessorEditor,
         public Button::Listener,
         public ChangeListener,
-        public Slider::Listener {
+        public Slider::Listener,
+        public ComboBox::Listener {
 public:
     RiseandfallAudioProcessorEditor(RiseandfallAudioProcessor &);
 
@@ -73,6 +73,8 @@ private:
     void changeListenerCallback(ChangeBroadcaster *source) override;
 
     void sliderValueChanged(Slider *slider) override;
+
+    void comboBoxChanged(ComboBox *box) override;
 
     void loadFileButtonCLicked();
 

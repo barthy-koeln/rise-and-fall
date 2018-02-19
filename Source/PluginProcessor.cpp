@@ -247,40 +247,42 @@ void RiseandfallAudioProcessor::normalizeSample() {
 
 
 void RiseandfallAudioProcessor::processSample() {
-    if (!processing) {
-        processing = true;
-        time_t start, end;
-        time(&start);
-        printf("BLOCK START\n");
+    if (numChannels > 0) {
+        if (!processing) {
+            processing = true;
+            time_t start, end;
+            time(&start);
+            printf("BLOCK START\n");
 
-        riseSampleBuffer.makeCopyOf(originalSampleBuffer);
-        fallSampleBuffer.makeCopyOf(originalSampleBuffer);
+            riseSampleBuffer.makeCopyOf(originalSampleBuffer);
+            fallSampleBuffer.makeCopyOf(originalSampleBuffer);
 
-        auto *risePoolJob = new ProcessingThreadPoolJob(RISE, riseSampleBuffer, guiParams, sampleRate);
-        auto *fallPoolJob = new ProcessingThreadPoolJob(FALL, fallSampleBuffer, guiParams, sampleRate);
+            auto *risePoolJob = new ProcessingThreadPoolJob(RISE, riseSampleBuffer, guiParams, sampleRate);
+            auto *fallPoolJob = new ProcessingThreadPoolJob(FALL, fallSampleBuffer, guiParams, sampleRate);
 
-        pool.addJob(risePoolJob, true);
-        pool.addJob(fallPoolJob, true);
+            pool.addJob(risePoolJob, true);
+            pool.addJob(fallPoolJob, true);
 
-        bool riseJobFinished = pool.waitForJobToFinish(risePoolJob, 60000);
-        bool fallJobFinished = pool.waitForJobToFinish(fallPoolJob, 60000);
+            bool riseJobFinished = pool.waitForJobToFinish(risePoolJob, 60000);
+            bool fallJobFinished = pool.waitForJobToFinish(fallPoolJob, 60000);
 
-        if (riseJobFinished && fallJobFinished) {
-            riseSampleBuffer.makeCopyOf(risePoolJob->getOutputBuffer());
-            fallSampleBuffer.makeCopyOf(fallPoolJob->getOutputBuffer());
-            position = 0;
-            concatenate();
-            time(&end);
-            printf("BLOCK END: %.2f\n\n", difftime(end, start));
-            updateThumbnail();
-            processing = false;
+            if (riseJobFinished && fallJobFinished) {
+                riseSampleBuffer.makeCopyOf(risePoolJob->getOutputBuffer());
+                fallSampleBuffer.makeCopyOf(fallPoolJob->getOutputBuffer());
+                position = 0;
+                concatenate();
+                time(&end);
+                printf("BLOCK END: %.2f\n\n", difftime(end, start));
+                updateThumbnail();
+                processing = false;
+            } else {
+                printf("TIMEOUT THREAD POOL SHIT\n");
+            }
         } else {
-            printf("TIMEOUT THREAD POOL SHIT\n");
+            pool.removeAllJobs(true, 2000);
+            processing = false;
+            processSample();
         }
-    } else {
-        pool.removeAllJobs(true, 2000);
-        processing = false;
-        processSample();
     }
 }
 

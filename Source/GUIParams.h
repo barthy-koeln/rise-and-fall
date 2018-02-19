@@ -22,4 +22,6 @@ public:
     int fallTimeWarp = 0;
     int delayTime = 500;
     int delayFeedback = 50;
+    int impulseResponse = 0;
+    int filterType = 0;
 };
