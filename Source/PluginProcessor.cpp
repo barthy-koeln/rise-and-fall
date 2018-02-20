@@ -29,6 +29,7 @@ RiseandfallAudioProcessor::RiseandfallAudioProcessor()
 {
     position = 0;
     numChannels = 0;
+    processing = false;
     formatManager.registerBasicFormats();
 }
 
@@ -134,18 +135,6 @@ void RiseandfallAudioProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuff
     midiMessages.clear();
 
     if (numChannels > 0 && !processing) {
-        const int totalNumOutputChannels = getTotalNumOutputChannels();
-
-        // In case we have more outputs than inputs, this code clears any output
-        // channels that didn't contain input data, (because these aren't
-        // guaranteed to be empty - they may contain garbage).
-        // This is here to avoid people getting screaming feedback
-        // when they first compile a plugin, but obviously you don't need to keep
-        // this code if your algorithm always overwrites all the output channels.
-        for (int i = numChannels; i < totalNumOutputChannels; ++i) {
-            buffer.clear(i, 0, buffer.getNumSamples());
-        }
-
         int inputNumSamples = processedSampleBuffer.getNumSamples();
         auto bufferSamplesRemaining = static_cast<int>(inputNumSamples - position);
         int samplesThisTime = jmin(samplesPerBlock, bufferSamplesRemaining);
@@ -200,9 +189,8 @@ AudioThumbnail *RiseandfallAudioProcessor::getThumbnail() {
 }
 
 void RiseandfallAudioProcessor::concatenate() {
-    time_t start, end;
+    const clock_t start = clock();
 
-    time(&start);
     // TIME OFFSET
     auto offsetNumSamples = static_cast<int>((guiParams.timeOffset / 1000) * sampleRate);
     int processedSize = riseSampleBuffer.getNumSamples() + fallSampleBuffer.getNumSamples() + offsetNumSamples;
@@ -214,7 +202,7 @@ void RiseandfallAudioProcessor::concatenate() {
     int overlapLength = overlapStop - overlapStart;
 
     for (int i = 0; i < numChannels; i++) {
-        for (int j = 0; j < overlapStart; j++) {
+        for (int j = 0; j < overlapStart && j < riseSampleBuffer.getNumSamples(); j++) {
             float value = riseSampleBuffer.getSample(i, j);
             processedSampleBuffer.setSample(i, j, value);
         }
@@ -230,8 +218,7 @@ void RiseandfallAudioProcessor::concatenate() {
         }
     }
 
-    time(&end);
-    printf("concat elapsed: %.2lf seconds\n", difftime(end, start));
+    printf("concat elapsed: %.2lf ms\n", float( clock () - start ) /  CLOCKS_PER_SEC);
 }
 
 void RiseandfallAudioProcessor::updateThumbnail() {
@@ -241,6 +228,7 @@ void RiseandfallAudioProcessor::updateThumbnail() {
 
 
 void RiseandfallAudioProcessor::normalizeSample() {
+    processing = true;
     float magnitude = originalSampleBuffer.getMagnitude(0, originalSampleBuffer.getNumSamples());
     originalSampleBuffer.applyGain(1 / magnitude);
 }
@@ -250,36 +238,38 @@ void RiseandfallAudioProcessor::processSample() {
     if (numChannels > 0) {
         if (!processing) {
             processing = true;
-            time_t start, end;
-            time(&start);
+            const clock_t start = clock();
             printf("BLOCK START\n");
 
             riseSampleBuffer.makeCopyOf(originalSampleBuffer);
             fallSampleBuffer.makeCopyOf(originalSampleBuffer);
 
-            auto *risePoolJob = new ProcessingThreadPoolJob(RISE, riseSampleBuffer, guiParams, sampleRate);
-            auto *fallPoolJob = new ProcessingThreadPoolJob(FALL, fallSampleBuffer, guiParams, sampleRate);
+            ProcessingThreadPoolJob risePoolJob(RISE, riseSampleBuffer, guiParams, sampleRate);
+            ProcessingThreadPoolJob fallPoolJob(FALL, fallSampleBuffer, guiParams, sampleRate);
 
-            pool.addJob(risePoolJob, true);
-            pool.addJob(fallPoolJob, true);
+            pool.addJob(&risePoolJob, false);
+            pool.addJob(&fallPoolJob, false);
 
-            bool riseJobFinished = pool.waitForJobToFinish(risePoolJob, 60000);
-            bool fallJobFinished = pool.waitForJobToFinish(fallPoolJob, 60000);
+            bool riseJobFinished = pool.waitForJobToFinish(&risePoolJob, 60000);
+            bool fallJobFinished = pool.waitForJobToFinish(&fallPoolJob, 60000);
 
             if (riseJobFinished && fallJobFinished) {
-                riseSampleBuffer.makeCopyOf(risePoolJob->getOutputBuffer());
-                fallSampleBuffer.makeCopyOf(fallPoolJob->getOutputBuffer());
+                riseSampleBuffer.makeCopyOf(risePoolJob.getOutputBuffer());
+                fallSampleBuffer.makeCopyOf(fallPoolJob.getOutputBuffer());
                 position = 0;
                 concatenate();
-                time(&end);
-                printf("BLOCK END: %.2f\n\n", difftime(end, start));
+                printf("BLOCK END: %.2f ms\n\n", float( clock () - start ) /  CLOCKS_PER_SEC);
                 updateThumbnail();
                 processing = false;
             } else {
-                printf("TIMEOUT THREAD POOL SHIT\n");
+                printf("Thread pool timed out after 60 seconds.\n");
             }
         } else {
-            pool.removeAllJobs(true, 2000);
+            printf("Interrupting all jobs.\n");
+            while (!pool.removeAllJobs(true, 2000)) {
+                // wait until all jobs are removed
+                printf("Still trying to interrupting all jobs.\n");
+            }
             processing = false;
             processSample();
         }

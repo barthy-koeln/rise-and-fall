@@ -54,17 +54,6 @@ add_executable (STANDALONE_PLUGIN
 set_source_files_properties ("../../../JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 
 add_library (SHARED_CODE STATIC
-    "../../Lib/FFTConvolver/test/Test.cpp"
-    "../../Lib/FFTConvolver/AudioFFT.cpp"
-    "../../Lib/FFTConvolver/AudioFFT.h"
-    "../../Lib/FFTConvolver/COPYING.txt"
-    "../../Lib/FFTConvolver/FFTConvolver.cpp"
-    "../../Lib/FFTConvolver/FFTConvolver.h"
-    "../../Lib/FFTConvolver/README.md"
-    "../../Lib/FFTConvolver/TwoStageFFTConvolver.cpp"
-    "../../Lib/FFTConvolver/TwoStageFFTConvolver.h"
-    "../../Lib/FFTConvolver/Utilities.cpp"
-    "../../Lib/FFTConvolver/Utilities.h"
     "../../Lib/SoundTouch/AAFilter.cpp"
     "../../Lib/SoundTouch/AAFilter.h"
     "../../Lib/SoundTouch/BPMDetect.cpp"
@@ -1392,12 +1381,6 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/JuceHeader.h"
 )
 
-set_source_files_properties ("../../Lib/FFTConvolver/AudioFFT.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Lib/FFTConvolver/COPYING.txt" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Lib/FFTConvolver/FFTConvolver.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Lib/FFTConvolver/README.md" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Lib/FFTConvolver/TwoStageFFTConvolver.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Lib/FFTConvolver/Utilities.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Lib/SoundTouch/AAFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Lib/SoundTouch/BPMDetect.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Lib/SoundTouch/cpu_detect.h" PROPERTIES HEADER_FILE_ONLY TRUE)

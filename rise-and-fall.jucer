@@ -15,24 +15,6 @@
               companyName="Barthy" companyWebsite="http://barthy.koeln" companyEmail="post@barthy.koeln">
   <MAINGROUP id="UHNwjp" name="RISE&amp;FALL">
     <GROUP id="{82B20B1B-AC74-0C47-3E9D-3777EEB27B6F}" name="Lib">
-      <GROUP id="{250A8187-CDFD-7FFF-73E7-D6CC21F9F3D1}" name="FFTConvolver">
-        <GROUP id="{63D9A6F8-7F5C-82B1-34C7-1A4C2297EFB3}" name="test">
-          <FILE id="y69cqK" name="Test.cpp" compile="1" resource="0" file="Lib/FFTConvolver/test/Test.cpp"/>
-        </GROUP>
-        <FILE id="msO0u0" name="AudioFFT.cpp" compile="1" resource="0" file="Lib/FFTConvolver/AudioFFT.cpp"/>
-        <FILE id="dp8Eoy" name="AudioFFT.h" compile="0" resource="0" file="Lib/FFTConvolver/AudioFFT.h"/>
-        <FILE id="CvDCMJ" name="COPYING.txt" compile="0" resource="1" file="Lib/FFTConvolver/COPYING.txt"/>
-        <FILE id="D34nQe" name="FFTConvolver.cpp" compile="1" resource="0"
-              file="Lib/FFTConvolver/FFTConvolver.cpp"/>
-        <FILE id="TzHJLO" name="FFTConvolver.h" compile="0" resource="0" file="Lib/FFTConvolver/FFTConvolver.h"/>
-        <FILE id="CAl6xt" name="README.md" compile="0" resource="1" file="Lib/FFTConvolver/README.md"/>
-        <FILE id="byEtBg" name="TwoStageFFTConvolver.cpp" compile="1" resource="0"
-              file="Lib/FFTConvolver/TwoStageFFTConvolver.cpp"/>
-        <FILE id="iYiAcJ" name="TwoStageFFTConvolver.h" compile="0" resource="0"
-              file="Lib/FFTConvolver/TwoStageFFTConvolver.h"/>
-        <FILE id="n4u2U1" name="Utilities.cpp" compile="1" resource="0" file="Lib/FFTConvolver/Utilities.cpp"/>
-        <FILE id="XJYMDO" name="Utilities.h" compile="0" resource="0" file="Lib/FFTConvolver/Utilities.h"/>
-      </GROUP>
       <GROUP id="{55FDE5FE-A537-FB4E-F378-CB3B221A7A49}" name="SoundTouch">
         <FILE id="BfhI9o" name="AAFilter.cpp" compile="1" resource="0" file="Lib/SoundTouch/AAFilter.cpp"/>
         <FILE id="onaEk5" name="AAFilter.h" compile="0" resource="0" file="Lib/SoundTouch/AAFilter.h"/>
@@ -163,6 +145,5 @@
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
   </MODULES>
-  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_DSP_USE_SHARED_FFTW="0" JUCE_DSP_USE_INTEL_MKL="0"
-               JUCE_DSP_USE_STATIC_FFTW="0" JUCE_ASSERTION_FIRFILTER="1" JUCE_DSP_ENABLE_SNAP_TO_ZERO="1"/>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_ASSERTION_FIRFILTER="1" JUCE_DSP_ENABLE_SNAP_TO_ZERO="1"/>
 </JUCERPROJECT>

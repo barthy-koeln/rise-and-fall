@@ -4317,39 +4317,6 @@
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/COPYING.txt">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/README.md">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.h">
-			<Option target="SHARED_CODE"/>
-		</Unit>
-		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp">
-			<Option target="SHARED_CODE"/>
-		</Unit>
 		<Unit filename="/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>

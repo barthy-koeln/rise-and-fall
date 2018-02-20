@@ -24,11 +24,12 @@ void ProcessingThreadPoolJob::applyTimeWarp(AudioSampleBuffer &buffer, int facto
         realFactor = 1 / abs(realFactor);
     }
 
+    printf("%d: Applying time warp with factor: %f\n", type, realFactor);
+
     AudioSampleBuffer copy;
     copy.makeCopyOf(buffer);
 
     soundTouch.setTempo(realFactor);
-    soundTouch.setPitch(1.0);
 
     double ratio = soundTouch.getInputOutputSampleRatio();
     buffer.setSize(buffer.getNumChannels(), static_cast<int>(ceil(buffer.getNumSamples() * ratio)), false, true,
@@ -56,6 +57,8 @@ void ProcessingThreadPoolJob::applyDelay(AudioSampleBuffer &target, AudioSampleB
         }
 
         applyDelay(target, base, dampen, delayTimeInSamples, iteration + 1);
+    } else {
+        printf("%d Delay processed after %d recursions\n", type, iteration);
     }
 }
 
@@ -86,31 +89,29 @@ ThreadPoolJob::JobStatus ProcessingThreadPoolJob::runJob() {
     auto delayTimeInSamples = static_cast<int>(sampleRate * delayTimeNormalized);
     AudioSampleBuffer delayBaseBuffer;
     delayBaseBuffer.makeCopyOf(bufferIn);
-    time_t start, end;
+    clock_t start = clock();
 
     int timeWarp = type == RISE ? guiParams.riseTimeWarp : guiParams.fallTimeWarp;
     if (timeWarp != 0) {
-        time(&start);
+        start = clock();
         applyTimeWarp(bufferIn, timeWarp);
-        time(&end);
-        printf("%d time warp elapsed: %.2lf seconds\n", type, difftime(end, start));
+        printf("%d time warp elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
     }
 
-    time(&start);
+    start = clock();
     applyDelay(bufferIn, delayBaseBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
-    time(&end);
-    printf("%d delay elapsed: %.2lf seconds\n", type, difftime(end, start));
+    printf("%d delay elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
 
-    time(&start);
+    /*
+    start = clock();
     applyReverb(bufferIn, BinaryData::room_impulse_response_LBS_wav, BinaryData::room_impulse_response_LBS_wavSize);
-    time(&end);
-    printf("%d reverb elapsed: %.2lf seconds\n", type, difftime(end, start));
+    printf("%d reverb elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
+    */
 
     if ((type == RISE && guiParams.riseReverse) || (type == FALL && guiParams.fallReverse)) {
-        time(&start);
+        start = clock();
         bufferIn.reverse(0, bufferIn.getNumSamples());
-        time(&end);
-        printf("%d reverse elapsed: %.2lf seconds\n", type, difftime(end, start));
+        printf("%d reverse elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
     }
 
     return jobHasFinished;
@@ -120,4 +121,5 @@ AudioSampleBuffer ProcessingThreadPoolJob::getOutputBuffer() {
     return bufferIn;
 }
 
+ProcessingThreadPoolJob::~ProcessingThreadPoolJob() = default;
 

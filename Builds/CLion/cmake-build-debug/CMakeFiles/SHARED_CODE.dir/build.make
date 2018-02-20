@@ -57,129 +57,9 @@ include CMakeFiles/SHARED_CODE.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SHARED_CODE.dir/flags.make
 
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp > CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.i
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.s
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o.requires:
-
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o.requires
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o.provides: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o.requires
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o.provides.build
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o.provides
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o.provides.build: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o
-
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp > CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.i
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.s
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o.requires:
-
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o.requires
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o.provides: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o.requires
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o.provides.build
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o.provides
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o.provides.build: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o
-
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp > CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.i
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.s
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o.requires:
-
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o.requires
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o.provides: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o.requires
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o.provides.build
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o.provides
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o.provides.build: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o
-
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp > CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.i
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.s
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o.requires:
-
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o.requires
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o.provides: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o.requires
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o.provides.build
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o.provides
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o.provides.build: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o
-
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp > CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.i
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.s
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o.requires:
-
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o.requires
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o.provides: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o.requires
-	$(MAKE) -f CMakeFiles/SHARED_CODE.dir/build.make CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o.provides.build
-.PHONY : CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o.provides
-
-CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o.provides.build: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o
-
-
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.i: cmake_force
@@ -203,7 +83,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.i: cmake_force
@@ -227,7 +107,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.i: cmake_force
@@ -251,7 +131,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIFOSampleBuffer.cpp.i: cmake_force
@@ -275,7 +155,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/FIRFilter.cpp.i: cmake_force
@@ -299,7 +179,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateCubic.cpp.i: cmake_force
@@ -323,7 +203,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateLinear.cpp.i: cmake_force
@@ -347,7 +227,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/InterpolateShannon.cpp.i: cmake_force
@@ -371,7 +251,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/mmx_optimized.cpp.i: cmake_force
@@ -395,7 +275,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/PeakFinder.cpp.i: cmake_force
@@ -419,7 +299,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/RateTransposer.cpp.i: cmake_force
@@ -443,7 +323,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/SoundTouch.cpp.i: cmake_force
@@ -467,7 +347,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/sse_optimized.cpp.i: cmake_force
@@ -491,7 +371,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/TDStretch.cpp.i: cmake_force
@@ -515,7 +395,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/ProcessingThreadPoolJob.cpp.i: cmake_force
@@ -539,7 +419,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/Processi
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginProcessor.cpp.i: cmake_force
@@ -563,7 +443,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginPr
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEditor.cpp.i: cmake_force
@@ -587,7 +467,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Source/PluginEd
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/BinaryData.cpp.i: cmake_force
@@ -611,7 +491,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_basics.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_basics.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_basics.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_basics.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_basics.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_basics.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_basics.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_basics.mm.i: cmake_force
@@ -635,7 +515,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_devices.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_devices.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_devices.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_devices.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_devices.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_devices.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_devices.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_devices.mm.i: cmake_force
@@ -659,7 +539,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_formats.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_formats.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_formats.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_formats.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_formats.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_formats.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_formats.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_formats.mm.i: cmake_force
@@ -683,7 +563,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp.i: cmake_force
@@ -707,7 +587,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm.i: cmake_force
@@ -731,7 +611,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_processors.mm.i: cmake_force
@@ -755,7 +635,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_audio_utils.mm.i: cmake_force
@@ -779,7 +659,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_core.mm.i: cmake_force
@@ -803,7 +683,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_data_structures.mm.i: cmake_force
@@ -827,7 +707,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_dsp.mm.i: cmake_force
@@ -851,7 +731,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_events.mm.i: cmake_force
@@ -875,7 +755,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_graphics.mm.i: cmake_force
@@ -899,7 +779,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_basics.mm.i: cmake_force
@@ -923,7 +803,7 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o: CMakeFiles/SHARED_CODE.dir/flags.make
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o: /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o -c /Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm
 
 CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.i: cmake_force
@@ -947,11 +827,6 @@ CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode
 
 # Object files for target SHARED_CODE
 SHARED_CODE_OBJECTS = \
-"CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o" \
-"CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o" \
-"CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o" \
-"CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o" \
-"CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o" \
 "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o" \
 "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o" \
 "CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o" \
@@ -988,11 +863,6 @@ SHARED_CODE_OBJECTS = \
 # External object files for target SHARED_CODE
 SHARED_CODE_EXTERNAL_OBJECTS =
 
-librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o
-librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o
-librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o
-librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o
-librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o
@@ -1027,7 +897,7 @@ librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/JuceLibraryCode/include_juce_gui_extra.mm.o
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/build.make
 librise-and-fall.a: CMakeFiles/SHARED_CODE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX static library librise-and-fall.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Barthy/GitHub/VST/rise-and-fall/Builds/CLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX static library librise-and-fall.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/SHARED_CODE.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SHARED_CODE.dir/link.txt --verbose=$(VERBOSE)
 
@@ -1036,11 +906,6 @@ CMakeFiles/SHARED_CODE.dir/build: librise-and-fall.a
 
 .PHONY : CMakeFiles/SHARED_CODE.dir/build
 
-CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/test/Test.cpp.o.requires
-CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/AudioFFT.cpp.o.requires
-CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/FFTConvolver.cpp.o.requires
-CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/TwoStageFFTConvolver.cpp.o.requires
-CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/FFTConvolver/Utilities.cpp.o.requires
 CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/AAFilter.cpp.o.requires
 CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/BPMDetect.cpp.o.requires
 CMakeFiles/SHARED_CODE.dir/requires: CMakeFiles/SHARED_CODE.dir/Users/Barthy/GitHub/VST/rise-and-fall/Lib/SoundTouch/cpu_detect_x86.cpp.o.requires

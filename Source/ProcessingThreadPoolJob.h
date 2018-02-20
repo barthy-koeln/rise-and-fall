@@ -22,6 +22,8 @@ class ProcessingThreadPoolJob : public ThreadPoolJob {
 public:
     ProcessingThreadPoolJob(ThreadType type, AudioSampleBuffer &bufferIn, GUIParams &guiParams, double sampleRate);
 
+    ~ProcessingThreadPoolJob();
+
     JobStatus runJob() override;
 
     AudioSampleBuffer getOutputBuffer();
