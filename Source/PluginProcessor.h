@@ -18,18 +18,13 @@
 //==============================================================================
 /**
 */
-class RiseandfallAudioProcessor : public AudioProcessor {
+class RiseandfallAudioProcessor : public AudioProcessor, public AudioProcessorListener {
 public:
-
-    /**
-     * Contains all extracted parameters from the GUI
-     */
-    GUIParams guiParams;
 
     //==============================================================================
     RiseandfallAudioProcessor();
 
-    ~RiseandfallAudioProcessor();
+    ~RiseandfallAudioProcessor() override;
 
     //==============================================================================
     void prepareToPlay(double sampleRate, int samplesPerBlock) override;
@@ -95,6 +90,8 @@ public:
      */
     void newSampleLoaded();
 
+    void loadSampleFromFile(File &file);
+
     /**
      * Cascade the multiple audio processing algorithms
      */
@@ -105,7 +102,7 @@ private:
     /**
      * Thread pool to execute multiple tasks at once and to separate GUI Threads from Processing threads
      */
-    ThreadPool pool { 2 };
+    ThreadPool pool{2};
 
     /**
      * Buffer containing the samples of the original audio file
@@ -162,6 +159,10 @@ private:
      */
     AudioThumbnail thumbnail;
 
+    AudioProcessorValueTreeState parameters;
+
+    String filePath;
+
     /**
      * Block processing of the sample if it is already in process
      */
@@ -178,6 +179,10 @@ private:
      * Update the thumbnail image
      */
     void updateThumbnail();
+
+    void audioProcessorParameterChanged(AudioProcessor *processor, int parameterIndex, float newValue) override;
+    void audioProcessorChanged (AudioProcessor* processor) override;
+    void audioProcessorParameterChangeGestureEnd(AudioProcessor* processor, int parameterIndex) override;
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (RiseandfallAudioProcessor)

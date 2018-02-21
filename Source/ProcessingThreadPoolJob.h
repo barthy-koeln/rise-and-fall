@@ -20,9 +20,9 @@ typedef enum ThreadTypeEnum {
 class ProcessingThreadPoolJob : public ThreadPoolJob {
 
 public:
-    ProcessingThreadPoolJob(ThreadType type, AudioSampleBuffer &bufferIn, GUIParams &guiParams, double sampleRate);
+    ProcessingThreadPoolJob(ThreadType type, AudioSampleBuffer &bufferIn, AudioProcessorValueTreeState& vts, double sampleRate);
 
-    ~ProcessingThreadPoolJob();
+    ~ProcessingThreadPoolJob() override;
 
     JobStatus runJob() override;
 
@@ -30,7 +30,7 @@ public:
 
 private:
     AudioSampleBuffer bufferIn;
-    GUIParams guiParams;
+    AudioProcessorValueTreeState &parameters;
     ThreadType type;
     double sampleRate;
 

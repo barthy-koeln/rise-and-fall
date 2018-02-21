@@ -24,13 +24,55 @@ RiseandfallAudioProcessor::RiseandfallAudioProcessor()
 #endif
                                  .withOutput("Output", AudioChannelSet::stereo(), true)
 #endif
-), thumbnailCache(5), thumbnail(256, formatManager, thumbnailCache)
+), thumbnailCache(5), thumbnail(256, formatManager, thumbnailCache), parameters(*this, nullptr)
 #endif
 {
     position = 0;
     numChannels = 0;
     processing = false;
     formatManager.registerBasicFormats();
+
+    parameters.createAndAddParameter(TIME_OFFSET_ID, TIME_OFFSET_NAME, String(), NormalisableRange<float>(-120, 120, 1),
+                                     0, nullptr, nullptr);
+    parameters.createAndAddParameter(RISE_REVERSE_ID, RISE_REVERSE_NAME, String(), NormalisableRange<float>(0, 1, 1),
+                                     true, nullptr, nullptr);
+    parameters.createAndAddParameter(FALL_REVERSE_ID, FALL_REVERSE_NAME, String(), NormalisableRange<float>(0, 1, 1),
+                                     false, nullptr, nullptr);
+    parameters.createAndAddParameter(RISE_EFFECTS_ID, RISE_EFFECTS_NAME, String(), NormalisableRange<float>(0, 1, 1),
+                                     true, nullptr, nullptr);
+    parameters.createAndAddParameter(FALL_EFFECTS_ID, FALL_EFFECTS_NAME, String(), NormalisableRange<float>(0, 1, 1),
+                                     true, nullptr, nullptr);
+    parameters.createAndAddParameter(RISE_TIME_WARP_ID, RISE_TIME_WARP_NAME, String(),
+                                     NormalisableRange<float>(-4, 4, 2), 0, nullptr, nullptr);
+    parameters.createAndAddParameter(FALL_TIME_WARP_ID, FALL_TIME_WARP_NAME, String(),
+                                     NormalisableRange<float>(-4, 4, 2), 0, nullptr, nullptr);
+    parameters.createAndAddParameter(DELAY_TIME_ID, DELAY_TIME_NAME, String(), NormalisableRange<float>(10, 1000, 1),
+                                     500, nullptr, nullptr);
+    parameters.createAndAddParameter(DELAY_FEEDBACK_ID, DELAY_FEEDBACK_NAME, String(),
+                                     NormalisableRange<float>(0, 99, 1), 50, nullptr, nullptr);
+    parameters.createAndAddParameter(IMPULSE_RESPONSE_ID, IMPULSE_RESPONSE_NAME, String(),
+                                     NormalisableRange<float>(0, 1, 1), 0, nullptr, nullptr);
+    parameters.createAndAddParameter(FILTER_TYPE_ID, FILTER_TYPE_NAME, String(), NormalisableRange<float>(0, 1, 1),
+                                     0, nullptr, nullptr);
+    parameters.createAndAddParameter(FILTER_CUTOFF_ID, FILTER_CUTOFF_NAME, String(),
+                                     NormalisableRange<float>(20, 20000, 1),
+                                     0, nullptr, nullptr);
+    parameters.createAndAddParameter(FILTER_RESONANCE_ID, FILTER_RESONANCE_NAME, String(),
+                                     NormalisableRange<float>(0, 10, 1),
+                                     0, nullptr, nullptr);
+    parameters.createAndAddParameter(REVERB_MIX_ID, REVERB_MIX_NAME, String(), NormalisableRange<float>(0, 100, 1),
+                                     50, nullptr, nullptr);
+    parameters.createAndAddParameter(DELAY_MIX_ID, DELAY_MIX_NAME, String(), NormalisableRange<float>(0, 100, 1),
+                                     50, nullptr, nullptr);
+
+    parameters.state = ValueTree(Identifier("RiseAndFall"));
+
+    this->addListener(this);
+
+    if (!filePath.isEmpty()) {
+        File file(filePath);
+        loadSampleFromFile(file);
+    }
 }
 
 RiseandfallAudioProcessor::~RiseandfallAudioProcessor() {
@@ -157,7 +199,7 @@ bool RiseandfallAudioProcessor::hasEditor() const {
 }
 
 AudioProcessorEditor *RiseandfallAudioProcessor::createEditor() {
-    return new RiseandfallAudioProcessorEditor(*this);
+    return new RiseandfallAudioProcessorEditor(*this, parameters);
 }
 
 //==============================================================================
@@ -165,11 +207,39 @@ void RiseandfallAudioProcessor::getStateInformation(MemoryBlock &destData) {
     // You should use this method to store your parameters in the memory block.
     // You could do that either as raw data, or use the XML or ValueTree classes
     // as intermediaries to make it easy to save and load complex data.
+    ScopedPointer<XmlElement> parent = new XmlElement(Identifier("RiseAndFallAllParams"));
+    ScopedPointer<XmlElement> xml = parameters.state.createXml();
+    ScopedPointer<XmlElement> filePathXML = new XmlElement(Identifier(FILE_PATH_ID));
+    filePathXML->setAttribute("path", filePath);
+
+    parent->addChildElement(xml);
+    parent->addChildElement(filePathXML);
+
+    copyXmlToBinary(*parent, destData);
+
+    parent->removeChildElement(xml, false);
+    parent->removeChildElement(filePathXML, false);
 }
 
 void RiseandfallAudioProcessor::setStateInformation(const void *data, int sizeInBytes) {
     // You should use this method to restore your parameters from this memory block,
     // whose contents will have been created by the getStateInformation() call.
+    ScopedPointer<XmlElement> xmlState(getXmlFromBinary(data, sizeInBytes));
+    if (xmlState != nullptr) {
+        ScopedPointer<XmlElement> xml = xmlState->getChildByName(parameters.state.getType());
+        ScopedPointer<XmlElement> filePathXML = xmlState->getChildByName(FILE_PATH_ID);
+        if (xml != nullptr) {
+            parameters.state = ValueTree::fromXml(*xml);
+        }
+        if (filePathXML != nullptr) {
+            filePath = filePathXML->getStringAttribute("path");
+            File file(filePath);
+            loadSampleFromFile(file);
+        }
+
+        xmlState->removeChildElement(xml, false);
+        xmlState->removeChildElement(filePathXML, false);
+    }
 }
 
 //==============================================================================
@@ -192,7 +262,7 @@ void RiseandfallAudioProcessor::concatenate() {
     const clock_t start = clock();
 
     // TIME OFFSET
-    auto offsetNumSamples = static_cast<int>((guiParams.timeOffset / 1000) * sampleRate);
+    auto offsetNumSamples = static_cast<int>((*parameters.getRawParameterValue(TIME_OFFSET_ID) / 1000) * sampleRate);
     int processedSize = riseSampleBuffer.getNumSamples() + fallSampleBuffer.getNumSamples() + offsetNumSamples;
 
     processedSampleBuffer.setSize(numChannels, processedSize, false, true, AVOID_REALLOCATING);
@@ -218,7 +288,7 @@ void RiseandfallAudioProcessor::concatenate() {
         }
     }
 
-    printf("concat elapsed: %.2lf ms\n", float( clock () - start ) /  CLOCKS_PER_SEC);
+    printf("concat elapsed: %.2lf ms\n", float(clock() - start) / CLOCKS_PER_SEC);
 }
 
 void RiseandfallAudioProcessor::updateThumbnail() {
@@ -244,8 +314,8 @@ void RiseandfallAudioProcessor::processSample() {
             riseSampleBuffer.makeCopyOf(originalSampleBuffer);
             fallSampleBuffer.makeCopyOf(originalSampleBuffer);
 
-            ProcessingThreadPoolJob risePoolJob(RISE, riseSampleBuffer, guiParams, sampleRate);
-            ProcessingThreadPoolJob fallPoolJob(FALL, fallSampleBuffer, guiParams, sampleRate);
+            ProcessingThreadPoolJob risePoolJob(RISE, riseSampleBuffer, parameters, sampleRate);
+            ProcessingThreadPoolJob fallPoolJob(FALL, fallSampleBuffer, parameters, sampleRate);
 
             pool.addJob(&risePoolJob, false);
             pool.addJob(&fallPoolJob, false);
@@ -258,7 +328,7 @@ void RiseandfallAudioProcessor::processSample() {
                 fallSampleBuffer.makeCopyOf(fallPoolJob.getOutputBuffer());
                 position = 0;
                 concatenate();
-                printf("BLOCK END: %.2f ms\n\n", float( clock () - start ) /  CLOCKS_PER_SEC);
+                printf("BLOCK END: %.2f ms\n\n", float(clock() - start) / CLOCKS_PER_SEC);
                 updateThumbnail();
                 processing = false;
             } else {
@@ -283,4 +353,34 @@ void RiseandfallAudioProcessor::newSampleLoaded() {
         normalizeSample();
         processSample();
     }
+}
+
+void RiseandfallAudioProcessor::loadSampleFromFile(File &file) {
+    filePath = file.getFullPathName();
+    printf("Loaded file: %s\n", filePath.toStdString().c_str());
+    ScopedPointer<AudioFormatReader> reader = formatManager.createReaderFor(file);
+    const double duration = reader->lengthInSamples / reader->sampleRate;
+
+    if (duration < 20) {
+        originalSampleBuffer.setSize(reader->numChannels,
+                                     static_cast<int>(reader->lengthInSamples));
+        reader->read(&originalSampleBuffer, 0, static_cast<int>(reader->lengthInSamples), 0, true, true);
+        newSampleLoaded();
+    } else {
+        // handle the error that the file is 20 seconds or longer..
+    }
+}
+
+void RiseandfallAudioProcessor::audioProcessorParameterChanged(AudioProcessor *processor, int parameterIndex,
+                                                               float newValue) {
+    // do nothing
+}
+
+void RiseandfallAudioProcessor::audioProcessorChanged(AudioProcessor *processor) {
+    //do nothing
+}
+
+void RiseandfallAudioProcessor::audioProcessorParameterChangeGestureEnd(AudioProcessor *processor, int parameterIndex) {
+    AudioProcessorListener::audioProcessorParameterChangeGestureEnd(processor, parameterIndex);
+    this->processSample();
 }

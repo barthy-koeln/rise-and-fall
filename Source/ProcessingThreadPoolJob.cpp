@@ -6,12 +6,12 @@
 
 #include "ProcessingThreadPoolJob.h"
 
-ProcessingThreadPoolJob::ProcessingThreadPoolJob(ThreadType type, AudioSampleBuffer &bufferIn, GUIParams &guiParams,
+ProcessingThreadPoolJob::ProcessingThreadPoolJob(ThreadType type, AudioSampleBuffer &bufferIn,
+                                                 AudioProcessorValueTreeState &vts,
                                                  double sampleRate)
-        : ThreadPoolJob("Processing Thread Pool Job") {
+        : ThreadPoolJob("Processing Thread Pool Job"), parameters(vts) {
     this->type = type;
     this->bufferIn = bufferIn;
-    this->guiParams = guiParams;
     this->sampleRate = sampleRate;
 
     soundTouch.setChannels(1); // always iterate over single channels
@@ -84,34 +84,41 @@ void ProcessingThreadPoolJob::applyReverb(AudioSampleBuffer &target, const char 
 
 ThreadPoolJob::JobStatus ProcessingThreadPoolJob::runJob() {
     AudioSampleBuffer delayBaseTempBuffer;
-    float delayFeedbackNormalized = guiParams.delayFeedback / 100.0f;
-    float delayTimeNormalized = guiParams.delayTime / 1000.0f;
+    float delayFeedbackNormalized = *parameters.getRawParameterValue(DELAY_FEEDBACK_ID) / 100.0f;
+    float delayTimeNormalized = *parameters.getRawParameterValue(DELAY_TIME_ID) / 1000.0f;
     auto delayTimeInSamples = static_cast<int>(sampleRate * delayTimeNormalized);
     AudioSampleBuffer delayBaseBuffer;
     delayBaseBuffer.makeCopyOf(bufferIn);
-    clock_t start = clock();
+    clock_t start;
 
-    int timeWarp = type == RISE ? guiParams.riseTimeWarp : guiParams.fallTimeWarp;
-    if (timeWarp != 0) {
+    auto effects = static_cast<bool>(*parameters.getRawParameterValue(
+            (type == RISE) ? RISE_EFFECTS_ID : FALL_EFFECTS_ID));
+
+    if (effects) {
+        auto timeWarp = static_cast<int>(*parameters.getRawParameterValue(
+                (type == RISE) ? RISE_TIME_WARP_ID : FALL_REVERSE_ID));
+        if (timeWarp != 0) {
+            start = clock();
+            applyTimeWarp(bufferIn, timeWarp);
+            printf("%d time warp elapsed: %.2lf ms\n", type, float(clock() - start) / CLOCKS_PER_SEC);
+        }
+
         start = clock();
-        applyTimeWarp(bufferIn, timeWarp);
-        printf("%d time warp elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
+        applyDelay(bufferIn, delayBaseBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
+        printf("%d delay elapsed: %.2lf ms\n", type, float(clock() - start) / CLOCKS_PER_SEC);
+
+        /*
+        start = clock();
+        applyReverb(bufferIn, BinaryData::room_impulse_response_LBS_wav, BinaryData::room_impulse_response_LBS_wavSize);
+        printf("%d reverb elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
+        */
     }
 
-    start = clock();
-    applyDelay(bufferIn, delayBaseBuffer, delayFeedbackNormalized, delayTimeInSamples, 1);
-    printf("%d delay elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
-
-    /*
-    start = clock();
-    applyReverb(bufferIn, BinaryData::room_impulse_response_LBS_wav, BinaryData::room_impulse_response_LBS_wavSize);
-    printf("%d reverb elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
-    */
-
-    if ((type == RISE && guiParams.riseReverse) || (type == FALL && guiParams.fallReverse)) {
+    if ((type == RISE && *parameters.getRawParameterValue(RISE_REVERSE_ID)) ||
+        (type == FALL && *parameters.getRawParameterValue(FALL_REVERSE_ID))) {
         start = clock();
         bufferIn.reverse(0, bufferIn.getNumSamples());
-        printf("%d reverse elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
+        printf("%d reverse elapsed: %.2lf ms\n", type, float(clock() - start) / CLOCKS_PER_SEC);
     }
 
     return jobHasFinished;
