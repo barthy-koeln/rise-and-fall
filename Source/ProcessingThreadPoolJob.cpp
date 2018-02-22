@@ -45,7 +45,7 @@ void ProcessingThreadPoolJob::applyTimeWarp(AudioSampleBuffer &buffer, int facto
 void ProcessingThreadPoolJob::applyDelay(AudioSampleBuffer &target, AudioSampleBuffer &base, float dampen,
                                          int delayTimeInSamples, int iteration) {
     base.applyGain(dampen);
-    if (base.getMagnitude(0, base.getNumSamples()) > 0.05) {
+    if (base.getMagnitude(0, base.getNumSamples()) > 0.005) {
         int currentDelayPosition = delayTimeInSamples * iteration;
         int length = target.getNumSamples() + base.getNumSamples() + delayTimeInSamples;
         target.setSize(target.getNumChannels(), length, true, true, AVOID_REALLOCATING);
@@ -111,7 +111,7 @@ ThreadPoolJob::JobStatus ProcessingThreadPoolJob::runJob() {
         start = clock();
         applyReverb(bufferIn, BinaryData::room_impulse_response_LBS_wav, BinaryData::room_impulse_response_LBS_wavSize);
         printf("%d reverb elapsed: %.2lf ms\n", type, float( clock () - start ) /  CLOCKS_PER_SEC);
-        */
+         */
     }
 
     if ((type == RISE && *parameters.getRawParameterValue(RISE_REVERSE_ID)) ||

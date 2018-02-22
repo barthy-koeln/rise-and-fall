@@ -138,11 +138,13 @@ private:
      * Number of channels in the original audio file
      */
     int numChannels;
+    
+    int numSamples;
 
     /**
      * Current position in the processing of sample blocks
      */
-    uint64 position;
+    int position;
 
     /**
      * Handles basic audio formats (wav, aiff)
@@ -161,14 +163,19 @@ private:
 
     AudioProcessorValueTreeState parameters;
 
-    String filePath;
+    String filePath = "";
 
     /**
      * Block processing of the sample if it is already in process
      */
     bool processing;
 
-    void normalizeSample();
+    bool play;
+    
+    OwnedArray<IIRFilter> filters;
+    IIRCoefficients coeffs;
+
+    void normalizeSample(AudioSampleBuffer &buffer);
 
     /**
      * Clone the processed audio, reverse it and finally prepend it to the processed audio buffer

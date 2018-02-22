@@ -73,7 +73,7 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
 
     initSlider(&filterCutoffSlider, "CUTOFF", customLookAndFeel.DIMENSION_HERTZ, true);
     filterCutoffSliderAttachment = new SliderAttachment(valueTreeState, FILTER_CUTOFF_ID, filterCutoffSlider);
-    initSlider(&filterResonanceSlider, "RESONANCE", customLookAndFeel.DIMENSION_DECIBEL);
+    initSlider(&filterResonanceSlider, "RESONANCE (Q)", "", true);
     filterResonanceSliderAttachment = new SliderAttachment(valueTreeState, FILTER_RESONANCE_ID, filterResonanceSlider);
 
     const ScopedPointer<StringArray> impResItems = new StringArray(
@@ -86,7 +86,6 @@ RiseandfallAudioProcessorEditor::RiseandfallAudioProcessorEditor(RiseandfallAudi
 
     const ScopedPointer<StringArray> filterTypes = new StringArray(
             CharPointer_UTF8("LP"),
-            CharPointer_UTF8("BP"),
             CharPointer_UTF8("HP")
     );
     initComboBox(&filterTypeComboBox, "FILTER", filterTypes);
